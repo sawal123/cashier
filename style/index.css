@@ -1,0 +1,107 @@
+:root {
+    --bluesoft: #ecf2f8;
+    --blue: #3498db;
+    --purplesoft: #9b59b6;
+    --navy: #001f3f;
+    --darkgrey: #afa9a9;
+    --darkgrey2: #d0d2d3;
+    --grey: #dfdcdc;
+    --purple: #8e44ad;
+    --green: #2ecc71;
+    --white: #fff;
+    --fwbold: 700;
+    --fwextrabold: 800;
+    --fwsemibold: 600;
+    --fwmedium: 500;
+    --fwregular: 400;
+    --fwlight:300;
+  }
+  
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bluesoft);
+    min-height: 5000px;
+}
+
+.big-header{
+    font-weight: var(--fwextrabold);
+    color: var(--navy);
+    font-size: 48px;
+    margin: 0;
+}
+
+.medium-header{
+    font-weight: var(--fwbold);
+    color: var(--navy);
+    font-size: 28px;
+    margin: 0;
+}
+
+.small-header{
+    font-weight: var(--fwregular);
+    color: #121212;
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.text-button{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.text-button:hover{
+    text-decoration: underline;
+    color: var(--navy);
+}
+
+.primary-copy{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-primary{
+width: 190px;
+height: 49px;
+flex-shrink: 0;
+border-radius: 7px;
+background: #728EF2;
+}
+.button-primary:hover{
+    
+    background: var(--navy);
+    color: var(--white);
+
+}
+.button-danger{
+width: 122px;
+height: 34px;
+flex-shrink: 0;
+border-radius: 17px;
+background: #F04242;
+}
+.button-danger:hover{
+    
+    background: var(--navy);
+    color: var(--white) !important;
+  
+}
+
+.pt-30{
+    padding-top: 30px;
+}
+
+.pt-70{
+    padding-top: 70px;
+}
+
+
+.sidebar{
+    background: var(--grey);
+}
+

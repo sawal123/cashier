@@ -1,12 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cashier</title>
-</head>
-<body>
-    <h1>hello</h1>
-    <p>hahahskwf</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kedai Kopi</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- sidebar -->
+          <div class="col-auto d-none d-sm-none d-md-block col-xl-2  px-0 bg-light"
+          > <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100 sidebar">
+              <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto  text-decoration-none">
+                
+                <img src="image/OBJECTS (1).svg" alt="" srcset=""> </a>
+
+              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start " id="menu">
+                <li class="nav-item ">
+                  <a href="#" class="nav-link align-middle ">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link align-middle ">
+                        <i class="fa-solid fa-money-bill"></i>
+                      <span class="ms-1 d-none d-sm-inline">Transaksi</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link align-middle ">
+                        <i class="fa-solid fa-burger"></i>
+                      <span class="ms-1 d-none d-sm-inline">Menu</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link align-middle ">
+                        <i class="fa-solid fa-gear"></i>
+                      <span class="ms-1 d-none d-sm-inline">Setting</span>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <nav class="navbar bg-body-tertiary">
+                                
+                                  <form class="container-fluid" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  </form>
+                               
+                              </nav>
+                        </div>
+                    </div>
+<!-- Card body -->
+                    <section calass="card ">
+                        <div class="container pt-30">
+                    <div class="row ">
+                        <div class="col-sm-3">
+                            <div class="card">
+                               <div class="card-body">
+                                    <img src="image/mdi_food.svg" class="card-icon" alt="...">
+                                  <p class="card-text">Buat Pesanan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                               <div class="card-body">
+                                    <img src="image/mdi_food.svg" class="card-icon" alt="...">
+                                  <p class="card-text">Buat Pesanan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                               <div class="card-body">
+                                    <img src="image/mdi_food.svg" class="card-icon" alt="...">
+                                  <p class="card-text">Buat Pesanan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                               <div class="card-body">
+                                    <img src="image/mdi_food.svg" class="card-icon" alt="...">
+                                  <p class="card-text">Buat Pesanan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+                <!-- data tables -->
+                <section class="card-table">
+                    
+                        <div class="container pt-70">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h2 class="card-title medium-header">Tabel Pesanan</h2>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>No Meja</th>
+                                                            <th>Menu</th>
+                                                            <th>Qty</th>
+                                                            <th>Jumlah</th>
+                                                            <th>Status</th> 
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>25</td>
+                                                            <td>3</td>
+                                                            <td>8</td>
+                                                            <td>RP.50.000</td>
+                                                            <td>Belum Bayar</td>
+                                                            <td>Status</td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                          <td>2</td>
+                                                          <td>20</td>
+                                                          <td>5</td>
+                                                          <td>6</td>
+                                                          <td>RP.45.000</td>
+                                                          <td>Belum Bayar</td>
+                                                          <td>Status</td>
+                                                          
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </section>
+
+                </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/c1d2872a82.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
