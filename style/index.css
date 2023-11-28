@@ -1,157 +1,152 @@
 :root {
-    --bluesoft: #161d24;
-    --blue: #3498db;
-    --purplesoft: #9b59b6;
-    --navy: #001f3f;
-    --darkgrey: #afa9a9;
-    --darkgrey2: #d0d2d3;
-    --grey: #dfdcdc;
-    --purple: #8e44ad;
-    --green: #2ecc71;
-    --white: #fff;
-    --fwbold: 700;
-    --fwextrabold: 800;
-    --fwsemibold: 600;
-    --fwmedium: 500;
-    --fwregular: 400;
-    --fwlight:300;
-  }
-  
+  --bluesoft: #161d24;
+  --blue: #3498db;
+  --purplesoft: #9b59b6;
+  --navy: #001f3f;
+  --darkgrey: #afa9a9;
+  --darkgrey2: #d0d2d3;
+  --grey: #dfdcdc;
+  --purple: #8e44ad;
+  --green: #2ecc71;
+  --white: #fff;
+  --fwbold: 700;
+  --fwextrabold: 800;
+  --fwsemibold: 600;
+  --fwmedium: 500;
+  --fwregular: 400;
+  --fwlight: 300;
+  --body : #F6F6F6;
+}
 
 body {
-    font-family: 'Poppins', sans-serif;
-    
+    background: #ececec !important;
+  font-family: "Poppins", sans-serif;
 }
 
-
-.big-header{
-    font-weight: var(--fwextrabold);
-    color: var(--navy);
-    font-size: 48px;
-    margin: 0;
+.big-header {
+  font-weight: var(--fwextrabold);
+  color: var(--navy);
+  font-size: 48px;
+  margin: 0;
 }
 
-.medium-header{
-    font-weight: var(--fwbold);
-    color: var(--navy);
-    font-size: 28px;
-    margin: 0;
+.medium-header {
+  font-weight: var(--fwbold);
+  color: var(--navy);
+  font-size: 28px;
+  margin: 0;
 }
 
-.small-header{
-    font-family: 'Poppins', sans-serif;
-    font-weight: var(--fwregular);
-    color: #121212;
-    font-size: 24px;
-    font-style: normal;
-    line-height: normal;
+.small-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--fwregular);
+  color: #121212;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
 }
 
-.text-button{
-    text-decoration: none;
-    color: var(--blue);
+.text-button {
+  text-decoration: none;
+  color: var(--blue);
 }
 
-.text-button:hover{
-    text-decoration: underline;
-    color: var(--navy);
+.text-button:hover {
+  text-decoration: underline;
+  color: var(--navy);
 }
 
-.primary-copy{
-    color: white;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.primary-copy {
+  color: white;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 /* button class */
-.btn-primary{
-    padding: 12px 20px 12px 20px;
-    background: var(--blue);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwsemibold);
-    border-radius: 50px;
-    border: 0;
+.btn-primary {
+  padding: 12px 20px 12px 20px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--fwsemibold);
+  border-radius: 50px;
+  border: 0;
 }
-.btn-primary:hover{
-    
-    background: var(--navy);
-    color: var(--white);
+.btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
 }
-.button-danger{
-    padding: 12px 20px 12px 20px;
-    background: #F04242;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwmedium);
-    border-radius: 50px;
-    border: 0;
+.button-danger {
+  padding: 12px 20px 12px 20px;
+  background: #f04242;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--fwmedium);
+  border-radius: 50px;
+  border: 0;
 }
-.button-danger:hover{
-    background: var(--navy);
-    color: var(--white) !important;
-}
-
-.small-btn-primary{
-    width: 50px;
-height: 30px;
-border-radius: 6px;
-background: #728EF2;
-}
-.small-btn-primary:hover{
-    background: var(--navy);
-    color: var(--white);
+.button-danger:hover {
+  background: var(--navy);
+  color: var(--white) !important;
 }
 
-.small-btn-danger{
-    width: 50px;
-height: 30px;
-border-radius: 6px;
-background: #F04242;
+.small-btn-primary {
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+  background: #728ef2;
+}
+.small-btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
 }
 
-
-
+.small-btn-danger {
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+  background: #f04242;
+}
 
 /* padding / margin */
-.pt-20{
-    padding-top:20px;
+.pt-20 {
+  padding-top: 20px;
 }
-.pt-30{
-    padding-top: 30px;
-}
-
-.pt-70{
-    padding-top: 70px;
-}
-.form-select .mx-30{
-width: 100px;
-height: 50px;
-
+.pt-30 {
+  padding-top: 30px;
 }
 
+.pt-70 {
+  padding-top: 70px;
+}
+.form-select .mx-30 {
+  width: 100px;
+  height: 50px;
+}
 
+.wrap-bar{
+    padding: 0px !important;
+}
 
 /* sidebar */
-.barsamping{
-    background: var(--grey);
-    box-shadow: #161d24;
+.barsamping {
     
-    
-   
+  background: white;
+  box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
+-webkit-box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
 }
 
-
-.barsamping .list{
-    width: 100%;
-    color: #000;
-    gap: 1rem;
-    transition: all 0.3s ease;
-    margin-left: 20px;
-    text-decoration: none;
-    height: 2rem;
+.barsamping .list {
+  width: 100%;
+  color: #000;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  text-decoration: none;
+  height: 2rem;
 }
 
 /* .barsamping a.active{
@@ -174,117 +169,99 @@ height: 50px;
 
 } */
 
-.barsamping .list:hover{
-    color: var(--blue);
-    background: #E8E8E8;
-    border-radius: 24.5px;
-    margin-left: 10px;
+.barsamping .list:hover {
+  color: var(--blue);
+  padding: 30px 20px 30px 20px;
+  background: #e8e8e8;
+  border-radius: 24.5px;
+  margin-left: 10px;
 }
 
 /* offcanvas sidebar */
-.navbar .offcanvas .offcanvas-body a{
-    text-decoration: none;
-    color: #000;
-    
+.navbar .offcanvas .offcanvas-body a {
+  text-decoration: none;
+  color: #000;
 }
-.navbar .offcanvas .offcanvas-body a:hover{
-    text-decoration: none;
-    background: var(--navy);
-    border-radius: 24.5px;
-    color: #dfdcdc;
+.navbar .offcanvas .offcanvas-body a:hover {
+  text-decoration: none;
+  background: var(--navy);
+  border-radius: 24.5px;
+  color: #dfdcdc;
 }
-
-
 
 /* Searching */
 
-.navbar .searching{
-    height: 60px;
-    flex-shrink: 0;
-border-radius: 41px;
-border: 1px solid #000;
-background: #FFF;
+.navbar .searching {
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  border: 1px solid #000;
+  background: #fff;
 }
-
 
 /* Card */
 
 .grafik .kartu-grafik .card {
-    padding-left: 15px;
-    padding-right: 15px;
-    
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* .grafik .kartu-grafik .card img {
    
 } */
 
-
-
-
-
-
-
-
-
-
 /* Data Tables Button */
-.Data_Tables .btn-primary{
-    width: 122px;
-    height: 34px;
-    background: var(--blue);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwsemibold);
-    border-radius: 50px;
-    border: 0;
+.Data_Tables .btn-primary {
+  width: 122px;
+  height: 34px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--fwsemibold);
+  border-radius: 50px;
+  border: 0;
 }
-.Data_Tables .btn-primary:hover{
-    
-    background: var(--navy);
-    color: var(--white);
+.Data_Tables .btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
 }
-.Data_Tables .btn-danger{
-    width: 122px;
-    height: 34px;
-    background: #F04242;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwmedium);
-    border-radius: 50px;
-    border: 0;
+.Data_Tables .btn-danger {
+  width: 122px;
+  height: 34px;
+  background: #f04242;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--fwmedium);
+  border-radius: 50px;
+  border: 0;
 }
-.Data_Tables .btn-danger:hover{
-    background: var(--navy);
-    color: var(--white) !important;
-}
-
-.Data_Tables .small-btn-primary{
-padding-top: 3px;
-width: 50px;
-height: 30px;
-border-radius: 6px;
-background: #728EF2;
-color: white;
-
-
-
-}
-.Data_Tables .small-btn-primary:hover{
-    background: var(--navy);
-    color: var(--white);
+.Data_Tables .btn-danger:hover {
+  background: var(--navy);
+  color: var(--white) !important;
 }
 
-.Data_Tables .small-btn-danger{
-padding-top: 3px;
-width: 50px;
-height: 30px;
-border-radius: 6px;
-background: #F04242;
+.Data_Tables .small-btn-primary {
+  padding-top: 3px;
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+  background: #728ef2;
+  color: white;
+}
+.Data_Tables .small-btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
 }
 
-.Data_Tables .small-btn-danger:hover{
-    background: var(--navy);
-    color: var(--white);
-    }
-    
+.Data_Tables .small-btn-danger {
+  padding-top: 3px;
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+  background: #f04242;
+}
+
+.Data_Tables .small-btn-danger:hover {
+  background: var(--navy);
+  color: var(--white);
+}
