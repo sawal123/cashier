@@ -1,5 +1,5 @@
 :root {
-    --bluesoft: #ecf2f8;
+    --bluesoft: #161d24;
     --blue: #3498db;
     --purplesoft: #9b59b6;
     --navy: #001f3f;
@@ -20,9 +20,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--bluesoft);
-    min-height: 5000px;
+    
 }
+
 
 .big-header{
     font-weight: var(--fwextrabold);
@@ -39,6 +39,7 @@ body {
 }
 
 .small-header{
+    font-family: 'Poppins', sans-serif;
     font-weight: var(--fwregular);
     color: #121212;
     font-size: 24px;
@@ -57,41 +58,67 @@ body {
 }
 
 .primary-copy{
-    color: #000;
+    color: white;
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-
-.button-primary{
-width: 190px;
-height: 49px;
-flex-shrink: 0;
-border-radius: 7px;
-background: #728EF2;
+/* button class */
+.btn-primary{
+    padding: 12px 20px 12px 20px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--fwsemibold);
+    border-radius: 50px;
+    border: 0;
 }
-.button-primary:hover{
+.btn-primary:hover{
     
     background: var(--navy);
     color: var(--white);
-
 }
 .button-danger{
-width: 122px;
-height: 34px;
-flex-shrink: 0;
-border-radius: 17px;
-background: #F04242;
+    padding: 12px 20px 12px 20px;
+    background: #F04242;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--fwmedium);
+    border-radius: 50px;
+    border: 0;
 }
 .button-danger:hover{
-    
     background: var(--navy);
     color: var(--white) !important;
-  
 }
 
+.small-btn-primary{
+    width: 50px;
+height: 30px;
+border-radius: 6px;
+background: #728EF2;
+}
+.small-btn-primary:hover{
+    background: var(--navy);
+    color: var(--white);
+}
+
+.small-btn-danger{
+    width: 50px;
+height: 30px;
+border-radius: 6px;
+background: #F04242;
+}
+
+
+
+
+/* padding / margin */
+.pt-20{
+    padding-top:20px;
+}
 .pt-30{
     padding-top: 30px;
 }
@@ -99,9 +126,165 @@ background: #F04242;
 .pt-70{
     padding-top: 70px;
 }
+.form-select .mx-30{
+width: 100px;
+height: 50px;
 
-
-.sidebar{
-    background: var(--grey);
 }
 
+
+
+/* sidebar */
+.barsamping{
+    background: var(--grey);
+    box-shadow: #161d24;
+    
+    
+   
+}
+
+
+.barsamping .list{
+    width: 100%;
+    color: #000;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+    text-decoration: none;
+    height: 2rem;
+}
+
+/* .barsamping a.active{
+    width: 100%;
+    color: var(--bluesoft);
+    background-color: #001f3f;
+    margin-left: 0;
+}
+.barsamping a.active::before{
+    content: '';
+    width: 10px;
+    height: 20px;
+    background-color: var(--grey);
+
+}
+
+.barsamping a.active span{
+    color: white;
+    margin-left: calc(1rem - 3rem);
+
+} */
+
+.barsamping .list:hover{
+    color: var(--blue);
+    background: #E8E8E8;
+    border-radius: 24.5px;
+    margin-left: 10px;
+}
+
+/* offcanvas sidebar */
+.navbar .offcanvas .offcanvas-body a{
+    text-decoration: none;
+    color: #000;
+    
+}
+.navbar .offcanvas .offcanvas-body a:hover{
+    text-decoration: none;
+    background: var(--navy);
+    border-radius: 24.5px;
+    color: #dfdcdc;
+}
+
+
+
+/* Searching */
+
+.navbar .searching{
+    height: 60px;
+    flex-shrink: 0;
+border-radius: 41px;
+border: 1px solid #000;
+background: #FFF;
+}
+
+
+/* Card */
+
+.grafik .kartu-grafik .card {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+/* .grafik .kartu-grafik .card img {
+   
+} */
+
+
+
+
+
+
+
+
+
+
+/* Data Tables Button */
+.Data_Tables .btn-primary{
+    width: 122px;
+    height: 34px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--fwsemibold);
+    border-radius: 50px;
+    border: 0;
+}
+.Data_Tables .btn-primary:hover{
+    
+    background: var(--navy);
+    color: var(--white);
+}
+.Data_Tables .btn-danger{
+    width: 122px;
+    height: 34px;
+    background: #F04242;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--fwmedium);
+    border-radius: 50px;
+    border: 0;
+}
+.Data_Tables .btn-danger:hover{
+    background: var(--navy);
+    color: var(--white) !important;
+}
+
+.Data_Tables .small-btn-primary{
+padding-top: 3px;
+width: 50px;
+height: 30px;
+border-radius: 6px;
+background: #728EF2;
+color: white;
+
+
+
+}
+.Data_Tables .small-btn-primary:hover{
+    background: var(--navy);
+    color: var(--white);
+}
+
+.Data_Tables .small-btn-danger{
+padding-top: 3px;
+width: 50px;
+height: 30px;
+border-radius: 6px;
+background: #F04242;
+}
+
+.Data_Tables .small-btn-danger:hover{
+    background: var(--navy);
+    color: var(--white);
+    }
+    
