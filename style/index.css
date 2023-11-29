@@ -142,7 +142,8 @@ body {
 
 /* sidebar */
 .barsamping {
-    
+    /* position: fixed; */
+    height: 100%;
   background: white;
   box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
 -webkit-box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
