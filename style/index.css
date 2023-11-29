@@ -20,7 +20,7 @@
 
 body {
     background: #ececec !important;
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .big-header {
@@ -39,7 +39,7 @@ body {
 
 .small-header {
   font-family: "Poppins", sans-serif;
-  font-weight: var(--fwregular);
+  font-weight: var(--fwmedium);
   color: #121212;
   font-size: 24px;
   font-style: normal;
@@ -137,6 +137,7 @@ body {
   box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
 -webkit-box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
 -moz-box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
+
 }
 
 .barsamping .list {
@@ -191,16 +192,25 @@ body {
 
 /* Searching */
 
-.navbar .searching {
-  height: 60px;
-  flex-shrink: 0;
+.nav {
+  
+  height: 83px;
   border-radius: 41px;
   border: 1px solid #000;
-  background: #fff;
+  background-color: white;
+  text-align: center;
+
 }
 
-/* Card */
+.nav a{
+  text-decoration: none;
+  color: #000;
+}
 
+
+
+
+/* Card */
 .grafik .kartu-grafik .card {
   padding-left: 15px;
   padding-right: 15px;
@@ -265,3 +275,7 @@ body {
   background: var(--navy);
   color: var(--white);
 }
+
+
+
+
