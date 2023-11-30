@@ -217,6 +217,7 @@ body {
   text-align: center;
   right:30px !important;
   top: 20px !important;
+  
 }
 
 @media (max-width: 1200px){
@@ -268,6 +269,7 @@ body {
 .grafik .kartu-grafik .card {
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 /* .grafik .kartu-grafik .card img {
@@ -333,7 +335,7 @@ body {
 
 
 
-@media (max-width: 1400px){
+@media (max-width: 10000px){
   .grafik{
     margin-top: 80px !important;
   }
