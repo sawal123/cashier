@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kedai Kopi</title>
+  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/menu.css/cardmakanan.css">
+  <link rel="stylesheet" href="style/menu.css/cardminuman.css">
+  <link rel="stylesheet" href="style/search.css">
+  <link rel="stylesheet" href="style/sidebar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+</head>
+<!--   -->
+<!--  -->
+
+<body>
+  <!-- Jangan pakek container fluid -->
+  <div class="">
+    <div class="row m-0 flex-nowrap">
+      <!-- sidebar -->
+      <div class="col-auto d-none d-md-block col-md-3 col-xl-2 wrap-bar">
+        <div class="d-flex flex-column align-items-center align-items-md-start px-3 pt-2 barsamping">
+          <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto px-3 pt-30 logo">
+            <img class="fs-5 d-none d-md-inline" src="assets/images/OBJECTS (1).svg" alt="" />
+          </a>
+          <div class=" w-75 mt-4">
+            <a href="/" class="d-flex align-items-center py-4 my-2 mb-md-0 me-md-auto list ">
+              <i class="fa-solid fa-house"></i>
+              <span class="fs-5 d-none d-md-inline">Dashboard</span>
+            </a>
+            <a href="/" class="d-flex align-items-center py-4 my-2 mb-md-0 me-md-auto list ">
+              <i class="fa-solid fa-money-bill"></i>
+              <span class="fs-5 d-none d-md-inline">Transaksi</span>
+            </a>
+            <a href="/" class="d-flex align-items-center py-4 my-2 mb-md-0 me-md-auto list ">
+              <i class="fa-solid fa-burger"></i>
+              <span class="fs-5 d-none d-md-inline">Menu</span>
+            </a>
+            <a href="/" class="d-flex align-items-center py-4 my-2 mb-md-0 me-md-auto list ">
+              <i class="fa-solid fa-gear"></i>
+              <span class="fs-5 d-none d-md-inline">Setting</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col col-lg-10 m-auto ">
+
+        <!-- sidebar btn -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
+          <div class="container-fluid">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                class="navbar-toggler-icon"></span></button>
+
+            <!-- search -->
+
+            <a class="navbar-brand" href="#">Hy, Sawal <img src="assets/images/profile.jpg" alt=""
+                class="profile-image"></a>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header ">
+                <h1 class="offcanvas-title" id="offcanvasScrollingLabel">Kedai Kopi</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body px-3">
+                <!-- isi offcanvas -->
+                <a class="d-flex align-items-center py-2 mb-md-0 me-md-auto list " href="#" id="searchIcon">
+                  <i class="fas fa-search"></i>
+                  <span class="px-2 d-sm-inline">Search</span>
+                </a>
+                <form class="form-inline my-2 my-lg-0 search-sidebar" id="search-form">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                </form>
+                <a href="/" class="d-flex align-items-center py-2 mb-md-0 me-md-auto active list">
+                  <i class="fa-solid fa-house"></i>
+                  <span class=" px-2 d-sm-inline">Dashboard</span>
+                </a>
+                <a href="/" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-money-bill"></i>
+                  <span class=" px-2 d-sm-inline">Transaksi</span>
+                </a>
+                <a href="/" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-burger"></i>
+                  <span class=" px-2 d-sm-inline">Menu</span>
+                </a>
+                <a href="/" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class=" px-2 d-sm-inline">Setting</span>
+                </a>
+
+                <!-- akhir isi offcanvas -->
+              </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
+          <div class="container-fluid">
+            <ol class="breadcrumb small-header m-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
+            </ol>
+            <span>
+              Hy. Sawal
+              <img src="assets/images/profile.jpg" alt="" class="profile-image">
+            </span>
+          </div>
+        </nav>
+        <!-- Other content within the wrapper -->
+
+        <!--SEARCH -->
+        <section class="search">
+          <div class="container">
+            <div class="row pt-4">
+              <div class="col-lg-12 col-md-12 col-sm-12 d-none d-md-block " style="margin-top: 120px;">
+                <form class="input-group">
+                  <input type="text" class="form-control" placeholder="Search...">
+                  <span class="input-group-text">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Akhir Search -->
+
+        <!-- Menu -->
+        <section class="wrapper-menu-minuman ">
+          <div class="container justify-content-center kartu-grafik-minuman">
+            <div class="row h2-title-minuman ">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h2>Minuman</h2>
+              </div>
+              <div class="row justify-content-center kartu-minuman">
+                <!-- Satu item minuman -->
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- akhir kolom 1 -->
+              </div>
+              <div class="row justify-content-center kartu-minuman" style="margin-top: 5px;">
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="card" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/Rectangle 9 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text text-start"><strong>Kopi Susu <br> Rp.10.000</strong></span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+                  height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                    height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Draft list makanan -->
+        <section class="wrapper-menu-makanan">
+          <div class="container justify-content-center" style="margin-top: 49px;">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h2 class="h2-makanan medium-header"> Makanan </h2>
+              </div>
+              <div class="row justify-content-center kartu-grafik-makanan pt-0 mb-3">
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+
+              <div class="row kartu-grafik-makanan kartu-makanan-2 justify-content-center">
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="card rounded-4" style="min-width: 170px; min-height: 170px;">
+                    <img src="assets/images/nasi-goreng.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="card-text text-start">Nasi Goreng <br> Rp.10.000</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm d-flex align-items-center" style="width: 29px;
+              height: 29px; border-radius: 3px; margin-top: 7px; margin-right: 5px;">
+                          <img src="assets/icons/+ (2).svg" alt="" style="width: 14px;
+                height: 14px; fill: #000;">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- akhir Main Content -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    // Toggle between icon and search form on click
+    document.getElementById('searchIcon').addEventListener('click', function () {
+      var searchForm = document.getElementById('search-form');
+      if (searchForm.style.display === 'none' || searchForm.style.display === '') {
+        searchForm.style.display = 'block';
+        document.getElementById('searchIcon').innerHTML = '<i class="fas fa-times"></i>&nbsp;Close';
+      } else {
+        searchForm.style.display = 'none';
+        document.getElementById('searchIcon').innerHTML = '<span><i class="fas fa-search"></i>&nbsp;Search</span>';
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/c1d2872a82.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+
+
+</body>
+
+</html>

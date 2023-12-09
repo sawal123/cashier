@@ -1,0 +1,15 @@
+{
+  "name": "cashier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "datatables.net-bs5": "^1.13.8",
+    "datatables.net-buttons-bs5": "^2.4.2"
+  }
+}

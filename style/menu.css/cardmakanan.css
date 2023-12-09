@@ -1,3 +1,4 @@
+
 :root {
   --bluesoft: #161d24;
   --blue: #3498db;
@@ -136,12 +137,101 @@ body {
   height: 50px;
 }
 
-.wrap-bar{
-  padding: 0px !important;
- 
+/* --------------------------------------------------- */
+
+.wrapper-menu-makanan .kartu-makanan-2 {
+  width: 100%;
+
+
+}
+/* .wrapper-menu-makanan .row-makanan{
+ padding-bottom: 1000px !important;
+} */
+
+.wrapper-menu-makanan .h2-makanan {
+  color: #000;
+font-family: Poppins;
+/* font-size: 16px; */
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  text-align: left; 
+  /* margin-bottom: 17px !important; */
+  padding-bottom: 10px !important;
 }
 
+@media (max-width: 1300px) {
+  .wrapper-menu-makanan .h2-makanan {
+    text-align: center; 
+   /* padding-left: 100px !important; */
+  }
+}
 
+/* .wrapper-menu-minuman .kartu-grafik-minuman{
+  margin-top: -20px !important;
+} */
 
+.wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
+    /* padding-left: 50px ;
+    padding-right: 4px ;
+    padding-top: 4px; */
+    padding: 20px 10px 20px 10px !important;
+    border-radius: 15px;
+    min-width: 170px;
+    margin-bottom: -30px !important;
+    /* min-height: 170px; */
+  }
+  @media(max-width: 1300px){
+    .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
+        min-height: 280px !important;
+        min-width: 260px !important;
+        padding: auto;
+       
+        
+    } 
+  }
 
+  @media(max-width: 993px){
+    .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
+      min-height: 170px !important;
+      min-width: 170px !important;
+      padding: auto;
+    }
+  }
 
+ 
+    @media(max-width: 550px){
+        .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
+        min-height: 150px !important;
+        min-width: 150px !important;
+        padding: auto;
+      
+      }
+    }
+
+    .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card{
+      background-color: #fff;
+      min-width: 170px;
+      min-height: 170px;
+      border-radius: 15px;
+      border: 1px solid #C7C7C7;
+      margin: 4px 4px 4px 4px;
+  }
+  
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-img-top{
+    min-width: 162px;
+    min-height: 116px;
+    border-radius: 15px;
+    padding: 4px 4px 4px 4px;
+  }
+
+  /* .wrapper-menu-makanan{
+    margin-top: -100px;
+  }
+  @media (max-width: 10000px){
+    .wrapper-menu-makanan{
+      margin-top: 10px !important;
+    }
+  } */
+
+  

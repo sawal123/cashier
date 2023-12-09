@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Navbar with Search</title>
+  <style>
+    #search-form {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Your Brand</a>
+
+  <div class="">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="searchIcon">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" id="search-form">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style=" width: 200px;
+      height: 40px !important;
+      flex-shrink: 0;
+      border-radius: 28.5px;
+      border: 1px solid #121221;">
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+    
+  
+  <!-- Search Icon Button -->
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   -->
+  <!-- Search Form -->
+
+  </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  // Toggle between icon and search form on click
+  document.getElementById('searchIcon').addEventListener('click', function() {
+    var searchForm = document.getElementById('search-form');
+    if (searchForm.style.display === 'none' || searchForm.style.display === '') {
+      searchForm.style.display = 'block';
+      document.getElementById('searchIcon').innerHTML = '<i class="fas fa-times"></i>&nbsp;Close'; // Change icon to 'X'
+    } else {
+      searchForm.style.display = 'none';
+      document.getElementById('searchIcon').innerHTML = '<i class="fas fa-search"></i>'; // Change icon back to search icon
+    }
+  });
+</script>
+
+</body>
+</html>
