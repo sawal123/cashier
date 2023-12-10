@@ -55,6 +55,7 @@
 } */
 
 .barsamping .list:hover {
+  
   color: var(--blue);
   padding: 20px 10px 20px 10px;
   background: #e8e8e8;

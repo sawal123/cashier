@@ -157,7 +157,7 @@ font-weight: 500;
 line-height: normal;
   text-align: left; 
   /* margin-bottom: 17px !important; */
-  padding-bottom: 10px !important;
+
 }
 
 @media (max-width: 1300px) {
@@ -167,7 +167,7 @@ line-height: normal;
   }
 }
 
-/* .wrapper-menu-minuman .kartu-grafik-minuman{
+/* .wrapper-menu-makanan .kartu-grafik-minuman{
   margin-top: -20px !important;
 } */
 
@@ -223,6 +223,49 @@ line-height: normal;
     min-height: 116px;
     border-radius: 15px;
     padding: 4px 4px 4px 4px;
+
+  }
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .nama-barang{
+    width: 69px !important;
+    height: 21px !important;
+    color: #121212;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .harga-barang{
+  width: 68px !important;
+  height: 21px !important;
+  color: #333;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+  
+  
+  
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .btn{
+    width: 29px !important;
+    height: 29px !important; 
+    border-radius: 3px;
+    margin-top: 7px; 
+    margin-right: 5px;
+    border-radius: 3px;
+    background: #C7C7C7;
+    color: #000;
+    font-weight: bolder;
+    margin-right: -6px !important;
+   
+  }
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .btn:hover{
+   background: var(--danger);
+   color: white;
+   text-decoration: var(--white);
+  
   }
 
   /* .wrapper-menu-makanan{

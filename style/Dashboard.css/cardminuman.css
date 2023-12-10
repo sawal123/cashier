@@ -16,6 +16,7 @@
   --fwregular: 400;
   --fwlight: 300;
   --body : #F6F6F6;
+  --danger: #dc3545;
 }
 
 @media (max-width: 700px){
@@ -164,7 +165,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-    text-align: left; 
+  text-align: left; 
  
 }
 
@@ -177,7 +178,7 @@ body {
 
 @media (max-width: 769px){
   .wrapper-menu-minuman .kartu-grafik-minuman .h2-title-minuman h2{
-    padding-top: 80px !important;
+    padding-top: 10px !important;
   }
 }
 
@@ -255,6 +256,55 @@ body {
   border-radius: 15px;
   padding: 4px 4px 4px 4px;
 }
+
+.wrapper-menu-minuman .kartu-grafik-minuman .kartu-minuman .card .card-body .nama-barang{
+  width: 69px !important;
+  height: 21px !important;
+  color: #121212;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.wrapper-menu-minuman .kartu-grafik-minuman .kartu-minuman .card .card-body .harga-barang{
+width: 68px !important;
+height: 21px !important;
+color: #333;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+.wrapper-menu-minuman .kartu-grafik-minuman .kartu-minuman .card .card-body .btn{
+  width: 29px !important;
+  height: 29px !important; 
+  border-radius: 3px;
+  margin-top: 7px; 
+  margin-right: 5px;
+  border-radius: 3px;
+  background: #C7C7C7;
+  color: #000;
+  font-weight: bolder;
+  margin-right: -6px !important;
+ 
+}
+.wrapper-menu-minuman .kartu-grafik-minuman .kartu-minuman .card .card-body .btn:hover{
+ background: var(--danger);
+ color: white;
+ text-decoration: var(--white);
+
+}
+
+
+
+
+
+
 
   .wrapper-menu-minuman{
     margin-top: -100px;
