@@ -140,10 +140,21 @@
 
 
   .search .input-group {
+    display: flex;
+    align-items: center;
     width: 301px !important;
     height: 50px !important;
-   
+    border: 1px solid #121221;
+    border-radius: 28.5px;
+    background-color: white !important;
 }
+.search .input-group:hover {
+  background-color: var(--grey);
+  border-color: #3498db;
+  border: 1px solid var(--blue);
+  border-radius: 28.5px;
+  }
+
 @media (max-width:767px){
   .search .input-group{
     width: 100% !important;
@@ -151,30 +162,61 @@
 }
 
 .search .input-group input {
-    height: 50px !important;
+    /* height: min-content !important; */
     flex-shrink: 0;
     border-radius: 28.5px;
-    border: 1px solid #121221;
+    /* border: 1px solid #121221; */
     border-right: none;
+    text-decoration: none !important;
+    background-color: none !important;
+    border: none !important;
 }
+
 .search .input-group input:focus{
   box-shadow: none !important;
 }
 
-.search .input-group span {
-    width: 50px;
-    height: 50px;
-    border-radius: 28.5px;
-    border: 1px solid #121221;
-    border-left: none;
-    background-color: white; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* cursor: pointer;  */
+.search .input-group .input:hover{
+  background-color: var(--grey);
 }
 
 
+
+.search .input-group .input-group-append {
+    width: 50px;
+    height: 50px;
+    border-radius: 28.5px;
+    /* border: 1px solid #121221; */
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    background-color: none !important;
+    border: none !important;
+    /* cursor: pointer;  */
+}
+.search .input-group .input-group-append::before{
+  content: '';
+  width: 2px;
+  height: 30px;
+ 
+  background-color: var(--darkgrey);
+}
+
+.search .input-group button{
+  text-decoration: none !important;
+  border-radius: 0% !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+/* .search .input-group button:hover{
+border: none !important;
+border-radius: 100% !important;
+background-color: var(--darkgrey);
+font-size: 15px;
+} */
 /* search sidebar */
 #search-form {
   display: none;

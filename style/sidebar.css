@@ -3,15 +3,23 @@
 /* sidebar */
 
 .barsamping {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  /* width: 268px; */
+  width: 210px !important;
   height: 100% ; 
   background: white;
   box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
 -webkit-box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
 -moz-box-shadow: 14px -2px 50px -27px rgba(0,0,0,0.75);
-
+transition: all 0.3s ease; 
+padding-right: 2rem !important;
+margin-left: -10px !important;
 }
+
+/* .barsamping:hover{
+  box-shadow: none;
+} */
 /* @media (max-width: 992px) {
   .barsamping {
     width: 100%;
@@ -25,43 +33,67 @@
 
 .barsamping .list {
   display: flex;
-  width: max-content;
+  align-items: center !important;
+  width: 130% !important;
   color: #000;
-  gap: 1rem;
+  gap: 5px;
+  position: relative;
   transition: all 0.3s ease;
-  align-items: center;
   text-decoration: none;
   height: 2rem;
+  font-size: 14px;
+}
+.barsamping .list:hover::before{
+  content: '';
+  width: 3px;
+  height: 25px;
+  background-color: var(--blue);
+}
+.barsamping .list:hover{
+  min-width: 140% !important;
+  /* color: var(--blue); */
+  /* border-radius: 24.5px; */
+  background: #E8E8E8;
+  padding: 20px 10px 20px 0px;
+  margin-left: 0px;
+  padding-left: 5px !important;
+  border-radius: 5px;
 }
 
-/* .barsamping a.active{
-    width: 100%;
-    color: var(--bluesoft);
-    background-color: #001f3f;
+
+.barsamping a.active{
+  width: 140% !important;
+    color: var(--blue) !important;
+    background: #e8e8e8 !important;
     margin-left: 0;
+    padding-right: 35px;
+    transition: all 0.3s ease;
+    padding-left: 5px !important;
+    border-radius: 5px;
+  
 }
-.barsamping a.active::before{
+/* .barsamping a.active::before{
     content: '';
-    width: 10px;
-    height: 20px;
-    background-color: var(--grey);
-
-}
-
-.barsamping a.active span{
-    color: white;
-    margin-left: calc(1rem - 3rem);
-
+    width: 3px;
+    height: 35px;
+    background-color: var(--blue);
 } */
 
-.barsamping .list:hover {
-  
-  color: var(--blue);
-  padding: 20px 10px 20px 10px;
-  background: #e8e8e8;
-  border-radius: 24.5px;
-  margin-left: 10px;
+
+.barsamping a.active:hover{
+  padding: 20px 10px 20px 0px;
+  margin-left: 0px;
+  padding-right: 10px;
 }
+.barsamping a.active span{
+  color: var(--blue);
+  /* margin-left: calc(1rem -3px); */
+}
+
+/* .barsamping a.hover span{
+  margin-left: 20px !important;
+} */
+
 
 /* offcanvas sidebar */
 .navbar .offcanvas .offcanvas-body a {
