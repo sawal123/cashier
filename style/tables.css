@@ -24,7 +24,7 @@
     border: 0;
   }
   .Data_Tables .btn-danger:hover {
-    background: var(--navy);
+    background: maroon;
     color: var(--white) !important;
   }
   
@@ -50,7 +50,7 @@
   }
   
   .Data_Tables .small-btn-danger:hover {
-    background: var(--navy);
+    background: maroon;
     color: var(--white);
   }
   

@@ -1,0 +1,333 @@
+:root {
+    --bluesoft: #161d24;
+    --blue: #3498db;
+    --purplesoft: #9b59b6;
+    --navy: #001f3f;
+    --darkgrey: #afa9a9;
+    --darkgrey2: #d0d2d3;
+    --grey: #dfdcdc;
+    --purple: #8e44ad;
+    --green: #2ecc71;
+    --white: #fff;
+    --fwbold: 700;
+    --fwextrabold: 800;
+    --fwsemibold: 600;
+    --fwmedium: 500;
+    --fwregular: 400;
+    --fwlight: 300;
+    --body: #F6F6F6;
+    --danger: #dc3545;
+}
+
+@media (max-width: 700px) {}
+
+h3 {
+    margin-bottom: 0px !important;
+    margin-top: 8px !important;
+    line-height: 20px !important;
+
+}
+
+body {
+    background: #ececec !important;
+    font-family: "Poppins", sans-serif;
+}
+
+.big-header {
+    font-weight: var(--fwextrabold);
+    color: var(--navy);
+    font-size: 48px;
+    margin: 0;
+}
+
+.medium-header {
+    font-weight: var(--fwbold);
+    color: var(--navy);
+    font-size: 28px;
+    margin: 0;
+}
+
+.small-header {
+    font-family: "Poppins", sans-serif;
+    font-weight: var(--fwmedium);
+    color: #121212;
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.text-button {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.text-button:hover {
+    text-decoration: underline;
+    color: var(--navy);
+}
+
+.primary-copy {
+    color: white;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* button class */
+.btn-primary {
+    padding: 12px 20px 12px 20px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--fwsemibold);
+    border-radius: 50px;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.button-danger {
+    padding: 12px 20px 12px 20px;
+    background: #f04242;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--fwmedium);
+    border-radius: 50px;
+    border: 0;
+}
+
+.button-danger:hover {
+    background: var(--navy);
+    color: var(--white) !important;
+}
+
+.small-btn-primary {
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+    background: #728ef2;
+}
+
+.small-btn-primary:hover {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.small-btn-danger {
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+    background: #f04242;
+}
+
+/* padding / margin */
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.form-select .mx-30 {
+    width: 100px;
+    height: 50px;
+}
+
+/* ------------------------------------------------------ */
+
+
+.keranjang-pesanan {
+    right: -100rem !important;
+    width: 280px !important;
+    background: #fff;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* z-index: 9999; */
+    display: none;
+    transition: all 0.5s linear;
+    /* opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; */
+
+}
+@media(max-width:1300px){
+    #offcanvasRight {
+        display: none !important;
+    }
+}
+
+.keranjang-pesanan.active{
+    right: -1rem !important;
+    padding-right: 1.6rem !important;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 14px -2px 25px 5px rgba(0,0,0,0.75);
+
+
+}
+
+.keranjang-pesanan .offcanvas-body{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly !important;
+ text-align: center;
+ 
+}
+.keranjang-pesanan .shopping-cart{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    margin-top: -50px !important;
+    margin-bottom: -140px !important;
+}
+.keranjang-pesanan .shopping-cart .cart-item {
+    display: flex;
+    align-items: center !important;
+    margin: 2px 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+   gap: 0.5rem;
+    color: #000;
+    padding-bottom: 5px;
+    /* font-size: 14px; */
+    /* font-weight: 400;
+    line-height: normal; */
+}
+
+.keranjang-pesanan .shopping-cart img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid #C7C7C7;
+}
+
+.keranjang-pesanan .shopping-cart .item-details .nama-item {
+    color: #333;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.keranjang-pesanan .shopping-cart .item-details .harga-item {
+    color: #333;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.keranjang-pesanan .shopping-cart .btn-kurang {
+    width: 22.905px;
+    height: 22.905px;
+    color: #000;
+    background-color: var(--grey);
+}
+
+.keranjang-pesanan .shopping-cart .btn-kurang:hover {
+    background-color: var(--danger);
+    color: white;
+}
+.keranjang-pesanan .shopping-cart .btn-tambah {
+    width: 22.905px;
+    height: 22.905px;
+    color: #000;
+    background-color: var(--grey);
+}
+
+.keranjang-pesanan .shopping-cart .btn-tambah:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.keranjang-pesanan .offcanvas-body .jumlah-harga{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around !important;
+    align-items: center;
+    color: #333;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 150px !important;
+    padding-bottom: 20px !important;
+}
+
+/* Keranjang Bawah */
+
+.keranjang-pesanan-bawah{
+    position: relative;
+    bottom: 0!important;
+    width: 100%!important;
+    background: #fff;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+    min-height: 200px;
+    /* transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; */
+
+
+}
+@media (max-width: 1299px) {
+    .keranjang-pesanan-bawah {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .keranjang-pesanan-bawah {
+        display: none !important;
+    }
+}
+
+.keranjang-pesanan-bawah .offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center;
+    
+   }
+
+   .keranjang-pesanan .shopping-cart{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    margin-top: -50px !important;
+    margin-bottom: -140px !important;
+}
+.keranjang-pesanan-bawah .shopping-cart .cart-item {
+    margin: 2px 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    /* cursor: pointer; */
+    color: #000;
+    padding-bottom: 5px;
+    /* font-size: 14px; */
+    /* font-weight: 400;
+    line-height: normal; */
+}
+

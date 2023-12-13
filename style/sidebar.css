@@ -15,6 +15,7 @@
 transition: all 0.3s ease; 
 padding-right: 2rem !important;
 margin-left: -10px !important;
+z-index: 99999 !important;
 }
 
 /* .barsamping:hover{
@@ -42,6 +43,7 @@ margin-left: -10px !important;
   text-decoration: none;
   height: 2rem;
   font-size: 14px;
+  padding-left: 10px;
 }
 .barsamping .list:hover::before{
   content: '';

@@ -7,7 +7,7 @@
   <title>Kedai Kopi</title>
   <link rel="stylesheet" href="style/index.css" />
   <link rel="stylesheet" href="style/navbar.css">
-  <link rel="stylesheet" href="style/grafikcard.css">
+  <link rel="stylesheet" href="style/menu/menu.css">
   <link rel="stylesheet" href="style/tables.css">
   <link rel="stylesheet" href="style/sidebar.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,7 +39,7 @@
               <i class="fa-solid fa-money-bill  ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Transaksi</span>
             </a>
-            <a href="menu.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+            <a href="menu.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list active">
               <i class="fa-solid fa-burger  ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Menu</span>
             </a>
@@ -52,7 +52,7 @@
       </div>
 
       <!-- Main Content -->
-      <div class="col col-lg-8  m-auto ">
+      <div class="col col-lg-8 m-auto ">
 
         <!-- sidebar btn -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
@@ -78,7 +78,7 @@
                   <i class="fa-solid fa-money-bill"></i>
                   <span class=" px-2 d-sm-inline">Transaksi</span>
                 </a>
-                <a href="menu.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
+                <a href="menu.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list active">
                   <i class="fa-solid fa-burger"></i>
                   <span class=" px-2 d-sm-inline">Menu</span>
                 </a>
@@ -107,46 +107,55 @@
         <!-- Other content within the wrapper -->
 
 
+        <section class="add-menu">
+          <div class="container ">
+            <div class="row">
+              <div class="col-lg-12 ">
+                <div class="d-grid gap-2 d-md-flex justify-content-end dua-button">
+                  <button class="btn btn-primary me-md-2" type="button"><i class="fa-solid fa-burger"></i>Add Menu</button>
+                  <button class="btn btn-primary" type="button"><i class="fa-solid fa-burger"></i>Add Category</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Card body -->
-        <section class="grafik pt-5">
+        <section class="grafik pt-2">
           <div class="text-center">
             <div class="row kartu-grafik">
-              <div class="col-md-6 col-lg-3 col-6 mb-4"  >
-                <a href="dashboard.html" style="text-decoration: none;">
-                  <div class="card rounded-4 pt-5 " style="min-height: 212px; ">
-                  <img src="assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text small-header">Buat Pesanan</h3>
+                <div class="col-md-6 col-lg-3 col-6 mb-4 column">
+                    <div class="card rounded-4">
+                      <div class="card-body">
+                        <span class="card-jumlah">20 Menu</span>
+                        <span class="card-menu">Makanan</span>
+                      </div>
+                    </div>
                   </div>
-                </div></a>
-              </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4 pt-5" style="min-height: 212px;">
-                  <img src="assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text small-header">Buat Pesanan</h3>
-                    <p class="card-text">30 Pesanan</p>
+                  <div class="col-md-6 col-lg-3 col-6 mb-4 column">
+                    <div class="card rounded-4">
+                      <div class="card-body">
+                        <span class="card-jumlah">20 Menu</span>
+                        <span class="card-menu">Minuman</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4 pt-5 pt-4" style="min-height: 212px;">
-                  <img src="assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text small-header">Buat Pesanan</h3>
-                    <p class="card-text">RP. 20.000</p>
+                  <div class="col-md-6 col-lg-3 col-6 mb-4 column">
+                    <div class="card rounded-4">
+                      <div class="card-body">
+                        <span class="card-jumlah">20 Menu</span>
+                        <span class="card-menu">Snack</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class= "card rounded-4 pt-5 pt-4" style="min-height: 212px;">
-                  <img src="assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text small-header">Buat Pesanan</h3>
-                    <p class="card-text">Rp. 20.000</p>
+                  <div class="col-md-6 col-lg-3 col-6 mb-4 column">
+                    <div class="card rounded-4">
+                      <div class="card-body">
+                        <span class="card-jumlah">20 Menu</span>
+                        <span class="card-menu">Coffe</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -163,10 +172,10 @@
                       <thead>
                         <tr>
                           <th>No</th>
-                          <th>No Meja</th>
                           <th>Menu</th>
-                          <th>Qty</th>
-                          <th>Jumlah</th>
+                          <th>Category</th>
+                          <th>Harga</th>
+                          <th>Komposisi</th>
                           <th>Status</th>
                           <th>Aksi</th>
                         </tr>
@@ -174,15 +183,12 @@
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>25</td>
-                          <td>3</td>
-                          <td>8</td>
-                          <td>RP.50.000</td>
+                          <td>Kopi Sanger</td>
+                          <td>Minuman</td>
+                          <td>10.000</td>
+                          <td>Kopi, Gula 5gram...</td>
                           <td><span type="button" class="btn btn-primary">Sudah Bayar</span></td>
                           <td>
-                            <button type="button" class="btn small-btn-primary" >
-                              <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
-                            </button>
                             <a href="" type="button" class="btn small-btn-danger">
                               <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
                             </a>
@@ -194,15 +200,13 @@
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td>20</td>
-                          <td>5</td>
-                          <td>6</td>
-                          <td>RP.45.000</td>
+                          <td>Kopi Sanger</td>
+                          <td>Minuman</td>
+                          <td>10.000</td>
+                          <td>Kopi, Gula 5gram...</td>
                           <td><span type="button" class="btn btn-danger">Belum Bayar</span></td>
                           <td>
-                            <button type="button" class="btn small-btn-primary" >
-                              <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
-                            </button>
+                            
                             <a href="" type="button" class="btn small-btn-danger">
                               <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
                             </a>
@@ -214,15 +218,13 @@
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td>20</td>
-                          <td>5</td>
-                          <td>6</td>
-                          <td>RP.45.000</td>
+                          <td>Nasi Goreng</td>
+                          <td>Makanan</td>
+                          <td>10.000</td>
+                          <td>Nasi, Telur Dadar...</td>
                           <td><button type="button" class="btn btn-danger">Belum Bayar</button></td>
                           <td>
-                            <span type="button" class="btn small-btn-primary" >
-                              <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
-                            </span>
+                           
                             <a href="" type="button" class="btn small-btn-danger">
                               <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
                             </a>
@@ -324,6 +326,7 @@
         <!-- akhir Main Content -->
       </div>
     </div>
+    
   </div>
 
 

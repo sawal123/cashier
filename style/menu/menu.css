@@ -135,96 +135,81 @@
     width: 100px;
     height: 50px;
   }
-
-  /* --------------------------------------------------- */
-
-
-  .search .input-group {
-    display: flex;
-    align-items: center;
-    width: 301px !important;
-    height: 50px !important;
-    border: 1px solid #121221;
-    border-radius: 28.5px;
-    background-color: white !important;
+  
+  .wrap-bar{
+    padding: 0px !important;
+   
+  }
+  
+/* --------------------------------------------------------- */
+/*                      Responsive CSS                       */
+/* --------------------------------------------------------- */
+/* button atas */
+.add-menu{
+  margin-top: 130px !important;
 }
-.search .input-group:hover {
-  background-color: var(--grey);
-  border-color: #3498db;
-  border: 1px solid var(--blue);
-  border-radius: 28.5px;
+.add-menu .dua-button .btn{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 39px;
+  border-radius: 7px;
+  color: #FFF;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+/* card */
+.grafik{
+    margin-top: -100px;
+  }
+  @media (max-width: 1200px){
+    .grafik{
+      margin-top: 100px !important;
+    }
+  }
+  
+.grafik .kartu-grafik .card-body {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+    
+    
+  }
+  .grafik .kartu-grafik .card .card-body .card-jumlah{
+    font-weight: var(--fwmedium);
+    font-size: 14px;
+    color: var(--navy);
+
+
+  }
+  .grafik .kartu-grafik .card .card-body .card-menu{
+    font-weight: var(--fwmedium);
+    font-size: 14px;
+    color:black;
+
+ 
+
   }
 
 
-@media (max-width:767px){
-  .search .input-group{
-    width: 100% !important;
+
+
+  @media (max-width: 10000px){
+    .grafik{
+      margin-top: 20px !important;
+    }
   }
-}
+  
 
-.search .input-group input {
-    /* height: min-content !important; */
-    flex-shrink: 0;
-    border-radius: 28.5px;
-    /* border: 1px solid #121221; */
-    border-right: none;
-    text-decoration: none !important;
-    background-color: none !important;
-    border: none !important;
-}
-
-.search .input-group input:focus{
-  box-shadow: none !important;
-}
-
-
-.search .input-group .input-group-append {
-    width: 50px;
-    height: 50px;
-    border-radius: 28.5px;
-    /* border: 1px solid #121221; */
-    border-left: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none !important;
-    background-color: none !important;
-    border: none !important;
-    /* cursor: pointer;  */
-}
-.search .input-group .input-group-append::before{
-  content: '';
-  width: 2px;
-  height: 30px;
- 
-  background-color: var(--darkgrey);
-}
-
-.search .input-group button{
-  text-decoration: none !important;
-  border-radius: 0% !important;
-  border: none !important;
-  transition: all 0.3s ease;
-}
-
-/* .search .input-group button:hover{
-border: none !important;
-border-radius: 100% !important;
-background-color: var(--darkgrey);
-font-size: 15px;
-} */
-/* search sidebar */
-#search-form {
-  display: none;
-}
-
-
-.navbar .search-sidebar input{
-  width: 200px;
-  height: 40px !important;
-  flex-shrink: 0;
-  border-radius: 28.5px;
-  border: 1px solid #121221;
- 
-}
-
+  
