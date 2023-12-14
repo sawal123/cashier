@@ -1,56 +1,63 @@
 /* Data Tables Button */
 .Data_Tables .btn-primary {
-    width: 122px;
-    height: 34px;
-    background: var(--blue);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwsemibold);
-    border-radius: 50px;
-    border: 0;
-  }
-  .Data_Tables .btn-primary:hover {
-    background: var(--navy);
-    color: var(--white);
-  }
-  .Data_Tables .btn-danger {
-    width: 122px;
-    height: 34px;
-    background: #f04242;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwmedium);
-    border-radius: 50px;
-    border: 0;
-  }
-  .Data_Tables .btn-danger:hover {
-    background: maroon;
-    color: var(--white) !important;
-  }
-  
-  .Data_Tables .small-btn-primary {
-    padding-top: 3px;
-    width: 50px;
-    height: 30px;
-    border-radius: 6px;
-    background: #728ef2;
-    color: white;
-  }
-  .Data_Tables .small-btn-primary:hover {
-    background: var(--navy);
-    color: var(--white);
-  }
-  
-  .Data_Tables .small-btn-danger {
-    padding-top: 3px;
-    width: 50px;
-    height: 30px;
-    border-radius: 6px;
-    background: #f04242;
-  }
-  
-  .Data_Tables .small-btn-danger:hover {
-    background: maroon;
-    color: var(--white);
-  }
-  
+  width: 122px;
+  height: 34px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 50px;
+  border: 0;
+}
+
+.Data_Tables .btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.Data_Tables .btn-danger {
+  width: 122px;
+  height: 34px;
+  background: #f04242;
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 50px;
+  border: 0;
+}
+
+.Data_Tables .btn-danger:hover {
+  background: maroon;
+  color: var(--white) !important;
+}
+
+.Data_Tables .small-btn-primary {
+  padding-top: 3px;
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+  background: #728ef2;
+  color: white;
+}
+
+.Data_Tables .small-btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.Data_Tables .small-btn-danger {
+  padding-top: 3px;
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+  background: #f04242;
+}
+
+.Data_Tables .small-btn-danger:hover {
+  background: maroon;
+  color: var(--white);
+}

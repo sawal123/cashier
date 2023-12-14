@@ -9,137 +9,14 @@
     --purple: #8e44ad;
     --green: #2ecc71;
     --white: #fff;
-    --fwbold: 700;
-    --fwextrabold: 800;
-    --fwsemibold: 600;
-    --fwmedium: 500;
-    --fwregular: 400;
-    --fwlight: 300;
-    --body : #F6F6F6;
   }
   
   @media (max-width: 700px){
     
   }
   
-  h3{
-    margin-bottom: 0px !important;
-    margin-top: 8px !important;
-    line-height: 20px !important;
+
   
-  }
-  body {
-      background: #ececec !important;
-      font-family: "Poppins", sans-serif;
-  }
-  
-  .big-header {
-    font-weight: var(--fwextrabold);
-    color: var(--navy);
-    font-size: 48px;
-    margin: 0;
-  }
-  
-  .medium-header {
-    font-weight: var(--fwbold);
-    color: var(--navy);
-    font-size: 28px;
-    margin: 0;
-  }
-  
-  .small-header {
-    font-family: "Poppins", sans-serif;
-    font-weight: var(--fwmedium);
-    color: #121212;
-    font-size: 24px;
-    font-style: normal;
-    line-height: normal;
-  }
-  
-  .text-button {
-    text-decoration: none;
-    color: var(--blue);
-  }
-  
-  .text-button:hover {
-    text-decoration: underline;
-    color: var(--navy);
-  }
-  
-  .primary-copy {
-    color: white;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  /* button class */
-  .btn-primary {
-    padding: 12px 20px 12px 20px;
-    background: var(--blue);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwsemibold);
-    border-radius: 50px;
-    border: 0;
-  }
-  .btn-primary:hover {
-    background: var(--navy);
-    color: var(--white);
-  }
-  .button-danger {
-    padding: 12px 20px 12px 20px;
-    background: #f04242;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: var(--fwmedium);
-    border-radius: 50px;
-    border: 0;
-  }
-  .button-danger:hover {
-    background: var(--navy);
-    color: var(--white) !important;
-  }
-  
-  .small-btn-primary {
-    width: 50px;
-    height: 30px;
-    border-radius: 6px;
-    background: #728ef2;
-  }
-  .small-btn-primary:hover {
-    background: var(--navy);
-    color: var(--white);
-  }
-  
-  .small-btn-danger {
-    width: 50px;
-    height: 30px;
-    border-radius: 6px;
-    background: #f04242;
-  }
-  
-  /* padding / margin */
-  .pt-20 {
-    padding-top: 20px !important;
-  }
-  .pt-30 {
-    padding-top: 30px;
-  }
-  
-  .pt-70 {
-    padding-top: 70px;
-  }
-  .form-select .mx-30 {
-    width: 100px;
-    height: 50px;
-  }
-  
-  .wrap-bar{
-    padding: 0px !important;
-   
-  }
   
 /* --------------------------------------------------------- */
 /*                      Responsive CSS                       */
@@ -157,7 +34,7 @@
   height: 39px;
   border-radius: 7px;
   color: #FFF;
-font-family: Poppins;
+
 font-size: 13px;
 font-style: normal;
 font-weight: 500;
@@ -181,20 +58,17 @@ line-height: normal;
     padding-right: 15px;
     display: flex;
   justify-content: space-evenly;
-  align-items: center;
-
-    
-    
+  align-items: center;  
   }
+
+  
   .grafik .kartu-grafik .card .card-body .card-jumlah{
-    font-weight: var(--fwmedium);
     font-size: 14px;
     color: var(--navy);
 
 
   }
   .grafik .kartu-grafik .card .card-body .card-menu{
-    font-weight: var(--fwmedium);
     font-size: 14px;
     color:black;
 
@@ -203,7 +77,13 @@ line-height: normal;
   }
 
 
-
+.Data_Tables h2{
+  color: #000;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 
   @media (max-width: 10000px){
     .grafik{

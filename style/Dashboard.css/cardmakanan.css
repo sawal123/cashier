@@ -1,141 +1,19 @@
+/* @font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('../assets/font/Poppins/Poppins-ExtraBold.ttf');
+} */
 
-:root {
-  --bluesoft: #161d24;
-  --blue: #3498db;
-  --purplesoft: #9b59b6;
-  --navy: #001f3f;
-  --darkgrey: #afa9a9;
-  --darkgrey2: #d0d2d3;
-  --grey: #dfdcdc;
-  --purple: #8e44ad;
-  --green: #2ecc71;
-  --white: #fff;
-  --fwbold: 700;
-  --fwextrabold: 800;
-  --fwsemibold: 600;
-  --fwmedium: 500;
-  --fwregular: 400;
-  --fwlight: 300;
-  --body : #F6F6F6;
-}
+@media (max-width: 700px) {}
 
-@media (max-width: 700px){
-  
-}
-
-h3{
+h3 {
   margin-bottom: 0px !important;
   margin-top: 8px !important;
   line-height: 20px !important;
 
 }
-body {
-    background: #ececec !important;
-    font-family: "Poppins", sans-serif;
-}
 
-.big-header {
-  font-weight: var(--fwextrabold);
-  color: var(--navy);
-  font-size: 48px;
-  margin: 0;
-}
 
-.medium-header {
-  font-weight: var(--fwbold);
-  color: var(--navy);
-  font-size: 28px;
-  margin: 0;
-}
 
-.small-header {
-  font-family: "Poppins", sans-serif;
-  font-weight: var(--fwmedium);
-  color: #121212;
-  font-size: 24px;
-  font-style: normal;
-  line-height: normal;
-}
-
-.text-button {
-  text-decoration: none;
-  color: var(--blue);
-}
-
-.text-button:hover {
-  text-decoration: underline;
-  color: var(--navy);
-}
-
-.primary-copy {
-  color: white;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-/* button class */
-.btn-primary {
-  padding: 12px 20px 12px 20px;
-  background: var(--blue);
-  color: var(--white);
-  font-size: 16px;
-  font-weight: var(--fwsemibold);
-  border-radius: 50px;
-  border: 0;
-}
-.btn-primary:hover {
-  background: var(--navy);
-  color: var(--white);
-}
-.button-danger {
-  padding: 12px 20px 12px 20px;
-  background: #f04242;
-  color: var(--white);
-  font-size: 16px;
-  font-weight: var(--fwmedium);
-  border-radius: 50px;
-  border: 0;
-}
-.button-danger:hover {
-  background: var(--navy);
-  color: var(--white) !important;
-}
-
-.small-btn-primary {
-  width: 50px;
-  height: 30px;
-  border-radius: 6px;
-  background: #728ef2;
-}
-.small-btn-primary:hover {
-  background: var(--navy);
-  color: var(--white);
-}
-
-.small-btn-danger {
-  width: 50px;
-  height: 30px;
-  border-radius: 6px;
-  background: #f04242;
-}
-
-/* padding / margin */
-.pt-20 {
-  padding-top: 20px !important;
-}
-.pt-30 {
-  padding-top: 30px;
-}
-
-.pt-70 {
-  padding-top: 70px;
-}
-.form-select .mx-30 {
-  width: 100px;
-  height: 50px;
-}
 
 /* --------------------------------------------------- */
 
@@ -144,131 +22,121 @@ body {
 
 
 }
+
 /* .wrapper-menu-makanan .row-makanan{
  padding-bottom: 1000px !important;
 } */
 
 .wrapper-menu-makanan .h2-makanan {
   color: #000;
-font-family: Poppins;
-/* font-size: 16px; */
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-  text-align: left; 
+  font-family: Poppins;
+  /* font-size: 16px; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
   /* margin-bottom: 17px !important; */
 
 }
 
 @media (max-width: 1300px) {
   .wrapper-menu-makanan .h2-makanan {
-    text-align: center; 
-   /* padding-left: 100px !important; */
+    text-align: center;
+    /* padding-left: 100px !important; */
   }
 }
 
-/* .wrapper-menu-makanan .kartu-grafik-minuman{
-  margin-top: -20px !important;
-} */
 
-.wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
-    /* padding-left: 50px ;
-    padding-right: 4px ;
-    padding-top: 4px; */
-    padding: 20px 10px 20px 10px !important;
-    border-radius: 15px;
-    min-width: 170px;
-    margin-bottom: -30px !important;
-    /* min-height: 170px; */
-  }
-  @media(max-width: 1300px){
-    .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
-        min-height: 280px !important;
-        min-width: 260px !important;
-        padding: auto;
-       
-        
-    } 
-  }
+.wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan {
+  padding: 20px 10px 20px 10px !important;
+  border-radius: 15px;
+  min-width: 170px;
+  margin-bottom: -30px !important;
 
-  @media(max-width: 993px){
-    .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
-      min-height: 170px !important;
-      min-width: 170px !important;
-      padding: auto;
-    }
-  }
+}
 
- 
-    @media(max-width: 550px){
-        .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan{
-        min-height: 150px !important;
-        min-width: 150px !important;
-        padding: auto;
-      
-      }
-    }
-
-    .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card{
-      background-color: #fff;
-      min-width: 170px;
-      min-height: 170px;
-      border-radius: 15px;
-      border: 1px solid #C7C7C7;
-      margin: 4px 4px 4px 4px;
+@media(max-width: 1300px) {
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan {
+    min-height: 280px !important;
+    min-width: 260px !important;
+    padding: auto;
   }
-  
-  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-img-top{
-    min-width: 162px;
-    min-height: 116px;
-    border-radius: 15px;
-    padding: 4px 4px 4px 4px;
+}
+
+@media(max-width: 993px) {
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan {
+    min-height: 170px !important;
+    min-width: 170px !important;
+    padding: auto;
+  }
+}
+
+
+@media(max-width: 550px) {
+  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan {
+    min-height: 150px !important;
+    min-width: 150px !important;
+    padding: auto;
 
   }
-  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .nama-barang{
-    width: 69px !important;
-    height: 21px !important;
-    color: #121212;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .harga-barang{
-  width: 68px !important;
-  height: 21px !important;
+}
+
+.wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card {
+  background-color: #fff;
+  min-width: 170px;
+  min-height: 170px;
+  border-radius: 15px;
+  border: 1px solid #C7C7C7;
+  margin: 4px 4px 4px 4px;
+}
+
+.wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-img-top {
+  min-width: 162px;
+  min-height: 116px;
+  border-radius: 15px;
+  padding: 4px 4px 4px 4px;
+
+}
+
+.wrapper-menu-minuman .kartu-grafik-minuman .kartu-minuman .card .card-body .nama-barang {
+  color: #121212;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.wrapper-menu-minuman .kartu-grafik-minuman .kartu-minuman .card .card-body .harga-barang {
   color: #333;
-  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  }
-  
-  
-  
-  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .btn{
-    width: 29px !important;
-    height: 29px !important; 
-    border-radius: 3px;
-    margin-top: 7px; 
-    margin-right: 5px;
-    border-radius: 3px;
-    background: #C7C7C7;
-    color: #000;
-    font-weight: bolder;
-    margin-right: -6px !important;
-   
-  }
-  .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .btn:hover{
-   background: var(--danger);
-   color: white;
-   text-decoration: var(--white);
-  
-  }
+}
 
-  /* .wrapper-menu-makanan{
+
+.wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .btn {
+  width: 29px !important;
+  height: 29px !important;
+  border-radius: 3px;
+  margin-top: 7px;
+  margin-right: 5px;
+  border-radius: 3px;
+  background: #C7C7C7;
+  color: #000;
+  font-weight: bolder;
+  margin-right: -6px !important;
+
+}
+
+.wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan .card .card-body .btn:hover {
+  background: var(--danger);
+  color: white;
+  text-decoration: var(--white);
+
+}
+
+/* .wrapper-menu-makanan{
     margin-top: -100px;
   }
   @media (max-width: 10000px){
@@ -276,5 +144,3 @@ line-height: normal;
       margin-top: 10px !important;
     }
   } */
-
-  

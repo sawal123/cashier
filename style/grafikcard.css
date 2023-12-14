@@ -1,24 +1,22 @@
 /* Card */
+.grafik {
+  margin-top: -100px;
+}
 
-.grafik{
-    margin-top: -100px;
+@media (max-width: 1200px) {
+  .grafik {
+    margin-top: 100px !important;
   }
-  @media (max-width: 1200px){
-    .grafik{
-      margin-top: 100px !important;
-    }
-  }
-  
+}
+
 .grafik .kartu-grafik .card {
-    padding-left: 15px;
-    padding-right: 15px;
-    
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+@media (max-width: 10000px) {
+  .grafik {
+    margin-top: 80px !important;
   }
-  
-  @media (max-width: 10000px){
-    .grafik{
-      margin-top: 80px !important;
-    }
-  }
-  
-  
+}
