@@ -58,7 +58,7 @@
             </div>
 
             <!-- Main Content -->
-            <div class="col col-lg-7 m-auto main-content ">
+            <div class="col col-lg-10 m-auto main-content ">
 
                 <!-- sidebar btn -->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
@@ -162,7 +162,7 @@
                                                         <p class="Harga-barang fw-bold m-0 "
                                                             x-text="rupiah(item.price)"></p>
                                                     </div>
-                                                    <a type="button"
+                                                    <a href="#" @click.prevent="$store.cart.add(item)"
                                                         class="btn btn-outline-secondary btn-sm text-center d-flex align-items-center justify-content-center">
                                                         <i class="fa-solid fa-plus fa-xl"></i>
                                                     </a>
@@ -226,7 +226,7 @@
                                                         <p class="fw-bold m-0 harga-barang" x-text="rupiah(item.price)">
                                                         </p>
                                                     </div>
-                                                    <button type="button"
+                                                    <button type="button" @click="$store.cart.add(item)"
                                                         class="btn btn-outline-secondary btn-sm text-center d-flex align-items-center justify-content-center">
                                                         <i class="fa-solid fa-plus fa-xl"></i>
                                                     </button>
@@ -273,7 +273,7 @@
 
             </div>
             <!-- akhir wrapper -->
-            <div class="col-lg-3 m-auto">
+            
                 <div class="offcanvas offcanvas-end show  keranjang-pesanan active" tabindex="1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel" data-bs-scroll="true" data-bs-backdrop="false">
                     <div class="offcanvas-header">
@@ -282,32 +282,35 @@
                     <div class="offcanvas-body ">
                         <!-- Isi Keranjang -->
                         <div class="wrap-cart">
+                           
                             <div class="shopping-cart ">
+                                <template x-for="(item, index) in $store.cart.items" x-keys="index">
                                 <div class="cart-item d-flex justify-content-between align-items-center ">
-                                    <img src="assets/images/Rectangle 9 (1).png" alt="">
+                                    <img :src="'assets/images/' + item.images" :alt="item.name">
                                     <div class="item-details d-block">
-                                        <p class=" m-0 nama-item ">Kopi Susu</p>
+                                        <p x-text="item.name" class=" m-0 nama-item " ></p>
 
-                                        <p class="harga-item fw-bold m-0">Rp 10.000</p>
+                                        <p class="harga-item fw-bold m-0" x-text="rupiah(item.price)">10000</p>
                                     </div>
                                     <button type="button"
-                                        class=" btn btn-outline-secondary btn-sm text-center d-flex align-items-center justify-content-center btn-kurang">
+                                        class=" btn btn-outline-secondary btn-sm text-center btn-kurang">
                                         <i class="fa-solid fa-minus fa-lg"></i>
                                     </button>
-                                    <span>1</span>
+                                    <span x-text="item.quantity">1</span>
                                     <button type="button"
-                                        class=" btn btn-outline-secondary btn-sm text-center d-flex align-items-center justify-content-center btn-tambah">
+                                        class=" btn btn-outline-secondary btn-sm text-center btn-tambah">
                                         <i class="fa-solid fa-plus fa-lg"></i>
                                     </button>
                                 </div>
-
+                            </template>
 
                             </div>
-
-                            <div class="jumlah-harga d-flex justify-content-around align-items-center">
+                            <template x-for="(item, index) in $store.cart.items" x-keys="index">
+                            <div class="jumlah-harga d-flex justify-content-around align-items-center" >
                                 <p>Total</p>
-                                <p>Rp. 40.000</p>
+                                <p x-text="rupiah(item.total)"></p>
                             </div>
+                        </template>
                             <div class="d-grid col-10 mx-auto">
                                 <button class="btn btn-primary  " type="button">Proses</button>
                             </div>
@@ -315,7 +318,7 @@
 
                         <!-- Isi Keranjang -->
                     </div>
-                </div>
+                
 
                 <!-- Keranjang Belanja -->
             </div>

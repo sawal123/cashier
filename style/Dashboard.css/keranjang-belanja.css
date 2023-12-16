@@ -83,6 +83,13 @@
     line-height: normal;
 }
 
+.keranjang-pesanan .shopping-cart .btn{
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* padding-left: 8.7px !important; */
+    
+}
 .keranjang-pesanan .shopping-cart .btn-kurang {
     width: 22.905px;
     height: 22.905px;
