@@ -1,0 +1,113 @@
+/* --------------------------------------------------- */
+
+
+.search .form-search .searching {
+    display: flex;
+    align-items: center;
+    width: 301px !important;
+    height: 50px !important;
+    border: 1px solid #121221;
+    border-radius: 28.5px;
+    background-color: white !important;
+  }
+  
+  .search .form-search .searching:hover {
+    background-color: var(--grey);
+    
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid var(--blue);
+    border-radius: 28.5px;
+  }
+  
+  
+  @media (max-width:767px) {
+    .search .form-search .searching {
+      width: 100% !important;
+    }
+  }
+  
+  .search .form-search .searching input {
+    /* height: min-content !important; */
+    flex-shrink: 0;
+    border-radius: 28.5px;
+    /* border: 1px solid #121221; */
+    border-right: none;
+    text-decoration: none !important;
+    background-color: none !important;
+    border: none !important;
+  }
+  
+  .search .form-search  .searching input:focus {
+    box-shadow: none !important;
+  }
+  
+  
+  .search .form-search  .searching .input-group-append {
+    width: 50px;
+    height: 50px;
+    border-radius: 28.5px;
+    /* border: 1px solid #121221; */
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    background-color: none !important;
+    border: none !important;
+    /* cursor: pointer;  */
+  }
+  
+  .search .form-search  .searching .input-group-append::before {
+    content: '';
+    width: 2px;
+    height: 30px;
+  
+    background-color: var(--darkgrey);
+  }
+  
+  .search .form-search  .searching button {
+    text-decoration: none !important;
+    border-radius: 0% !important;
+    border: none !important;
+    transition: all 0.3s ease;
+  }
+  
+  /* .search .input-group button:hover{
+  border: none !important;
+  border-radius: 100% !important;
+  background-color: var(--darkgrey);
+  font-size: 15px;
+  } */
+  /* search sidebar */
+  #search-form {
+    display: none;
+  }
+  
+  /* input username */
+  
+  .search .username{
+    width: 100%;
+    margin-bottom: 16px;
+
+  }
+  
+  .search .username input {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+
+
+  /* input file */
+
+  .search .file{
+    width: 100%;
+    margin-bottom: 16px;
+
+  }
+
+  .search .file input {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }

@@ -13,20 +13,13 @@
   transition: all 0.3s ease;
   padding-right: 2rem !important;
   margin-left: -10px !important;
-  /* z-index: 9999 !important; */
+  z-index: 999 !important;
 }
 
 /* .barsamping:hover{
   box-shadow: none;
 } */
-/* @media (max-width: 992px) {
-  .barsamping {
-    width: 100%;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-  }
-} */
+
 
 
 
