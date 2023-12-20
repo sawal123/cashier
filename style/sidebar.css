@@ -26,7 +26,7 @@
 .barsamping .list {
   display: flex;
   align-items: center !important;
-  width: 130% !important;
+  
   color: #000;
   gap: 5px;
   position: relative;
@@ -34,9 +34,12 @@
   text-decoration: none;
   height: 2rem;
   font-size: 14px;
+  width: 130% !important;
   padding-left: 10px;
   border-radius: 5px;
 }
+  
+
 
 .barsamping .list:hover::before {
   content: '';
@@ -56,15 +59,17 @@
 }
 
 
+
+
 .barsamping a.active {
-  width: 140% !important;
+ 
   color: var(--blue) !important;
-  background: #e8e8e8 !important;
+  background: #f1f1f1 !important;
   margin-left: 0;
   padding-right: 35px;
   /* padding-left: 5px !important;
     border-radius: 5px; */
-
+    width: 140% !important;
 }
 
 /* .barsamping a.active::before{
@@ -80,12 +85,10 @@
   padding: 20px 10px 20px 0px;
   margin-left: 0px;
   padding-right: 10px;
+  background: #e8e8e8 !important;
 }
 
-.barsamping a.active span {
-  color: var(--blue);
-  /* margin-left: calc(1rem -3px); */
-}
+
 
 /* .barsamping a.hover span{
   margin-left: 20px !important;
