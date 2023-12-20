@@ -61,7 +61,8 @@
                       class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
                   <li><a href="../assets-index/dataTable.html" class="py-2 text-decoration-none text-dark">dataTable</a>
                   </li>
-                  <li><a href="../assets-index/chartJs.html" class="py-2 text-decoration-none text-dark">chartJs</a>
+                  <li><a href="../assets-index/chartJs.html"
+                      class="py-2 text-decoration-none text-dark active">chartJs</a>
                   </li>
                   <li><a href="../assets-index/iconFontAwsme.html" class="py-2 text-decoration-none text-dark">Icon</a>
                   </li>
@@ -252,7 +253,7 @@
     // LineChart
     const line = {
       type: 'bar',
-      data,
+      data: data,
       options: {
         indexAxis: 'y',
       }
@@ -307,29 +308,29 @@
 
 
 
-<script>
-  // Line Chart
+  <script>
+    // Line Chart
     const labelsLine = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-const dataLine = {
-  labels: labelsLine,
-  datasets: [{
-    label: 'My First Dataset',
-    data: [65, 59, 80, 81, 56, 55, 40],
-    fill: false,
-    borderColor: 'rgb(75, 192, 192)',
-    tension: 0.1,
-    autoPadding: true
-  }]
-};
+    const dataLine = {
+      labels: labelsLine,
+      datasets: [{
+        label: 'My First Dataset',
+        data: [65, 59, 80, 81, 56, 55, 40],
+        fill: false,
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0.1,
+        autoPadding: true
+      }]
+    };
 
-const configLine = {
-  type: 'line',
-  data: data,
-};
+    const configLine = {
+      type: 'line',
+      data: data,
+    };
 
-const lineChart = document.getElementById('lineChart').getContext('2d');
+    const lineChart = document.getElementById('lineChart').getContext('2d');
     new Chart(lineChart, configLine);
-</script>
+  </script>
 
 </body>
 
