@@ -101,7 +101,7 @@ Swal.fire({
     clearInterval(timerInterval);
   }
 }).then((result) => {
-  /* Read more about handling dismissals below */
+
   if (result.dismiss === Swal.DismissReason.timer) {
     console.log("I was closed by the timer");
   }
@@ -146,4 +146,93 @@ function ajaxRequest(){
           });
         }
       });
+}
+
+// Mixin
+function mixin(){
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
+  Toast.fire({
+    icon: "success",
+    title: "Signed in successfully"
+  });
+}
+
+// Input User
+function inputUser(){
+  (async () => {
+    const { value: formValues } = await Swal.fire({
+      title: 'Input your credentials',
+      html:
+        '<input id="swal-input1" class="swal2-input" placeholder="Email">' +
+        '<input id="swal-input2" class="swal2-input" type="password" placeholder="Password">',
+      focusConfirm: false,
+      preConfirm: () => {
+        return [
+          document.getElementById('swal-input1').value,
+          document.getElementById('swal-input2').value
+        ];
+      },
+      showCancelButton: true,
+      confirmButtonText: 'Submit',
+      cancelButtonText: 'Cancel',
+      willOpen: () => {
+        // You can customize attributes for each input field here if needed
+        document.getElementById('swal-input1').setAttribute('autocomplete', 'off');
+        document.getElementById('swal-input2').setAttribute('autocomplete', 'off');
+      }
+    });
+  
+    if (formValues) {
+      const [email, password] = formValues;
+      Swal.fire(`Entered email: ${email}\nEntered password: ${password}`);
+    }
+  })();
+
+}
+
+function select(){
+  (async () => {
+    const { value: fruit } = await Swal.fire({
+      title: "Select field validation",
+      input: "select",
+      inputOptions: {
+        Fruits: {
+          apples: "Apples",
+          bananas: "Bananas",
+          grapes: "Grapes",
+          oranges: "Oranges"
+        },
+        Vegetables: {
+          potato: "Potato",
+          broccoli: "Broccoli",
+          carrot: "Carrot"
+        },
+        icecream: "Ice cream"
+      },
+      inputPlaceholder: "Select a fruit",
+      showCancelButton: true,
+      inputValidator: (value) => {
+        return new Promise((resolve) => {
+          if (value === "oranges") {
+            resolve();
+          } else {
+            resolve("You need to select oranges :)");
+          }
+        });
+      }
+    });
+    if (fruit) {
+      Swal.fire(`You selected: ${fruit}`);
+    }
+  })();
 }

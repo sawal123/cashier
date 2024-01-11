@@ -11,11 +11,52 @@
     <link rel="stylesheet" href="../../style/tables.css">
     <link rel="stylesheet" href="../../style/sidebar.css">
     <link rel="stylesheet" href="input.css">
-    <link href="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../node_modules/flatpickr/dist/flatpickr.min.css">
+    <link href="../../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
 
 
 
     <!--   -->
+    <style>
+        /* Calendar container styling */
+        .flatpickr-calendar {
+            background-color: rgb(231, 228, 228);
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Day styling */
+        .flatpickr-day {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        /* Today's date styling */
+        .flatpickr-day.today {
+            background-color: #2ecc71;
+        }
+
+        /* Selected date styling */
+        .flatpickr-day.selected {
+            background-color: #e74c3c;
+        }
+
+        /* Range styling */
+        .flatpickr-day.inRange {
+            background-color: #95a5a6;
+        }
+
+        /* Range start styling */
+        .flatpickr-day.rangeStart {
+            background-color: #3498db;
+        }
+
+        /* Range end styling */
+        .flatpickr-day.rangeEnd {
+            background-color: #e74c3c;
+        }
+    </style>
+
     <!--  -->
 
 <body>
@@ -29,186 +70,719 @@
                         <img class="fs-5 d-none d-md-inline" src="../../assets/images/OBJECTS (1).svg" alt="" />
                     </a>
                     <div class=" w-75 mt-4">
-                        <a href="dashboard.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+                        <a href="../../dashboard.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
                             <i class="fa-solid fa-house ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Dashboard</span>
                         </a>
-                        <a href="transaksi.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+                        <a href="../../transaksi.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
                             <i class="fa-solid fa-money-bill  ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Transaksi</span>
                         </a>
-                        <a href="menu.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+                        <a href="../../menu.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
                             <i class="fa-solid fa-burger  ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Menu</span>
                         </a>
-                        <a href="setting.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
-                            <i class="fa-solid fa-gear  ms-1"></i>
+                        <a href="../../setting.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+                            <i class="fa-solid fa-star ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Setting</span>
                         </a>
-                        <div class="dropdown">
-                            <a href="#"
-                                class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list border-0 dropdown-toggle"
-                                id="assetsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <i class="fa-solid fa-gear ms-1"></i>
-                                <span class="fs-5 d-none d-md-inline">Assets</span>
-                            </a>
-
-                            <div class="dropdown-menu text-center bg-white shadow-lg rounded-4 py-2"
-                                aria-labelledby="assetsDropdown">
-                                <ul class="list-unstyled">
-                                    <li><a href="../assets-index/button.html"
-                                            class="py-2 text-decoration-none text-dark">Button</a></li>
-                                    <li><a href="../assets-index/card.html"
-                                            class="py-2 text-decoration-none text-dark">Card</a></li>
-                                    <li><a href="../assets-index/input.html"
-                                            class="py-2 text-decoration-none text-dark active">Input</a></li>
-                                    <li><a href="../assets-index/dropdown.html"
-                                            class="py-2 text-decoration-none text-dark">Dropdown</a></li>
-                                    <li><a href="../assets-index/slick.html"
-                                            class="py-2 text-decoration-none text-dark">Slick Js</a></li>
-                                    <li><a href="../assets-index/sweetAlert.html"
-                                            class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
-                                    <li><a href="../assets-index/dataTable.html"
-                                            class="py-2 text-decoration-none text-dark">dataTable</a></li>
-                                    <li><a href="../assets-index/chartJs.html"
-                                            class="py-2 text-decoration-none text-dark">chartJs</a></li>
-                                    <li><a href="../assets-index/iconFontAwsme.html"
-                                            class="py-2 text-decoration-none text-dark">Icon</a></li>
-                                </ul>
+                        <div class="accordion accordion-flush" id="accordionFlushExample" >
+                            <button 
+                              class="accordion-button collapsed py-4 my-1 mb-md-0 me-md-auto list"
+                              type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                              aria-controls="flush-collapseOne">
+                              <i class="fa-solid fa-star ms-1"></i>
+                              <span class="fs-5 d-none d-md-inline">Assets</span>
+                          </button>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3 " aria-labelledby="flush-headingOne"
+                              data-bs-parent="#accordionFlushExample">
+                              <ul class="list-unstyled " >
+                                <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark ">Button</a>
+                                </li>
+                                <li><a href="../assets-index/card.html" class="py-2 text-decoration-none  text-dark">Card</a>
+                                </li>
+                                <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark active">Input</a>
+                                </li>
+                                <li><a href="../assets-index/dropdown.html"
+                                    class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                                <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                                    Js</a></li>
+                                <li><a href="../assets-index/sweetAlert.html"
+                                    class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                                <li><a href="../assets-index/dataTable.html"
+                                    class="py-2 text-decoration-none text-dark">dataTable</a></li>
+                                <li><a href="../assets-index/chartJs.html"
+                                    class="py-2 text-decoration-none text-dark">chartJs</a></li>
+                                <li><a href="../assets-index/iconFontAwsme.html"
+                                    class="py-2 text-decoration-none text-dark">Icon</a></li>
+                              </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Main Content -->
-        <div class="col col-lg-8 m-auto ">
 
-            <!-- sidebar btn -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
-                <div class="container-fluid">
-                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+            <!-- Main Content -->
+            <div class="col col-lg-10 m-auto ">
+
+                <!-- sidebar btn -->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
+                    <div class="container-fluid">
+                      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
-                            class="navbar-toggler-icon"></span></button>
-                    <a class="navbar-brand" href="#">Hy, Sawal <img src="../images/profile.jpg" alt=""
-                            class="profile-image"></a>
-                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
-                        aria-labelledby="offcanvasScrollingLabel">
+                          class="navbar-toggler-icon"></span></button>
+                      <a class="navbar-brand" href="#">Hy, Sawal <img src="../../assets/images/profile.jpg" alt=""
+                          class="profile-image"></a>
+                      <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
+                        aria-labelledby="offcanvasScrollingLabel" >
                         <div class="offcanvas-header ">
-                            <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="index.html">Kedai Kopi</a>
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                          <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="../../index.html"><img src="../../assets/images/OBJECTS (1).svg" alt="" srcset="" style="width: 100px;"></a></h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body px-3">
-                            <!-- isi offcanvas -->
-                            <a href="../../dashboard.html"
-                                class="d-flex align-items-center py-2 mb-md-0 me-md-auto active list">
-                                <i class="fa-solid fa-house"></i>
-                                <span class=" px-2 d-sm-inline">Dashboard</span>
-                            </a>
-                            <a href="../../transaksi.html"
-                                class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                                <i class="fa-solid fa-money-bill"></i>
-                                <span class=" px-2 d-sm-inline">Transaksi</span>
-                            </a>
-                            <a href="../../menu.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                                <i class="fa-solid fa-burger"></i>
-                                <span class=" px-2 d-sm-inline">Menu</span>
-                            </a>
-                            <a href="../../setting.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                                <i class="fa-solid fa-gear"></i>
-                                <span class=" px-2 d-sm-inline">Setting</span>
-                            </a>
-                            <div class="">
-                                <a href="#"
-                                    class="collapse d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list border-0"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    <i class="fa-solid fa-gear ms-1"></i>
-                                    <span class="fs-5 d-none d-md-inline">Assets</span>
-                                </a>
+                          <!-- isi offcanvas -->
+                          <a href="../../dashboard.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                            <i class="fa-solid fa-house ms-1"></i>
+                            <span class=" px-2 d-sm-inline">Dashboard</span>
+                          </a>
+                          <a href="../../transaksi.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                            <i class="fa-solid fa-money-bill ms-1"></i>
+                            <span class=" px-2 d-sm-inline">Transaksi</span>
+                          </a>
+                          <a href="../../menu.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                            <i class="fa-solid fa-burger ms-1"></i>
+                            <span class=" px-2 d-sm-inline">Menu</span>
+                          </a>
+                          <a href="../../setting.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                            <i class="fa-solid fa-gear ms-1"></i>
+                            <span class=" px-2 d-sm-inline">Setting</span>
+                          </a>
+          
+                          <div class="accordion accordion-flush " id="accordionFlushExample">
+                            <button class="accordion-button collapsed py-2 my-1 mb-md-0 me-md-auto list" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                              aria-controls="flush-collapseOne">
+                              <i class="fa-solid fa-star ms-1"></i>
+                              <span class=" px-2 d-sm-inline">Assets</span>
+                            </button>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3"
+                              aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                              <ul class="list-unstyled ">
+                                <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a>
+                                </li>
+                                <li><a href="../assets-index/card.html" class="py-2 text-decoration-none text-dark">Card</a>
+                                </li>
+                                <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark active">Input</a>
+                                </li>
+                                <li><a href="../assets-index/dropdown.html"
+                                    class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                                <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                                    Js</a></li>
+                                <li><a href="../assets-index/sweetAlert.html"
+                                    class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                                <li><a href="../assets-index/dataTable.html"
+                                    class="py-2 text-decoration-none text-dark">DataTable</a></li>
+                                <li><a href="../assets-index/chartJs.html" class="py-2 text-decoration-none text-dark">ChartJs</a>
+                                </li>
+                                <li><a href="../assets-index/iconFontAwsme.html"
+                                    class="py-2 text-decoration-none text-dark">Icon</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- akhir isi offcanvas -->
+                        </div>
+                      </div>
+                  </nav>
 
-                                <div class="collapse text-center bg-white shadow-lg rounded-4 py-2 collapse-inner  "
-                                    id="collapseExample">
-                                    <ul class="list-unstyled">
-                                        <li><a href="../assets-index/button.html"
-                                                class="py-2 text-decoration-none text-dark">Button</a></li>
-                                        <li><a href="../../assets/assets-index/card.html"
-                                                class="py-2 text-decoration-none text-dark">Card</a></li>
-                                        <li><a href="/assets/assets-index/input.html"
-                                                class="py-2 text-decoration-none text-dark">Input</a></li>
-                                    </ul>
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
+                    <div class="container-fluid">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
+                        </ol>
+                        <span>
+                            Hy. Sawal
+                            <img src="../images/profile.jpg" alt="" class="profile-image">
+                        </span>
+                    </div>
+                </nav>
+                <!-- Other content within the wrapper -->
+                <!-- input search -->
+                <section class="search py-2" style="padding-top: 150px !important;">
+                    <div class="coontainer text-center ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>Form Input</h2>
+                            </div>
+
+                        </div>
+                        <div class="row form-search">
+                            <div class="col-lg-12">
+                                <form class="input-group searching rounded-pill ">
+                                    <input type="text" class="form-control d-inline-block focus-none border-0 "
+                                        placeholder="Search...">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-6 py-3">
+                                <div class="form-group username ">
+                                    <input type="text" class="form-control" id="username" name="username"
+                                        placeholder="Username" required>
                                 </div>
                             </div>
-                            <!-- akhir isi offcanvas -->
-                        </div>
-                    </div>
-            </nav>
 
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
-                <div class="container-fluid">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
-                    </ol>
-                    <span>
-                        Hy. Sawal
-                        <img src="../images/profile.jpg" alt="" class="profile-image">
-                    </span>
-                </div>
-            </nav>
-            <!-- Other content within the wrapper -->
-            <!-- input search -->
-            <section class="search" style="padding-top: 150px;">
-                <div class="coontainer text-center ">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>Form Input</h2>
-                        </div>
+                            <div class="col-lg-6 py-3">
+                                <div class="input-group file">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
 
-                    </div>
-                    <div class="row form-search">
-                        <div class="col-lg-12">
-                            <form class="input-group searching rounded-pill ">
-                                <input type="text" class="form-control d-inline-block focus-none border-0 "
-                                    placeholder="Search...">
-                                <div class="input-group-append">
-                                    <button class="btn" type="button">
-                                        <i class="fas fa-search"></i>
-                                    </button>
                                 </div>
-                            </form>
-                        </div>
-
-                        <div class="col-lg-6 py-3">
-                            <div class="form-group username ">
-                                <input type="text" class="form-control" id="username" name="username"
-                                    placeholder="Username" required>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 py-3">
-                            <div class="input-group file">
-                                <input type="file" class="form-control" id="inputGroupFile02">
-
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-            </section>
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>File Input</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <!--  -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="customFile">File input example</label>
+                                            <input class="form-control" id="customFile" type="file">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="formFileDisabled">Disabled file input
+                                                example</label>
+                                            <input class="form-control" id="formFileDisabled" type="file"
+                                                disabled="disabled">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="formFileMultiple">Multiple files input
+                                                example</label>
+                                            <input class="form-control" id="formFileMultiple" type="file"
+                                                multiple="multiple">
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Select</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="py-2">
+                                            <h4>Standart</h4>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected="">Form Select</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="py-2">
+                                            <h4>Sizing</h4>
+                                            <select class="form-select form-select-lg mb-3"
+                                                aria-label=".form-select-lg example">
+                                                <option selected="">Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected="">Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>
+                                            Check
+                                        </h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class=" card my-3">
+                                            <div class="card-header">
+                                                <h4>Check</h4>
+                                            </div>
+                                            <!--  -->
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flexCheckDefault"
+                                                        type="checkbox" value="">
+                                                    <label class="form-check-label" for="flexCheckDefault">Default
+                                                        checkbox</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flexCheckChecked"
+                                                        type="checkbox" value="" checked="">
+                                                    <label class="form-check-label" for="flexCheckChecked">Checked
+                                                        checkbox</label>
+                                                </div>
+                                                <!--  -->
+                                            </div>
+                                        </div>
+
+                                        <div class=" card my-3">
+                                            <div class="card-header">
+                                                <h4>Radios</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <!--  -->
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flexRadioDefault1" type="radio"
+                                                        name="flexRadioDefault">
+                                                    <label class="form-check-label" for="flexRadioDefault1">Default
+                                                        radio</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flexRadioDefault2" type="radio"
+                                                        name="flexRadioDefault" checked="">
+                                                    <label class="form-check-label" for="flexRadioDefault2">Default
+                                                        checked
+                                                        radio</label>
+                                                </div>
+                                                <!--  -->
+                                            </div>
+                                        </div>
+
+                                        <div class="card my-3">
+                                            <div class="card-header">
+                                                <h4>Switch</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <!--  -->
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" id="flexSwitchCheckDefault"
+                                                        type="checkbox">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Default
+                                                        switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" id="flexSwitchCheckChecked"
+                                                        type="checkbox" checked="">
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked
+                                                        switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" id="flexSwitchCheckDisabled"
+                                                        type="checkbox" disabled="">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckDisabled">Disabled switch checkbox
+                                                        input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" id="flexSwitchCheckCheckedDisabled"
+                                                        type="checkbox" checked="" disabled="">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckCheckedDisabled">Disabled checked switch
+                                                        checkbox input</label>
+                                                </div>
+                                                <!--  -->
+                                            </div>
+                                        </div>
+
+                                        <div class="card my-3">
+                                            <div class="card-header">
+                                                <h4>Check Inline</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <!--  -->
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="inlineCheckbox1" type="checkbox"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Item 1</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="inlineCheckbox2" type="checkbox"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Item 2</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="inlineCheckbox3" type="checkbox"
+                                                        value="option3" disabled="">
+                                                    <label class="form-check-label" for="inlineCheckbox3">Item 3
+                                                        (disabled)</label>
+                                                </div>
+                                                <!--  -->
+                                            </div>
+                                        </div>
+
+                                        <div class="card my-3">
+                                            <div class="card-header">
+                                                <h4>Radio Inline</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <!--  -->
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="inlineRadio1" type="radio"
+                                                        name="inlineRadioOptions" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Item 1</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="inlineRadio2" type="radio"
+                                                        name="inlineRadioOptions" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">item 2</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="inlineRadio3" type="radio"
+                                                        name="inlineRadioOptions" value="option3" disabled="">
+                                                    <label class="form-check-label" for="inlineRadio3">Item 3
+                                                        (disabled)</label>
+                                                </div>
+                                                <!--  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Layout Basic Form</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Start -->
+                                        <form>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="basic-form-name">Name</label>
+                                                <input class="form-control" id="basic-form-name" type="text"
+                                                    placeholder="Name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="basic-form-email">Email address</label>
+                                                <input class="form-control" id="basic-form-email" type="email"
+                                                    placeholder="name@example.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="basic-form-password">Password</label>
+                                                <input class="form-control" id="basic-form-password" type="password"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="basic-form-dob">Date of Birth</label>
+                                                <input class="form-control" id="basic-form-dob" type="date">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="basic-form-gender">Gender</label>
+                                                <select class="form-select" id="basic-form-gender"
+                                                    aria-label="Default select example">
+                                                    <option selected="selected">Select your gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flexRadioDefault1" type="radio"
+                                                        name="flexRadioDefault">
+                                                    <label class="form-check-label mb-0"
+                                                        for="flexRadioDefault1">Personal Account</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flexRadioDefault2" type="radio"
+                                                        name="flexRadioDefault" checked="checked">
+                                                    <label class="form-check-label mb-0"
+                                                        for="flexRadioDefault2">Business Account</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Upload Image</label>
+                                                <input class="form-control" type="file">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="basic-form-textarea">Description</label>
+                                                <textarea class="form-control" id="basic-form-textarea" rows="3"
+                                                    placeholder="Description"></textarea>
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input class="form-check-input" id="basic-form-checkbox"
+                                                    type="checkbox">
+                                                <label class="form-check-label" for="basic-form-checkbox">Remember
+                                                    me</label>
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                        </form>
+                                        <!-- End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Horizontal Form</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Start -->
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-2 col-form-label" for="inputEmail3">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" id="inputEmail3" type="email">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-2 col-form-label"
+                                                    for="inputPassword3">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" id="inputPassword3" type="password">
+                                                </div>
+                                            </div>
+                                            <fieldset>
+                                                <div class="row mb-3">
+                                                    <label class="col-form-label col-sm-2 pt-0">Radios</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" id="gridRadios1"
+                                                                type="radio" name="gridRadios" value="option1"
+                                                                checked="">
+                                                            <label class="form-check-label" for="gridRadios1">First
+                                                                radio</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" id="gridRadios2"
+                                                                type="radio" name="gridRadios" value="option2">
+                                                            <label class="form-check-label" for="gridRadios2">Second
+                                                                radio</label>
+                                                        </div>
+                                                        <div class="form-check disabled">
+                                                            <input class="form-check-input" id="gridRadios3"
+                                                                type="radio" name="gridRadios" value="option3"
+                                                                disabled="">
+                                                            <label class="form-check-label" for="gridRadios3">Third
+                                                                disabled radio</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="row mb-3">
+                                                <div class="col-form-label col-sm-2 pt-0">Checkbox</div>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" id="gridCheck1" type="checkbox">
+                                                        <label class="form-check-label" for="gridCheck1">Example
+                                                            checkbox</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Sign in</button>
+                                        </form>
+                                        <!-- End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Form Grid</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Start -->
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="inputEmail4">Email</label>
+                                                <input class="form-control" id="inputEmail4" type="email">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="inputPassword4">Password</label>
+                                                <input class="form-control" id="inputPassword4" type="password">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="inputAddress">Address</label>
+                                                <input class="form-control" id="inputAddress" type="text"
+                                                    placeholder="1234 Main St">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="inputAddress2">Address 2</label>
+                                                <input class="form-control" id="inputAddress2" type="text"
+                                                    placeholder="Apartment, studio, or floor">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="inputCity">City</label>
+                                                <input class="form-control" id="inputCity" type="text">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label" for="inputState">State</label>
+                                                <select class="form-select" id="inputState">
+                                                    <option selected="selected">Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="form-label" for="inputZip">Zip</label>
+                                                <input class="form-control" id="inputZip" type="text">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="gridCheck" type="checkbox">
+                                                    <label class="form-check-label" for="gridCheck">Check me out</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary" type="submit">Sign in</button>
+                                            </div>
+                                        </form>
+                                        <!-- End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Date Picker</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="card my-3 mx-2">
+                                                <div class="card-header">
+                                                    <h5>Date</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <!--  -->
+                                                    <label class="form-label" for="datepicker">Start Date</label>
+                                                    <input class="form-control datetimepicker flatpickr-input"
+                                                        id="datepicker" type="text" placeholder="dd/mm/yyyy"
+                                                        data-options="{&quot;disableMobile&quot;:true,&quot;dateFormat&quot;:&quot;d/m/Y&quot;}"
+                                                        readonly="readonly">
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="card my-3 mx-2">
+                                                <div class="card-header">
+                                                    <h5>Date Time Picker</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <!--  -->
+                                                    <label class="form-label" for="datetimepicker">Start Date</label>
+                                                    <input class="form-control datetimepicker flatpickr-input"
+                                                        id="datetimepicker" type="text"
+                                                        placeholder="dd/mm/yyyy hour : minute"
+                                                        data-options="{&quot;enableTime&quot;:true,&quot;dateFormat&quot;:&quot;d/m/y H:i&quot;,&quot;disableMobile&quot;:true}"
+                                                        readonly="readonly">
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="card my-3 mx-2">
+                                                <div class="card-header">
+                                                    <h5>Range</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <!--  -->
+                                                    <label class="form-label" for="timepicker2">Select Time
+                                                        Range</label>
+                                                    <input class="form-control datetimepicker flatpickr-input"
+                                                        id="timepicker2" type="text" placeholder="d/m/y to d/m/y"
+                                                        data-options="{&quot;mode&quot;:&quot;range&quot;,&quot;dateFormat&quot;:&quot;d/m/y&quot;,&quot;disableMobile&quot;:true}"
+                                                        readonly="readonly">
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
 
-    <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js" crossorigin="anonymous"></script>
-    <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+        <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js" crossorigin="anonymous"></script>
+        <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="../../assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+        <script src="../../node_modules/flatpickr/dist/flatpickr.js"></script>
 
+        <!-- Date Picker -->
+        <script>
+            flatpickr("#datepicker", {
+                disableMobile: true,
+                dateFormat: "d/m/Y"
+            });
 
+            flatpickr("#datetimepicker", {
+                enableTime: true,
+                time_24hr: true,
+                noCalendar: false,
+                dateFormat: "d/m/Y H:i",
+            });
+
+            flatpickr("#timepicker2", {
+                mode: "range",
+                minDate: "today",
+                dateFormat: "Y-m-d",
+                disable: [
+
+                ]
+            });
+        </script>
+        <!-- End Date Picker -->
 
 </body>
 

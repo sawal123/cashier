@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../../style/tables.css">
     <link rel="stylesheet" href="../../style/sidebar.css">
     <link rel="stylesheet" href="input.css">
-    <link href="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
-    
+    <link href="../../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
 
     <!--   -->
     <!--  -->
@@ -28,11 +28,13 @@
                         <img class="fs-5 d-none d-md-inline" src="../../assets/images/OBJECTS (1).svg" alt="" />
                     </a>
                     <div class=" w-75 mt-4">
-                        <a href="../../dashboard.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+                        <a href="../../dashboard.html"
+                            class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
                             <i class="fa-solid fa-house ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Dashboard</span>
                         </a>
-                        <a href="../../transaksi.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+                        <a href="../../transaksi.html"
+                            class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
                             <i class="fa-solid fa-money-bill  ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Transaksi</span>
                         </a>
@@ -40,32 +42,35 @@
                             <i class="fa-solid fa-burger  ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Menu</span>
                         </a>
-                        <a href="../../setting.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+                        <a href="../../setting.html"
+                            class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
                             <i class="fa-solid fa-gear  ms-1"></i>
                             <span class="fs-5 d-none d-md-inline">Setting</span>
                         </a>
-                        <div class="dropdown">
-                            <a href="#"
-                                class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list border-0 dropdown-toggle"
-                                id="assetsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <i class="fa-solid fa-gear ms-1"></i>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <button class="accordion-button collapsed py-4 my-1 mb-md-0 me-md-auto list" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <i class="fa-solid fa-star ms-1"></i>
                                 <span class="fs-5 d-none d-md-inline">Assets</span>
-                            </a>
-
-                            <div class="dropdown-menu text-center bg-white shadow-lg rounded-4 py-2"
-                                aria-labelledby="assetsDropdown">
-                                <ul class="list-unstyled">
+                            </button>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3 "
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <ul class="list-unstyled ">
                                     <li><a href="../assets-index/button.html"
-                                            class="py-2 text-decoration-none text-dark">Button</a></li>
+                                            class="py-2 text-decoration-none text-dark ">Button</a>
+                                    </li>
                                     <li><a href="../assets-index/card.html"
-                                            class="py-2 text-decoration-none text-dark">Card</a></li>
+                                            class="py-2 text-decoration-none  text-dark">Card</a>
+                                    </li>
                                     <li><a href="../assets-index/input.html"
-                                            class="py-2 text-decoration-none text-dark">Input</a></li>
+                                            class="py-2 text-decoration-none text-dark">Input</a>
+                                    </li>
                                     <li><a href="../assets-index/dropdown.html"
                                             class="py-2 text-decoration-none text-dark active">Dropdown</a></li>
                                     <li><a href="../assets-index/slick.html"
-                                            class="py-2 text-decoration-none text-dark">Slick Js</a></li>
+                                            class="py-2 text-decoration-none text-dark">Slick
+                                            Js</a></li>
                                     <li><a href="../assets-index/sweetAlert.html"
                                             class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
                                     <li><a href="../assets-index/dataTable.html"
@@ -80,339 +85,675 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Main Content -->
-        <div class="col col-lg-8 m-auto ">
 
-            <!-- sidebar btn -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
-                <div class="container-fluid">
-                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
-                            class="navbar-toggler-icon"></span></button>
-                    <a class="navbar-brand" href="#">Hy, Sawal <img src="../images/profile.jpg" alt=""
-                            class="profile-image"></a>
-                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
-                        aria-labelledby="offcanvasScrollingLabel">
-                        <div class="offcanvas-header ">
-                            <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="index.html">Kedai Kopi</a>
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+            <!-- Main Content -->
+            <div class="col col-lg-10 m-auto ">
+
+                <!-- sidebar btn -->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
+                    <div class="container-fluid">
+                        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <a class="navbar-brand" href="#">Hy, Sawal <img src="../../assets/images/profile.jpg" alt=""
+                                class="profile-image"></a>
+                        <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <div class="offcanvas-header ">
+                                <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="../../index.html"><img
+                                            src="../../assets/images/OBJECTS (1).svg" alt="" srcset=""
+                                            style="width: 100px;"></a></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body px-3">
+                                <!-- isi offcanvas -->
+                                <a href="../../dashboard.html"
+                                    class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-house ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Dashboard</span>
+                                </a>
+                                <a href="../../transaksi.html"
+                                    class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-money-bill ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Transaksi</span>
+                                </a>
+                                <a href="../../menu.html"
+                                    class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-burger ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Menu</span>
+                                </a>
+                                <a href="../../setting.html"
+                                    class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-gear ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Setting</span>
+                                </a>
+
+                                <div class="accordion accordion-flush " id="accordionFlushExample">
+                                    <button class="accordion-button collapsed py-2 my-1 mb-md-0 me-md-auto list"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <i class="fa-solid fa-star ms-1"></i>
+                                        <span class=" px-2 d-sm-inline">Assets</span>
+                                    </button>
+                                    <div id="flush-collapseOne"
+                                        class="accordion-collapse collapse text-center bg-white mx-3"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <ul class="list-unstyled ">
+                                            <li><a href="../assets-index/button.html"
+                                                    class="py-2 text-decoration-none text-dark">Button</a>
+                                            </li>
+                                            <li><a href="../assets-index/card.html"
+                                                    class="py-2 text-decoration-none text-dark">Card</a>
+                                            </li>
+                                            <li><a href="../assets-index/input.html"
+                                                    class="py-2 text-decoration-none text-dark">Input</a>
+                                            </li>
+                                            <li><a href="../assets-index/dropdown.html"
+                                                    class="py-2 text-decoration-none text-dark active">Dropdown</a></li>
+                                            <li><a href="../assets-index/slick.html"
+                                                    class="py-2 text-decoration-none text-dark">Slick
+                                                    Js</a></li>
+                                            <li><a href="../assets-index/sweetAlert.html"
+                                                    class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                                            <li><a href="../assets-index/dataTable.html"
+                                                    class="py-2 text-decoration-none text-dark">DataTable</a></li>
+                                            <li><a href="../assets-index/chartJs.html"
+                                                    class="py-2 text-decoration-none text-dark">ChartJs</a>
+                                            </li>
+                                            <li><a href="../assets-index/iconFontAwsme.html"
+                                                    class="py-2 text-decoration-none text-dark">Icon</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- akhir isi offcanvas -->
+                            </div>
                         </div>
-                        <div class="offcanvas-body px-3">
-                            <!-- isi offcanvas -->
-                            <a href="../../dashboard.html"
-                                class="d-flex align-items-center py-2 mb-md-0 me-md-auto active list">
-                                <i class="fa-solid fa-house"></i>
-                                <span class=" px-2 d-sm-inline">Dashboard</span>
-                            </a>
-                            <a href="../../transaksi.html"
-                                class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                                <i class="fa-solid fa-money-bill"></i>
-                                <span class=" px-2 d-sm-inline">Transaksi</span>
-                            </a>
-                            <a href="../../menu.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                                <i class="fa-solid fa-burger"></i>
-                                <span class=" px-2 d-sm-inline">Menu</span>
-                            </a>
-                            <a href="../../setting.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                                <i class="fa-solid fa-gear"></i>
-                                <span class=" px-2 d-sm-inline">Setting</span>
-                            </a>
+                </nav>
 
-                            <!-- akhir isi offcanvas -->
-                        </div>
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
+                    <div class="container-fluid">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
+                        </ol>
+                        <span>
+                            Hy. Sawal
+                            <img src="../images/profile.jpg" alt="" class="profile-image">
+                        </span>
                     </div>
-            </nav>
-
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
-                <div class="container-fluid">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
-                    </ol>
-                    <span>
-                        Hy. Sawal
-                        <img src="../images/profile.jpg" alt="" class="profile-image">
-                    </span>
-                </div>
-            </nav>
-            <!-- Other content within the wrapper -->
-            <!-- input search -->
-            <section style="padding-top: 150px;">
-                <div class="container">
-                    <div class="row ">
-                        <div class="col-lg-12 text-center">
-                            <h2>Dropdown</h2>
+                </nav>
+                <!-- Other content within the wrapper -->
+                <!-- input search -->
+                <section style="padding-top: 150px !important;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="text-center mb-5">
+                                    Dropdown
+                                </h2>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3">
-                                <p>Dropdown Action</p>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-danger dropdown-toggle"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <p>Dropdown Active</p>
-                                <button class="btn btn-primary dropdown-toggle" id="activeLinkExample" type="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">Dropdown</button>
-                                <div class="dropdown-menu" aria-labelledby="activeLinkExample">
-                                    <a class="dropdown-item" href="#">Regular link</a>
-                                    <a class="dropdown-item active" href="#">Active link</a>
-                                    <a class="dropdown-item" href="#">Another link</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <p>Dropdown Link</p>
-                                <div class="dropdown">
-                                    <a class="btn btn-link dropdown-toggle" id="dropdownMenuLink" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown
-                                        link</a>
-                                    <div class="dropdown-menu dropdown-menu-end py-0"
-                                        aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2>Basic Dropdown</h2>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="dol-lg-3">
-                                <div class="dropdown">
-                                <p>Dropdown Header</p>
-                                <button class="btn btn-primary dropdown-toggle" id="headerExample" type="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">Dropdown</button>
-                                <div class="dropdown-menu" aria-labelledby="headerExample">
-                                    <h6 class="dropdown-header">Dropdown Header</h6>
-                                    <a class="dropdown-item" href="#">Regular link</a>
-                                    <a class="dropdown-item" href="#">Another action link</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Another link</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                    <div class="card-body">
 
-            <section style="padding-top: 100px;">
-                <div class="contianer">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <H2>Dropdown Variant</H2>
-                        </div>
-                    </div>
-                    <div class="row">
+                                        <div class="dropdown d-inline-block">
+                                            <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Dropdown button</button><span class="caret">
+                                            </span>
+                                            <div class="dropdown-menu dropdown-menu-end py-0"
+                                                aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
 
-                        <div class="col-lg-12">
-
-                            <!-- Default dropup button-->
-                            <div class="d-flex flex-column flex-sm-row justify-content-between">
-                                <div class="btn-group dropend mt-2">
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">Dropend</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group dropup mt-2">
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">Dropup</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group dropstart mt-2">
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">Dropstart</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
                                     </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="d-flex flex-column flex-md-row justify-content-between">
-                                <div class="btn-group dropend mt-2"><button class="btn btn-primary" type="button">Split
-                                        dropend</button>
-                                    <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                                            class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
+                            <!--  -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2>Dropdown Link</h2>
+                                    </div>
+                                    <div class="card-body">
+
+
+                                        <div class="dropdown">
+                                            <a class="btn btn-link dropdown-toggle bg-tertiary" id="dropdownMenuLink"
+                                                href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Dropdown link</a>
+                                            <div class="dropdown-menu dropdown-menu-end py-0"
+                                                aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                 </div>
-                                <div class="btn-group dropup mt-2"><button class="btn btn-primary" type="button">Split
-                                        dropup</button>
-                                    <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                                            class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-6">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Button Variant</h2>
+                                    </div>
+                                    <div class="card-body">
+
+
+
+                                        <div class="btn-group me-1">
+                                            <button class="btn dropdown-toggle mb-1 btn-primary" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Primary</button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group me-1">
+                                            <button class="btn dropdown-toggle mb-1 btn-secondary" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Secondary</button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group me-1">
+                                            <button class="btn dropdown-toggle mb-1 btn-success" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Success</button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group me-1">
+                                            <button class="btn dropdown-toggle mb-1 btn-info" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Info</button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group me-1">
+                                            <button class="btn dropdown-toggle mb-1 btn-warning" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Warning</button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group me-1">
+                                            <button class="btn dropdown-toggle mb-1 btn-danger" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Danger</button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+
+
+
                                     </div>
                                 </div>
-                                <div class="btn-group mt-2">
-                                    <div class="btn-group dropstart" role="group">
-                                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-6">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Button Split</h2>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-primary" type="button">Primary</button>
+                                            <button class="btn dropdown-toggle dropdown-toggle-split btn-primary"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-secondary" type="button">Secondary</button>
+                                            <button class="btn dropdown-toggle dropdown-toggle-split btn-secondary"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-success" type="button">Success</button>
+                                            <button class="btn dropdown-toggle dropdown-toggle-split btn-success"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-info" type="button">Info</button>
+                                            <button class="btn dropdown-toggle dropdown-toggle-split btn-info"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-warning" type="button">Warning</button>
+                                            <button class="btn dropdown-toggle dropdown-toggle-split btn-warning"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-danger" type="button">Danger</button>
+                                            <button class="btn dropdown-toggle dropdown-toggle-split btn-danger"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-12">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Button Sizing</h2>
+                                    </div>
+                                    <div class="card-body">
+
+
+                                        <div class="btn-group mb-1 mb-md-0 me-1">
+                                            <button class="btn btn-primary btn-lg dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Large button</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 mb-md-0 me-1">
+                                            <button class="btn btn-primary btn-md dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Regular button</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 mb-md-0 me-1">
+                                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Small button</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-primary btn-lg" type="button">Large split
+                                                button</button>
+                                            <button class="btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-primary btn-md" type="button">Regular split
+                                                button</button>
+                                            <button class="btn btn-md btn-primary dropdown-toggle dropdown-toggle-split"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group mb-1 me-1">
+                                            <button class="btn btn-primary btn-sm" type="button">Small split
+                                                button</button>
+                                            <button class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"
+                                                type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><span class="sr-only">Toggle
+                                                    Dropdown</span></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-12">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Dropdown Directions</h2>
+                                    </div>
+                                    <div class="card-body">
+
+
+
+                                        <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                            <div class="btn-group dropend mt-2">
+                                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Dropend</button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group dropup mt-2">
+                                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Dropup</button>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group dropstart mt-2">
+                                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Dropstart</button>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                                            <div class="btn-group dropend mt-2"><button class="btn btn-primary"
+                                                    type="button">Split dropend</button>
+                                                <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                                    type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false"><span class="sr-only">Toggle
+                                                        Dropdown</span></button>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group dropup mt-2"><button class="btn btn-primary"
+                                                    type="button">Split dropup</button>
+                                                <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                                    type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false"><span class="sr-only">Toggle
+                                                        Dropdown</span></button>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group mt-2">
+                                                <div class="btn-group dropstart" role="group">
+                                                    <button
+                                                        class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                                        type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false"><span class="sr-only">Toggle
+                                                            Dropstart</span></button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" type="button">Split dropstart</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-6">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Dropdown Active</h2>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <button class="btn btn-primary dropdown-toggle" id="activeLinkExample"
                                             type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false"><span class="sr-only">Toggle Dropstart</span></button>
-                                        <div class="dropdown-menu">
+                                            aria-expanded="false">Dropdown</button>
+                                        <div class="dropdown-menu" aria-labelledby="activeLinkExample" style="">
+                                            <a class="dropdown-item" href="#">Regular link</a>
+                                            <a class="dropdown-item active" href="#">Active link</a>
+                                            <a class="dropdown-item" href="#">Another link</a>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-6">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Dropdown Alignment</h2>
+                                    </div>
+                                    <div class="card-body">
+
+
+                                        <div class="btn-group">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" data-display="static" aria-haspopup="true"
+                                                aria-expanded="false">Right-aligned menu</button>
+                                            <div class="dropdown-menu dropdown-menu-end" style="">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-6">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Header</h2>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <button class="btn btn-primary dropdown-toggle" id="headerExample" type="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Dropdown</button>
+                                        <div class="dropdown-menu" aria-labelledby="headerExample" style="">
+                                            <h6 class="dropdown-header">Dropdown Header</h6>
+                                            <a class="dropdown-item" href="#">Regular link</a>
+                                            <a class="dropdown-item" href="#">Another action link</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Another link</a>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-6">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h2>Divider</h2>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <button class="btn btn-primary dropdown-toggle" id="dividerExample"
+                                            type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Dropdown</button>
+                                        <div class="dropdown-menu" aria-labelledby="dividerExample" style="">
                                             <a class="dropdown-item" href="#">Action</a>
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Separated link</a>
                                         </div>
+
                                     </div>
-                                    <button class="btn btn-primary" type="button">Split dropstart</button>
                                 </div>
                             </div>
-
+                            <!--  -->
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section style="padding-top: 100px;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2>
-                                Dropdown size
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
 
-                            <div class="btn-group mb-1 mb-md-0 me-1">
-                                <button class="btn btn-primary btn-lg dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Large
-                                    button</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </div>
-                            <div class="btn-group mb-1 mb-md-0 me-1">
-                                <button class="btn btn-primary btn-md dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Regular
-                                    button</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </div>
-                            <div class="btn-group mb-1 mb-md-0 me-1">
-                                <button class="btn btn-primary btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Small
-                                    button</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="btn-group mb-1 me-1">
-                                <button class="btn btn-primary btn-lg" type="button">Large split button</button>
-                                <button class="btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split"
-                                    type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </div>
-                            <div class="btn-group mb-1 me-1">
-                                <button class="btn btn-primary btn-md" type="button">Regular split button</button>
-                                <button class="btn btn-md btn-primary dropdown-toggle dropdown-toggle-split"
-                                    type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </div>
-                            <div class="btn-group mb-1 me-1">
-                                <button class="btn btn-primary btn-sm" type="button">Small split button</button>
-                                <button class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"
-                                    type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+            </div>
         </div>
-    </div>
 
-    <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js"></script>
-    <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+        <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js"></script>
+        <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="../../assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 
 </body>
 

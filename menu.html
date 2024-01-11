@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style/menu/menu.css">
   <link rel="stylesheet" href="style/tables.css">
   <link rel="stylesheet" href="style/sidebar.css">
-  <link href="assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
@@ -49,24 +49,26 @@
               <i class="fa-solid fa-gear  ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Setting</span>
             </a>
-            <div class="dropdown">
-              <a href="#" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list border-0 dropdown-toggle"
-                id="assetsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa-solid fa-gear ms-1"></i>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <button class="accordion-button collapsed py-4 my-1 mb-md-0 me-md-auto list" type="button"
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                <i class="fa-solid fa-star ms-1"></i>
                 <span class="fs-5 d-none d-md-inline">Assets</span>
-              </a>
-
-              <div class="dropdown-menu text-center bg-white shadow-lg rounded-4 py-2" aria-labelledby="assetsDropdown">
-                <ul class="list-unstyled">
+              </button>
+              <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3 "
+                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <ul class="list-unstyled ">
                   <li><a href="assets/assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a>
                   </li>
-                  <li><a href="assets/assets-index/card.html" class="py-2 text-decoration-none text-dark">Card</a></li>
+                  <li><a href="assets/assets-index/card.html" class="py-2 text-decoration-none text-dark">Card</a>
+                  </li>
                   <li><a href="assets/assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a>
                   </li>
                   <li><a href="assets/assets-index/dropdown.html"
                       class="py-2 text-decoration-none text-dark">Dropdown</a></li>
-                  <li><a href="assets/assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick Js</a>
-                  </li>
+                  <li><a href="assets/assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                      Js</a></li>
                   <li><a href="assets/assets-index/sweetAlert.html"
                       class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
                   <li><a href="assets/assets-index/dataTable.html"
@@ -93,31 +95,65 @@
                 class="navbar-toggler-icon"></span></button>
             <a class="navbar-brand" href="#">Hy, Sawal <img src="assets/images/profile.jpg" alt=""
                 class="profile-image"></a>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
+            <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
               aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header ">
-                <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="index.html">Kedai Kopi</a></h1>
+                <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="index.html"><img
+                      src="assets/images/OBJECTS (1).svg" alt="" srcset="" style="width: 100px;"></a></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body px-3">
                 <!-- isi offcanvas -->
-                <a href="dashboard.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto active list">
-                  <i class="fa-solid fa-house"></i>
+                <a href="dashboard.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-house ms-1"></i>
                   <span class=" px-2 d-sm-inline">Dashboard</span>
                 </a>
-                <a href="transaksi.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                  <i class="fa-solid fa-money-bill"></i>
+                <a href="transaksi.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-money-bill ms-1"></i>
                   <span class=" px-2 d-sm-inline">Transaksi</span>
                 </a>
-                <a href="menu.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list active">
-                  <i class="fa-solid fa-burger"></i>
+                <a href="menu.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto active list">
+                  <i class="fa-solid fa-burger ms-1"></i>
                   <span class=" px-2 d-sm-inline">Menu</span>
                 </a>
-                <a href="setting.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                  <i class="fa-solid fa-gear"></i>
+                <a href="setting.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-gear ms-1"></i>
                   <span class=" px-2 d-sm-inline">Setting</span>
                 </a>
 
+                <div class="accordion accordion-flush " id="accordionFlushExample">
+                  <button class="accordion-button collapsed py-2 my-1 mb-md-0 me-md-auto list" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    <i class="fa-solid fa-star ms-1"></i>
+                    <span class=" px-2 d-sm-inline">Assets</span>
+                  </button>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <ul class="list-unstyled ">
+                      <li><a href="assets/assets-index/button.html"
+                          class="py-2 text-decoration-none text-dark">Button</a>
+                      </li>
+                      <li><a href="assets/assets-index/card.html" class="py-2 text-decoration-none text-dark">Card</a>
+                      </li>
+                      <li><a href="assets/assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a>
+                      </li>
+                      <li><a href="assets/assets-index/dropdown.html"
+                          class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                      <li><a href="assets/assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                          Js</a></li>
+                      <li><a href="assets/assets-index/sweetAlert.html"
+                          class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                      <li><a href="assets/assets-index/dataTable.html"
+                          class="py-2 text-decoration-none text-dark">DataTable</a></li>
+                      <li><a href="assets/assets-index/chartJs.html"
+                          class="py-2 text-decoration-none text-dark">ChartJs</a>
+                      </li>
+                      <li><a href="assets/assets-index/iconFontAwsme.html"
+                          class="py-2 text-decoration-none text-dark">Icon</a></li>
+                    </ul>
+                  </div>
+                </div>
                 <!-- akhir isi offcanvas -->
               </div>
             </div>
@@ -368,8 +404,10 @@
 
 
   <script src="assets/icons/fontawesome-free-6.5.1-web/js/all.js" crossorigin="anonymous"></script>
-  <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-  <script src="/assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
   <!-- jQuery -->
   <script src="node_modules/jquery/dist/jquery.js"></script>
 
@@ -383,11 +421,11 @@
   <script src="node_modules/Buttons-2.4.2/js/buttons.html5.js"></script>
   <script src="node_modules/Buttons-2.4.2/js/buttons.print.js"></script>
   <!-- DataTables pdf JS -->
-  <script src="node_modules/pdfmake-0.2.7/vfs_fonts.js"></script>
+  <script src="node_modules/pdfmake/build/pdfmake.min.js"></script>
+  <script src="node_modules/pdfmake/build/vfs_fonts.js"></script>
   <script src="node_modules/Buttons-2.4.2/js/buttons.print.js"></script>
 
   <script src="node_modules/apps/datatables.js"></script>
-
 
 
 

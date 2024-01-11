@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../../style/grafikcard.css">
   <link rel="stylesheet" href="../../style/tables.css">
   <link rel="stylesheet" href="../../style/sidebar.css">
-  <link href="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Data Tables -->
 
 
@@ -42,28 +42,32 @@
               <i class="fa-solid fa-gear  ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Setting</span>
             </a>
-            <div class="dropdown">
-              <a href="#" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list border-0 dropdown-toggle"
-                id="assetsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa-solid fa-gear ms-1"></i>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <button class="accordion-button collapsed py-4 my-1 mb-md-0 me-md-auto list" type="button"
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                <i class="fa-solid fa-star ms-1"></i>
                 <span class="fs-5 d-none d-md-inline">Assets</span>
-              </a>
-
-              <div class="dropdown-menu text-center bg-white shadow-lg rounded-4 py-2" aria-labelledby="assetsDropdown">
-                <ul class="list-unstyled">
-                  <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a></li>
-                  <li><a href="../assets-index/card.html" class="py-2 text-decoration-none text-dark">Card</a></li>
-                  <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a></li>
+              </button>
+              <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3"
+                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <ul class="list-unstyled ">
+                  <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a>
+                  </li>
+                  <li><a href="../assets-index/card.html" class="py-2 text-decoration-none  text-dark">Card</a>
+                  </li>
+                  <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a>
+                  </li>
                   <li><a href="../assets-index/dropdown.html" class="py-2 text-decoration-none text-dark">Dropdown</a>
                   </li>
-                  <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick Js</a></li>
+                  <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                      Js</a></li>
                   <li><a href="../assets-index/sweetAlert.html"
                       class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
                   <li><a href="../assets-index/dataTable.html" class="py-2 text-decoration-none text-dark">dataTable</a>
                   </li>
                   <li><a href="../assets-index/chartJs.html"
-                      class="py-2 text-decoration-none text-dark active">chartJs</a>
-                  </li>
+                      class="py-2 text-decoration-none text-dark active">chartJs</a></li>
                   <li><a href="../assets-index/iconFontAwsme.html" class="py-2 text-decoration-none text-dark">Icon</a>
                   </li>
                 </ul>
@@ -72,262 +76,242 @@
           </div>
         </div>
       </div>
+
+
+      <!-- Main Content -->
+      <div class="col col-lg-10 m-auto">
+
+        <!-- sidebar btn -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
+          <div class="container-fluid">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="#">Hy, Sawal <img src="../../assets/images/profile.jpg" alt=""
+                class="profile-image"></a>
+            <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header ">
+                <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="../../index.html"><img
+                      src="../../assets/images/OBJECTS (1).svg" alt="" srcset="" style="width: 100px;"></a></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body px-3">
+                <!-- isi offcanvas -->
+                <a href="../../dashboard.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-house ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Dashboard</span>
+                </a>
+                <a href="../../transaksi.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-money-bill ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Transaksi</span>
+                </a>
+                <a href="../../menu.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-burger ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Menu</span>
+                </a>
+                <a href="../../setting.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-gear ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Setting</span>
+                </a>
+
+                <div class="accordion accordion-flush " id="accordionFlushExample">
+                  <button class="accordion-button collapsed py-2 my-1 mb-md-0 me-md-auto list" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    <i class="fa-solid fa-star ms-1"></i>
+                    <span class=" px-2 d-sm-inline">Assets</span>
+                  </button>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <ul class="list-unstyled ">
+                      <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a>
+                      </li>
+                      <li><a href="../assets-index/card.html" class="py-2 text-decoration-none text-dark">Card</a>
+                      </li>
+                      <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a>
+                      </li>
+                      <li><a href="../assets-index/dropdown.html"
+                          class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                      <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                          Js</a></li>
+                      <li><a href="../assets-index/sweetAlert.html"
+                          class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                      <li><a href="../assets-index/dataTable.html"
+                          class="py-2 text-decoration-none text-dark">DataTable</a></li>
+                      <li><a href="../assets-index/chartJs.html"
+                          class="py-2 text-decoration-none text-dark active">ChartJs</a>
+                      </li>
+                      <li><a href="../assets-index/iconFontAwsme.html"
+                          class="py-2 text-decoration-none text-dark">Icon</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- akhir isi offcanvas -->
+              </div>
+            </div>
+        </nav>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
+          <div class="container-fluid">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
+            </ol>
+            <span>
+              Hy. Sawal
+              <img src="../images/profile.jpg" alt="" class="profile-image">
+            </span>
+          </div>
+        </nav>
+        <!-- Other content within the wrapper -->
+
+        <section style="margin-top: 150px;">
+          <div class="container">
+            <div class="row text-center" style="margin-bottom: 30px !important;">
+              <div class="col-lg-12">
+                    <h2>EchartJs</h2>
+                  </div>
+                  </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                            <h3>
+                              LineChart
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="echart-line-chart" style="min-height: 300px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                            <h3>
+                              BasicLineChart
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="echart-area-line-chart-example" style="height:300px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-6">
+                        <div class="card my-2">
+                          <div class="card-header">
+                            <h3>
+                              Stacked Chart
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="echart-stacked-line-chart-example" style="height:300px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-6">
+                        <div class="card my-2">
+                          <div class="card-header">
+                            <h3>
+                              Dynamic Data Animation
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="echart-line-dynamic-data" style="height:300px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-6">
+                        <div class="card my-2">
+                          <div class="card-header">
+                            <h3>
+                              Basic Bar Chart
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="basic-bar-chart" style="height:300px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-6">
+                        <div class="card my-2">
+                          <div class="card-header">
+                            <h3>
+                              Bar Chart & Background
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="bar-chart-background" style="height:300px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-12">
+                        <div class="card my-2">
+                          <div class="card-header">
+                            <h3>
+                              Side Bar Chart
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="side-bar-chart" style="height:400px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-6">
+                        <div class="card my-2">
+                          <div class="card-header">
+                            <h3>
+                              Pie Chart
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="circle-chart" style="height:500px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="col-md-6">
+                        <div class="card my-2">
+                          <div class="card-header">
+                            <h3>
+                              Doughnut-Chart
+                            </h3>
+                          </div>
+                          <div class="card-body text-center">
+                            <div id="doughnut-chart" style="height:500px"></div>
+                          </div>
+                        </div>
+                      </div>
+                 
+              </div>
+            </div>
+        </section>
+      </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="col col-lg-8 m-auto">
 
-      <!-- sidebar btn -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
-        <div class="container-fluid">
-          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
-              class="navbar-toggler-icon"></span></button>
-          <a class="navbar-brand" href="#">Hy, Sawal <img src="../images/profile.jpg" alt="" class="profile-image"></a>
-          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
-            aria-labelledby="offcanvasScrollingLabel">
-            <div class="offcanvas-header ">
-              <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="index.html">Kedai Kopi</a>
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body px-3">
-              <!-- isi offcanvas -->
-              <a href="dashboard.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto active list">
-                <i class="fa-solid fa-house"></i>
-                <span class=" px-2 d-sm-inline">Dashboard</span>
-              </a>
-              <a href="transaksi.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                <i class="fa-solid fa-money-bill"></i>
-                <span class=" px-2 d-sm-inline">Transaksi</span>
-              </a>
-              <a href="menu.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                <i class="fa-solid fa-burger"></i>
-                <span class=" px-2 d-sm-inline">Menu</span>
-              </a>
-              <a href="setting.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                <i class="fa-solid fa-gear"></i>
-                <span class=" px-2 d-sm-inline">Setting</span>
-              </a>
-              <!-- akhir isi offcanvas -->
-            </div>
-          </div>
-      </nav>
+    <!-- <script src="../../node_modules/chart.js/dist/chart.umd.js"></script> -->
+    <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js"></script>
+    <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!-- Include ECharts library -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.0.0/dist/echarts.min.js"></script>
 
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
-        <div class="container-fluid">
-          <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-            <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
-          </ol>
-          <span>
-            Hy. Sawal
-            <img src="../images/profile.jpg" alt="" class="profile-image">
-          </span>
-        </div>
-      </nav>
-      <!-- Other content within the wrapper -->
-      <section>
-        <div class="container" style="padding-top: 150px;">
-          <div class="row text-center">
-            <div class="col-lg-12">
-              <h2>Chart JS</h2>
-            </div>
-          </div>
-          <div class="row my-4">
-            <div class="col-lg-12">
-              <canvas id="barChart"></canvas>
-            </div>
-
-            <div class="col-lg-12 py-5">
-              <h2>Horizontal Chart</h2>
-              <canvas id="horizontalChart"></canvas>
-            </div>
-
-            <div class="col-lg-12 py-5">
-              <div class="card">
-                <div class="card-body" style="width: 300px;">
-                  <h2>Donut Chart</h2>
-                  <canvas id="donutChart"></canvas>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12 py-5">
-              <div class="card">
-                <div class="card-body" style="width: 300px;">
-                  <h2>Pie Chart</h2>
-                  <canvas id="pieChart"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12 py-5">
-              <div class="card">
-                <div class="card-body" style="width: 700px;">
-                  <h2>Line Chart</h2>
-                  <canvas id="lineChart"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-
-
-  <script src="../../node_modules/chart.js/dist/chart.umd.js"></script>
-  <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js"></script>
-  <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-  <script src="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
-
-
-  <script>
-    // const ctx = document.getElementById('barChart');
-
-    // new Chart(ctx, {
-    //   type: 'bar',
-    //   data: {
-    //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    //     datasets: [{
-    //       label: '# of Votes',
-    //       data: [12, 19, 3, 5, 2, 3],
-    //       borderWidth: 1
-    //     }]
-    //   },
-    //   options: {
-    //     scales: {
-    //       y: {
-    //         beginAtZero: true
-    //       }
-    //     }
-    //   }
-    // });
-
-    const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-
-    const data = {
-      labels: labels,
-      datasets: [{
-        label: 'My First Dataset',
-        data: [65, 59, 80, 81, 56, 55, 40],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(255, 205, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(201, 203, 207, 0.2)'
-        ],
-        borderColor: [
-          'rgb(255, 99, 132)',
-          'rgb(255, 159, 64)',
-          'rgb(255, 205, 86)',
-          'rgb(75, 192, 192)',
-          'rgb(54, 162, 235)',
-          'rgb(153, 102, 255)',
-          'rgb(201, 203, 207)'
-        ],
-        borderWidth: 1
-      }]
-    };
-    // barChart
-    const config = {
-      type: 'bar',
-      data: data,
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      },
-    };
-
-
-    // LineChart
-    const line = {
-      type: 'bar',
-      data: data,
-      options: {
-        indexAxis: 'y',
-      }
-    };
-    // barChart
-    const bar = document.getElementById('barChart').getContext('2d');
-    new Chart(bar, config);
-
-    // LineChart
-    const horizontalChart = document.getElementById('horizontalChart').getContext('2d');
-    new Chart(horizontalChart, line);
-  </script>
+    <script src="../../src/js/echart.js"></script>
+    
 
 
 
-  <script>
-    // Donut Chart & Pie
-    const dataDonut = {
-      labels: [
-        'Red',
-        'Blue',
-        'Yellow'
-      ],
-      datasets: [{
-        label: 'My First Dataset',
-        data: [300, 50, 100],
-        backgroundColor: [
-          'rgb(255, 99, 132)',
-          'rgb(54, 162, 235)',
-          'rgb(255, 205, 86)'
-        ],
-        hoverOffset: 4
-      }]
-    };
-
-    // Donut Chart
-    const donut = {
-      type: 'doughnut',
-      data: dataDonut,
-    };
-    const donutChart = document.getElementById('donutChart').getContext('2d');
-    new Chart(donutChart, donut);
-
-    //Pie Chart
-    const pie = {
-      type: 'pie',
-      data: dataDonut,
-    };
-    const pieChart = document.getElementById('pieChart').getContext('2d');
-    new Chart(pieChart, pie);
-  </script>
-
-
-
-  <script>
-    // Line Chart
-    const labelsLine = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-    const dataLine = {
-      labels: labelsLine,
-      datasets: [{
-        label: 'My First Dataset',
-        data: [65, 59, 80, 81, 56, 55, 40],
-        fill: false,
-        borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1,
-        autoPadding: true
-      }]
-    };
-
-    const configLine = {
-      type: 'line',
-      data: data,
-    };
-
-    const lineChart = document.getElementById('lineChart').getContext('2d');
-    new Chart(lineChart, configLine);
-  </script>
 
 </body>
 

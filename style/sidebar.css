@@ -5,6 +5,7 @@
   flex-direction: column;
   position: fixed;
   width: 210px !important;
+  overflow:auto;
   height: 100%;
   background: white;
   box-shadow: 14px -2px 50px -27px rgba(0, 0, 0, 0.75);
@@ -15,18 +16,35 @@
   margin-left: -10px !important;
   z-index: 999 !important;
 }
+.barsamping::-webkit-scrollbar {
+  width: 10px;
+}
+
+.barsamping::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.barsamping::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.barsamping::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.barsamping::-webkit-scrollbar-track:hover {
+  background-color: #ddd;
+}
 
 /* .barsamping:hover{
   box-shadow: none;
 } */
 
 
-
-
 .barsamping .list {
-  display: flex;
   align-items: center !important;
-  
   color: #000;
   gap: 5px;
   position: relative;
@@ -34,11 +52,11 @@
   text-decoration: none;
   height: 2rem;
   font-size: 14px;
-  width: 130% !important;
+  width: 140% !important;
   padding-left: 10px;
   border-radius: 5px;
 }
-  
+
 
 
 .barsamping .list:hover::before {
@@ -58,18 +76,14 @@
   padding-left: 5px !important;
 }
 
-
-
-
 .barsamping a.active {
- 
   color: var(--blue) !important;
   background: #f1f1f1 !important;
   margin-left: 0;
   padding-right: 35px;
   /* padding-left: 5px !important;
     border-radius: 5px; */
-    width: 140% !important;
+  width: 140% !important;
 }
 
 /* .barsamping a.active::before{
@@ -80,7 +94,6 @@
     margin-left: 3px;
 } */
 
-
 .barsamping a.active:hover {
   padding: 20px 10px 20px 0px;
   margin-left: 0px;
@@ -89,23 +102,221 @@
 }
 
 
-
 /* .barsamping a.hover span{
   margin-left: 20px !important;
 } */
 
-
-/* offcanvas sidebar */
-.navbar .offcanvas .offcanvas-body a {
-  width: max-content;
-  text-decoration: none;
-  color: #000;
+.barsamping .accordion-button {
+  box-shadow: none !important;
 }
 
-.navbar .offcanvas .offcanvas-body a:hover {
-  text-decoration: none;
-  border-radius: 10px;
-  color: var(--blue);
-  background: #e8e8e8;
+.barsamping .accordion-button:focus{
+    background: #f1f1f1 !important;
+    color: var(--blue);
+  }
 
+/* Styling for accordion list items */
+
+.barsamping .accordion-collapse {
+  /* Transisi efek untuk hover */
+  width: 125% !important;
+}
+
+.barsamping .accordion-collapse .list-unstyled li a {
+  display: flex;
+  align-items: center !important;
+  color: #000;
+  gap: 5px;
+  position: relative;
+  transition: all 0.5s ease;
+  /* Transisi efek untuk hover */
+  height: 2rem;
+  font-size: 14px;
+  width: 100% !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.barsamping .accordion-collapse .list-unstyled li a.active {
+  color: var(--blue) !important;
+  background: #f1f1f1;
+  margin-left: 0;
+  padding-right: 35px;
+  /* padding-left: 5px !important;
+    border-radius: 5px; */
+  width: 100% !important;
+}
+
+/* Hover effect for accordion list items */
+.barsamping .accordion-collapse .list-unstyled li a:hover {
+  width: 100% !important;
+  /* color: var(--blue); */
+  /* border-radius: 24.5px; */
+  background: #E8E8E8 !important;
+  padding: 20px 10px 20px 0px;
+  margin-left: 0px;
+  padding-left: 5px !important;
+}
+
+.barsamping .accordion-collapse .list-unstyled li a:hover::before {
+  content: '';
+  width: 3px;
+  height: 20px;
+  background-color: var(--blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar .offcanvas .offcanvas-body::-webkit-scrollbar {
+  width: 7px;
+}
+
+.navbar .offcanvas .offcanvas-body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.navbar .offcanvas .offcanvas-body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.navbar .offcanvas .offcanvas-body::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.navbar .offcanvas .offcanvas-body::-webkit-scrollbar-track:hover {
+  background-color: #ddd;
+}
+
+/* offcanvas sidebar */
+.navbar .offcanvas .offcanvas-body .list{
+  align-items: center !important;
+  color: #000;
+  gap: 5px;
+  position: relative;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  height: 2rem;
+  font-size: 14px !important;
+  width:90% !important;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.navbar .offcanvas .offcanvas-body .list:hover::before {
+  content: '';
+  width: 3px;
+  height: 25px;
+  background-color: var(--blue);
+}
+
+.navbar .offcanvas .offcanvas-body .list:hover {
+  width:90% !important;
+  /* color: var(--blue); */
+  /* border-radius: 24.5px; */
+  background: #E8E8E8;
+  padding: 20px 10px 20px 0px;
+  margin-left: 0px;
+  padding-left: 5px !important;
+}
+
+.navbar .offcanvas .offcanvas-body a.active {
+  color: var(--blue) !important;
+  background: #f1f1f1 !important;
+  margin-left: 0;
+  padding-right: 35px;
+  /* padding-left: 5px !important;
+    border-radius: 5px; */
+  width:90% !important;
+}
+
+/* .navbar .offcanvas .offcanvas-body a.active::before{
+    content: '';
+    width: 5px;
+    height: 35px;
+    background-color: var(--blue);
+    margin-left: 3px;
+} */
+
+.navbar .offcanvas .offcanvas-body a.active:hover {
+  padding: 20px 10px 20px 0px;
+  margin-left: 0px;
+  padding-right: 10px;
+  background: #e8e8e8 !important;
+}
+
+.navbar .offcanvas .offcanvas-body .accordion-button {
+  box-shadow: none !important;
+}
+.navbar .offcanvas .offcanvas-body .accordion-button:focus {
+ background: #f1f1f1 !important;
+ color:var(--blue) ;
+}
+
+
+
+.navbar .offcanvas .offcanvas-body .accordion-collapse {
+  /* Transisi efek untuk hover */
+  width: 85% !important;
+}
+
+.navbar .offcanvas .offcanvas-body .accordion-collapse .list-unstyled li a {
+  display: flex;
+  align-items: center !important;
+  color: #000;
+  gap: 5px;
+  position: relative;
+  transition: all 0.5s ease;
+  /* Transisi efek untuk hover */
+  height: 2rem;
+  font-size: 14px !important;
+  width: 100% !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.navbar .offcanvas .offcanvas-body .accordion-collapse .list-unstyled li a.active {
+  color: var(--blue) !important;
+  background: #f1f1f1;
+  margin-left: 0;
+  padding-right: 35px;
+  /* padding-left: 5px !important;
+    border-radius: 5px; */
+  width: 100% !important;
+}
+
+/* Hover effect for accordion list items */
+.navbar .offcanvas .offcanvas-body .accordion-collapse .list-unstyled li a:hover {
+  width: 100% !important;
+  /* color: var(--blue); */
+  /* border-radius: 24.5px; */
+  background: #E8E8E8 !important;
+  padding: 20px 10px 20px 0px;
+  margin-left: 0px;
+  padding-left: 5px !important;
+}
+
+.navbar .offcanvas .offcanvas-body .accordion-collapse .list-unstyled li a:hover::before {
+  content: '';
+  width: 3px;
+  height: 20px;
+  background-color: var(--blue);
 }

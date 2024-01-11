@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../../style/grafikcard.css">
   <link rel="stylesheet" href="../../style/tables.css">
   <link rel="stylesheet" href="../../style/sidebar.css">
-  <link href="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Data Tables -->
 
 
@@ -29,209 +29,519 @@
             <img class="fs-5 d-none d-md-inline" src="../../assets/images/OBJECTS (1).svg" alt="" />
           </a>
           <div class=" w-75 mt-4">
-            <a href="dashboard.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+            <a href="../../dashboard.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
               <i class="fa-solid fa-house ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Dashboard</span>
             </a>
-            <a href="transaksi.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+            <a href="../../transaksi.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
               <i class="fa-solid fa-money-bill  ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Transaksi</span>
             </a>
-            <a href="menu.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+            <a href="../../menu.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
               <i class="fa-solid fa-burger  ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Menu</span>
             </a>
-            <a href="setting.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+            <a href="../../setting.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
               <i class="fa-solid fa-gear  ms-1"></i>
               <span class="fs-5 d-none d-md-inline">Setting</span>
             </a>
-            <div class="dropdown">
-              <a href="#" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list border-0 dropdown-toggle"
-                id="assetsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa-solid fa-gear ms-1"></i>
+            <div class="accordion accordion-flush" id="accordionFlushExample" >
+              <button 
+                class="accordion-button collapsed py-4 my-1 mb-md-0 me-md-auto list"
+                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                <i class="fa-solid fa-star ms-1"></i>
                 <span class="fs-5 d-none d-md-inline">Assets</span>
-              </a>
-
-              <div class="dropdown-menu text-center bg-white shadow-lg rounded-4 py-2" aria-labelledby="assetsDropdown">
-                <ul class="list-unstyled">
-                  <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a></li>
-                  <li><a href="../assets-index/card.html" class="py-2 text-decoration-none text-dark active">Card</a></li>
-                  <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a></li>
-                  <li><a href="../assets-index/dropdown.html" class="py-2 text-decoration-none text-dark">Dropdown</a>
+            </button>
+              <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3 " aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <ul class="list-unstyled " >
+                  <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark ">Button</a>
                   </li>
-                  <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick Js</a></li>
+                  <li><a href="../assets-index/card.html" class="py-2 text-decoration-none  text-dark active">Card</a>
+                  </li>
+                  <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a>
+                  </li>
+                  <li><a href="../assets-index/dropdown.html"
+                      class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                  <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                      Js</a></li>
                   <li><a href="../assets-index/sweetAlert.html"
                       class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
-                  <li><a href="../assets-index/dataTable.html" class="py-2 text-decoration-none text-dark">dataTable</a>
-                  </li>
-                  <li><a href="../assets-index/chartJs.html" class="py-2 text-decoration-none text-dark">chartJs</a>
-                  </li>
-                  <li><a href="../assets-index/iconFontAwsme.html" class="py-2 text-decoration-none text-dark">Icon</a>
-                  </li>
+                  <li><a href="../assets-index/dataTable.html"
+                      class="py-2 text-decoration-none text-dark">dataTable</a></li>
+                  <li><a href="../assets-index/chartJs.html"
+                      class="py-2 text-decoration-none text-dark">chartJs</a></li>
+                  <li><a href="../assets-index/iconFontAwsme.html"
+                      class="py-2 text-decoration-none text-dark">Icon</a></li>
                 </ul>
               </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Main Content -->
-    <div class="col col-lg-8 m-auto">
 
-      <!-- sidebar btn -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
-        <div class="container-fluid">
-          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
-              class="navbar-toggler-icon"></span></button>
-          <a class="navbar-brand" href="#">Hy, Sawal <img src="../images/profile.jpg" alt="" class="profile-image"></a>
-          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
-            aria-labelledby="offcanvasScrollingLabel">
-            <div class="offcanvas-header ">
-              <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="index.html">Kedai Kopi</a>
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body px-3">
-              <!-- isi offcanvas -->
-              <a href="../../dashboard.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto active list">
-                <i class="fa-solid fa-house"></i>
-                <span class=" px-2 d-sm-inline">Dashboard</span>
-              </a>
-              <a href="../../transaksi.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                <i class="fa-solid fa-money-bill"></i>
-                <span class=" px-2 d-sm-inline">Transaksi</span>
-              </a>
-              <a href="../../menu.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                <i class="fa-solid fa-burger"></i>
-                <span class=" px-2 d-sm-inline">Menu</span>
-              </a>
-              <a href="../../setting.html" class="d-flex align-items-center py-2 mb-md-0 me-md-auto list">
-                <i class="fa-solid fa-gear"></i>
-                <span class=" px-2 d-sm-inline">Setting</span>
-              </a>
+      <!-- Main Content -->
+      <div class="col col-lg-10 m-auto">
 
-              <!-- akhir isi offcanvas -->
-            </div>
-          </div>
-      </nav>
+        <!-- sidebar btn -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
+          <div class="container-fluid">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="#">Hy, Sawal <img src="../../assets/images/profile.jpg" alt=""
+                class="profile-image"></a>
+            <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel" >
+              <div class="offcanvas-header ">
+                <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="../../index.html"><img src="../../assets/images/OBJECTS (1).svg" alt="" srcset="" style="width: 100px;"></a></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body px-3">
+                <!-- isi offcanvas -->
+                <a href="../../dashboard.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-house ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Dashboard</span>
+                </a>
+                <a href="../../transaksi.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-money-bill ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Transaksi</span>
+                </a>
+                <a href="../../menu.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-burger ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Menu</span>
+                </a>
+                <a href="../../setting.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                  <i class="fa-solid fa-gear ms-1"></i>
+                  <span class=" px-2 d-sm-inline">Setting</span>
+                </a>
 
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
-        <div class="container-fluid">
-          <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-            <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
-          </ol>
-          <span>
-            Hy. Sawal
-            <img src="../images/profile.jpg" alt="" class="profile-image">
-          </span>
-        </div>
-      </nav>
-      <!-- Other content within the wrapper -->
-      <section style="padding-top: 150px;">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <h2>Card Index</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-3 col-6 mb-4">
-              <a href="dashboard.html" style="text-decoration: none;">
-                <div class="card rounded-4 pt-5 " style="min-height: 212px; ">
-                  <img src="../../assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text">Buat Pesanan</h3>
+                <div class="accordion accordion-flush " id="accordionFlushExample">
+                  <button class="accordion-button collapsed py-2 my-1 mb-md-0 me-md-auto list" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    <i class="fa-solid fa-star ms-1"></i>
+                    <span class=" px-2 d-sm-inline">Assets</span>
+                  </button>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <ul class="list-unstyled ">
+                      <li><a href="../assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a>
+                      </li>
+                      <li><a href="../assets-index/card.html" class="py-2 text-decoration-none text-dark active">Card</a>
+                      </li>
+                      <li><a href="../assets-index/input.html" class="py-2 text-decoration-none text-dark">Input</a>
+                      </li>
+                      <li><a href="../assets-index/dropdown.html"
+                          class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                      <li><a href="../assets-index/slick.html" class="py-2 text-decoration-none text-dark">Slick
+                          Js</a></li>
+                      <li><a href="../assets-index/sweetAlert.html"
+                          class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                      <li><a href="../assets-index/dataTable.html"
+                          class="py-2 text-decoration-none text-dark">DataTable</a></li>
+                      <li><a href="../assets-index/chartJs.html" class="py-2 text-decoration-none text-dark">ChartJs</a>
+                      </li>
+                      <li><a href="../assets-index/iconFontAwsme.html"
+                          class="py-2 text-decoration-none text-dark">Icon</a></li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-3 col-6 mb-4">
-              <div class="card rounded-4 pt-5" style="min-height: 212px;">
-                <img src="../../assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
-                <div class="card-body">
-                  <h3 class="card-text">Buat Pesanan</h3>
-                  <p class="card-text">30 Pesanan</p>
-                </div>
+                <!-- akhir isi offcanvas -->
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 col-6 mb-4">
-              <div class="card rounded-4 pt-5 pt-4" style="min-height: 212px;">
-                <img src="../../assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
-                <div class="card-body">
-                  <h3 class="card-text">Buat Pesanan</h3>
-                  <p class="card-text">RP. 20.000</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 col-6 mb-4">
-              <div class="card rounded-4 pt-5 pt-4" style="min-height: 212px;">
-                <img src="../../assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
-                <div class="card-body">
-                  <h3 class="card-text">Buat Pesanan</h3>
-                  <p class="card-text">Rp. 20.000</p>
-                </div>
-              </div>
-            </div>
+        </nav>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
+          <div class="container-fluid">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
+            </ol>
+            <span>
+              Hy. Sawal
+              <img src="../images/profile.jpg" alt="" class="profile-image">
+            </span>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="container text-center">
+        </nav>
+        <!-- Other content within the wrapper -->
+        <div class="container text-center py-2" style="padding-top: 150px !important; ">
           <div class="row">
             <div class="col-lg-12">
-              <h2>
-                Card Menu
-              </h2>
+              <h2>Card</h2>
             </div>
+          </div>
+        </div>
+
+        <section class="py-2">
+          <div class="container">
             <div class="row">
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4 ">
-                  <div class="card-body  d-flex justify-content-between">
-                    <span class="fw-bold card-jumlah">20 Menu</span>
-                    <span class="card-menu">Makanan</span>
+              <div class="col-lg-6">
+                <div class="card" style="max-width:20rem;">
+                  <img class="card-img-top" src="../../assets/images/image pemandangan.jpg" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Kopi Susu</h5>
+                    <p class="card-text">Here is the example of the Multiple Container Sortable feature of the </p>
+                    <button class="btn btn-primary">Click</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4">
-                  <div class="card-body  d-flex justify-content-between">
-                    <span class="fw-bold card-jumlah">20 Menu</span>
-                    <span class="card-menu">Minuman</span>
-                  </div>
+              <div class="col-lg-6">
+                <div class="card p-3" style="max-width:20rem;">
+                  <a class="dropdown-item fw-bold text-warning" href="#!">
+                    <svg class="svg-inline--fa fa-crown me-1" aria-hidden="true" focusable="false" data-prefix="fas"
+                      data-icon="crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M576 136c0 22.09-17.91 40-40 40c-.248 0-.4551-.1266-.7031-.1305l-50.52 277.9C482 468.9 468.8 480 453.3 480H122.7c-15.46 0-28.72-11.06-31.48-26.27L40.71 175.9C40.46 175.9 40.25 176 39.1 176c-22.09 0-40-17.91-40-40S17.91 96 39.1 96s40 17.91 40 40c0 8.998-3.521 16.89-8.537 23.57l89.63 71.7c15.91 12.73 39.5 7.544 48.61-10.68l57.6-115.2C255.1 98.34 247.1 86.34 247.1 72C247.1 49.91 265.9 32 288 32s39.1 17.91 39.1 40c0 14.34-7.963 26.34-19.3 33.4l57.6 115.2c9.111 18.22 32.71 23.4 48.61 10.68l89.63-71.7C499.5 152.9 496 144.1 496 136C496 113.9 513.9 96 536 96S576 113.9 576 136z">
+                      </path>
+                    </svg><!-- <span class="fas fa-crown me-1"></span> Font Awesome fontawesome.com -->
+                    <span>Go Pro</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#!">Set status</a>
+                  <a class="dropdown-item" href="#!">Profile &amp; account</a>
+                  <a class="dropdown-item" href="#!">Feedback</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#!">Settings</a>
+                  <a class="dropdown-item" href="#!">Logout</a>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4">
-                  <div class="card-body  d-flex justify-content-between">
-                    <span class="fw-bold card-jumlah">20 Menu</span>
-                    <span class="card-menu">Snack</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-2">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Card Horizontal</h3>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4">
-                  <div class="card-body  d-flex justify-content-between">
-                    <span class="fw-bold card-jumlah">20 Menu</span>
-                    <span class="card-menu">Coffe</span>
+                  <div class="card-body">
+                    <div class="card" style="max-width:32rem;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img class="img-fluid h-100 rounded-start" src="../../assets/images/profile.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h4 class="card-title">Card Title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.</p>
+                            <p class="card-text"> <small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </div>
+        </section>
 
-  <!-- <script src="../../node_modules/jquery/dist/jquery.js"></script> -->
-  <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js"></script>
-  <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-  <script src="../../assets/bootstrap-5.3.2/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
-  <!-- <script src="../bootstrap-5.3.2/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script> -->
+        <section class="py-2">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Card Index</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="row text-center">
+                      <!-- Card Item -->
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <a href="dashboard.html" style="text-decoration: none;">
+                          <div class="card rounded-4 pt-5 " style="min-height: 212px; ">
+                            <img src="../../assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
+                            <div class="card-body">
+                              <h3 class="card-text">Buat Pesanan</h3>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <div class="card rounded-4 pt-5" style="min-height: 212px;">
+                          <img src="../../assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
+                          <div class="card-body">
+                            <h3 class="card-text">Buat Pesanan</h3>
+                            <p class="card-text">30 Pesanan</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <div class="card rounded-4 pt-5 pt-4" style="min-height: 212px;">
+                          <img src="../../assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
+                          <div class="card-body">
+                            <h3 class="card-text">Buat Pesanan</h3>
+                            <p class="card-text">RP. 20.000</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <div class="card rounded-4 pt-5 pt-4" style="min-height: 212px;">
+                          <img src="../../assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
+                          <div class="card-body">
+                            <h3 class="card-text">Buat Pesanan</h3>
+                            <p class="card-text">Rp. 20.000</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card Item -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-2">
+          <div class="container ">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>
+                      Card Menu
+                    </h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- Start Card Item -->
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <div class="card rounded-4 ">
+                          <div class="card-body  d-flex justify-content-between">
+                            <span class="fw-bold card-jumlah">20 Menu</span>
+                            <span class="card-menu">Makanan</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <div class="card rounded-4">
+                          <div class="card-body  d-flex justify-content-between">
+                            <span class="fw-bold card-jumlah">20 Menu</span>
+                            <span class="card-menu">Minuman</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <div class="card rounded-4">
+                          <div class="card-body  d-flex justify-content-between">
+                            <span class="fw-bold card-jumlah">20 Menu</span>
+                            <span class="card-menu">Snack</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-6 mb-4">
+                        <div class="card rounded-4">
+                          <div class="card-body  d-flex justify-content-between">
+                            <span class="fw-bold card-jumlah">20 Menu</span>
+                            <span class="card-menu">Coffe</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card Item -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Card Group Image</h3>
+                  </div>
+                  <div class="card-body">
+                    <!-- Start Card Item -->
+                    <div class="card-group">
+                      <div class="card px-1">
+                        <img class="card-img-top" src="../../assets/images/ayam penyet.png" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">First card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                          <p class="card-text">
+                            <small class="text-muted">Last updated 45 mins ago</small>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card  px-1">
+                        <img class="card-img-top" src="../../assets/images/ayam penyet.png" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">First card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                          <p class="card-text">
+                            <small class="text-muted">Last updated 45 mins ago</small>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card px-1">
+                        <img class="card-img-top" src="../../assets/images/nasi-goreng.png" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">First card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                          <p class="card-text">
+                            <small class="text-muted">Last updated 45 mins ago</small>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card px-1">
+                        <img class="card-img-top" src="../../assets/images/nasi-goreng.png" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">First card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in a
+                            wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                          <p class="card-text">
+                            <small class="text-muted">Last updated 45 mins ago</small>
+                          </p>
+                        </div>
+                      </div>
+                      <!-- End Card Item -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-2">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>
+                      Card Image Overlays
+                    </h3>
+                  </div>
+                  <div class="card-body">
+                  <!-- Start Card Item -->
+                    <div class="card text-white dark__text-gray-100 overflow-hidden" style="max-width:30rem;">
+                      <img class="card-img-top" src="../../assets/images/image pemandangan.jpg" alt="...">
+                      <div class="card-img-overlay d-flex align-items-end">
+                        <div>
+                          <h4 class="card-title text-white dark__text-gray-100">Card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- End Card Item -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Card Background Color</h3>
+                  </div>
+                  <div class="card-body">
+                    
+                    <div class="row g-4">
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-white bg-primary">
+                          <div class="card-body">
+                            <h4 class="card-title text-white">Primary Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-white dark__text-gray-100 bg-secondary">
+                          <div class="card-body">
+                            <h4 class="card-title text-white dark__text-gray-100">Secondary Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-white bg-success">
+                          <div class="card-body">
+                            <h4 class="card-title text-white">Success Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-white bg-danger">
+                          <div class="card-body">
+                            <h4 class="card-title text-white">Danger Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-white bg-warning">
+                          <div class="card-body">
+                            <h4 class="card-title text-white">Warning Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-white bg-info">
+                          <div class="card-body">
+                            <h4 class="card-title text-white">Info Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-dark bg-light">
+                          <div class="card-body">
+                            <h4 class="card-title text-dark">Light Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-white bg-dark">
+                          <div class="card-body">
+                            <h4 class="card-title text-white">Dark Card </h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- <script src="../../node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="../../assets/icons/fontawesome-free-6.5.1-web/js/all.js"></script>
+    <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="../bootstrap-5.3.2/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script> -->
 
 
 
