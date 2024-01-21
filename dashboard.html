@@ -5,14 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kedai Kopi</title>
-  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/navbar.css">
   <link rel="stylesheet" href="style/Dashboard.css/cardminuman.css">
   <link rel="stylesheet" href="style/Dashboard.css/cardmakanan.css">
   <link rel="stylesheet" href="style/search.css">
   <link rel="stylesheet" href="style/sidebar.css">
   <link rel="stylesheet" href="style/Dashboard.css/keranjang-belanja.css">
-  <link href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- alpine js -->
 
 </head>
@@ -24,7 +24,7 @@
   <div class="">
     <div class="row m-0 flex-nowrap">
       <!-- sidebar -->
-      <div class="col-auto d-none d-md-block col-md-3 col-xl-2 wrap-bar">
+      <div class="col-auto d-none d-lg-block col-md-3 col-xl-2 wrap-bar">
         <div class="d-flex flex-column align-items-center align-items-md-start px-3 pt-2 barsamping">
           <a href="index.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto px-3 pt-30 logo">
             <img class="fs-5 d-none d-md-inline" src="assets/images/OBJECTS (1).svg" alt="" style="margin-left:10px;" />
@@ -53,7 +53,7 @@
                 <i class="fa-solid fa-star ms-1"></i>
                 <span class="fs-5 d-none d-md-inline">Assets</span>
               </button>
-              <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3 "
+              <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3"
                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <ul class="list-unstyled ">
                   <li><a href="assets/assets-index/button.html" class="py-2 text-decoration-none text-dark">Button</a>
@@ -82,16 +82,42 @@
       </div>
 
       <!-- Main Content -->
-      <div class="col col-lg-10 m-auto main-content ">
+      <div class="col col-xxl-8  col-lg-6 col-md-9 col-sm-10 m-auto main-content "
+        style="right: 500px !important;">
 
         <!-- sidebar btn -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-lg-none shadow-sm">
           <div class="container-fluid">
             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
                 class="navbar-toggler-icon"></span></button>
-            <a class="navbar-brand" href="#">Hy, Sawal <img src="assets/images/profile.jpg" alt=""
-                class="profile-image"></a>
+
+                <div class="dropdown dropdown-nav">
+              <a class="btn btn-link bg-tertiary py-0 my-0 lh-1 pe-0 navbar-brand" id="dropdownMenuLink" href="#" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hy. Sawal <img src="assets/images/profile.jpg" alt="" class="profile-image">
+              </a>
+
+              <div class="dropdown-menu shadow border mt-3" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                <div class="card border-0 pt-2">
+                  <ul class="p-0 list-unstyled">
+                    <li>
+                      <a class="nav-link ms-3 mb-2" href="profile.html">
+                        <i class="fa-solid fa-user ms-1"></i>
+                        <span class="px-2">Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a type="button" class="nav-link ms-3" href="">
+                        <i class="fa-solid fa-right-to-bracket ms-1"></i>
+                        <span class="px-2">Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+                
             <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
               aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header ">
@@ -157,16 +183,40 @@
         </nav>
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
+        <nav class="navbar navbar-expand-lg d-none d-lg-block px-2 nav-dashboard ">
           <div class="container-fluid">
             <ol class="breadcrumb m-0">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
               <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
             </ol>
-            <span>
-              Hy. Sawal
-              <img src="assets/images/profile.jpg" alt="" class="profile-image">
-            </span>
+
+            <div class="dropdown dropdown-nav">
+              <a class="btn btn-link bg-tertiary py-0 my-0 lh-1 pe-0 navbar-brand" id="dropdownMenuLink" href="#" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hy. Sawal <img src="assets/images/profile.jpg" alt="" class="profile-image">
+              </a>
+
+              <div class="dropdown-menu shadow border mt-3" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                <div class="card border-0 pt-2">
+                  <ul class="p-0 list-unstyled">
+                    <li>
+                      <a class="nav-link ms-3 mb-2" href="profile.html">
+                        <i class="fa-solid fa-user ms-1"></i>
+                        <span class="px-2">Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a type="button" class="nav-link ms-3" href="">
+                        <i class="fa-solid fa-right-to-bracket ms-1"></i>
+                        <span class="px-2">Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </nav>
         <!-- Other content within the wrapper -->
@@ -190,7 +240,6 @@
         </section>
         <!-- Akhir Search -->
 
-
         <!-- Menu -->
         <section class="wrapper-menu-minuman" id="menu-minuman" x-data="produkMinuman">
           <div class="container justify-content-center kartu-grafik-minuman">
@@ -201,7 +250,7 @@
               <div class="row justify-content-center kartu-minuman">
                 <!-- Satu item minuman -->
                 <template x-for="(item, index) in items" x-key="index">
-                  <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class="col-xxl-2 col-lg-4 col-md-4 col-sm-6 minuman">
                     <div class="card" style="min-width: 170px; min-height: 170px;">
                       <img :src="'assets/images/' + item.images" class="card-img-top" :alt="item-name">
                       <div class="card-body ">
@@ -227,7 +276,7 @@
               </div>
               <div class="row justify-content-center kartu-minuman" style="margin-top: 5px;">
                 <template x-for="(item, index) in items" x-key="index">
-                  <div class="col-lg-2 col-md-4 col-sm-6 minuman">
+                  <div class=" col-xxl-2 col-lg-4 col-md-4 col-sm-6 minuman">
                     <div class="card" style="min-width: 170px; min-height: 170px;">
                       <img :src="'assets/images/' + item.images" class="card-img-top" :alt="item-name">
                       <div class="card-body ">
@@ -244,7 +293,6 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </template>
 
@@ -261,7 +309,7 @@
               </div>
               <div class="row justify-content-center kartu-grafik-makanan">
                 <template x-for="(item, index) in items" x-key="index">
-                  <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="col-xxl-2 col-lg-4 col-md-4 col-sm-6 grafik-makanan">
                     <div class="card" style="min-width: 170px; min-height: 170px;">
                       <img :src="'assets/images/' + item.images" class="card-img-top" :alt="item.name">
                       <div class="card-body ">
@@ -281,11 +329,12 @@
                   </div>
                 </template>
                 <!--  -->
+
                 <!-- Akhir Kolom 1 -->
               </div>
               <div class="row kartu-grafik-makanan kartu-makanan-2 justify-content-center" style="margin-top: 5px;">
                 <template x-for="(item, index) in items" x-key="index">
-                  <div class="col-lg-2 col-md-4 col-sm-6 grafik-makanan">
+                  <div class="col-xxl-2 col-lg-4 col-md-4 col-sm-6 grafik-makanan">
                     <div class="card" style="min-width: 170px; min-height: 170px;">
                       <img :src="'assets/images/' + item.images" class="card-img-top" :alt="item.name">
                       <div class="card-body ">
@@ -305,24 +354,179 @@
                   </div>
                 </template>
                 <!--  -->
+
+                <!-- Cart Bottom md -->
+                <div class="d-block d-lg-none z-3 text-center my-4 px-3">
+                  <button class="btn btn-primary rounded-4" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i
+                      class="fa-solid fa-bowl-food me-1"></i>Cart</button>
+
+                  <div class="offcanvas offcanvas-bottom z-5" tabindex="1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel" style="min-height: 350px !important;">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Cart</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-12 ">
+                          <div class="bottom-cart border-bottom border-2">
+                            <!-- Items 1 -->
+                            <div class="card ps-3 my-2">
+                              <div class="row text-start">
+                                <div class="col-5 d-flex align-items-center">
+                                  <img src="./assets/images/nasi-goreng.png" alt=""
+                                    style="width: 40px !important; height: 40px !important; border-radius: 3px; border: 1px solid #C7C7C7; margin-right: 10px;">
+                                  <div class="">
+                                    <span
+                                      style="color: #333; font-size: 14px; font-style: normal; line-height: normal;">Kopi
+                                      Sanger</span>
+                                    <br />
+                                    <span class="fw-bold"
+                                      style="color: #333; font-size: 14px; font-style: normal; line-height: normal;">Rp
+                                      10.000</span>
+                                  </div>
+                                </div>
+                                <div class="col-7 d-flex justify-content-end align-content-end text-end">
+                                  <div class="input-wrapper d-flex align-items-center justify-content-end me-2"
+                                    style="max-width: 80px;">
+                                    <button class="btn btn-outline-secondary btn-sm" type="button">-</button>
+                                    <input type="text" class="form-control form-control-sm text-center" value="0"
+                                      readonly>
+                                    <button class="btn btn-outline-secondary btn-sm" type="button">+</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Items 1 -->
+
+                            <!-- Items 2 -->
+                            <div class="card ps-3 my-2">
+                              <div class="row text-start">
+                                <div class="col-5 d-flex align-items-center">
+                                  <img src="./assets/images/nasi-goreng.png" alt=""
+                                    style="width: 40px !important; height: 40px !important; border-radius: 3px; border: 1px solid #C7C7C7; margin-right: 10px;">
+                                  <div class="">
+                                    <span
+                                      style="color: #333; font-size: 14px; font-style: normal; line-height: normal;">Kopi
+                                      Sanger</span>
+                                    <br />
+                                    <span class="fw-bold"
+                                      style="color: #333; font-size: 14px; font-style: normal; line-height: normal;">Rp
+                                      10.000</span>
+                                  </div>
+                                </div>
+                                <div class="col-7 d-flex justify-content-end align-content-end text-end">
+                                  <div class="input-wrapper d-flex align-items-center justify-content-end me-2"
+                                    style="max-width: 80px;">
+                                    <button class="btn btn-outline-secondary btn-sm" type="button">-</button>
+                                    <input type="text" class="form-control form-control-sm text-center" value="0"
+                                      readonly>
+                                    <button class="btn btn-outline-secondary btn-sm" type="button">+</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Items 2 -->
+                          </div>
+                          <!-- Total Harga -->
+                          <div class="jumlah-harga-cart-md text-center mt-3">
+                            <div class="row d-flex align-items-center justify-content-between">
+                              <div class="col-6 text-start">
+                                <p for="" class=" fw-reguler fs-5 mb-3 ms-2">Total</p>
+                                <p for="" class=" fw-bold fs-5 mb-3 ms-2">40.000</p>
+                              </div>
+                              <div class="col-6 text-end">
+                                <button type="button" class="btn btn-primary me-2">Proses</button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Total Harga -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Cart Bottom md -->
               </div>
             </div>
-          </div>
         </section>
         <!-- akhir Main Content -->
-
       </div>
       <!-- akhir wrapper -->
 
-      <div class="offcanvas offcanvas-end show  keranjang-pesanan active" tabindex="1" id="offcanvasRight"
+      <!-- Start Cart -->
+      <!-- right sidebar -->
+      <div class="col-auto d-none d-lg-block col-md-3 col-xl-2 col-barsamping-kanan">
+        <div class="d-flex flex-column align-items-center align-items-md-end px-3 barsamping-kanan">
+          <div class="keranjang-pesanan">
+            <div class="shopping-cart">
+              <div style="border-bottom: 3px solid #C7C7C7;">
+                <!-- Item 1 -->
+                <div class="cart-item d-flex justify-content-between align-items-center">
+                  <img src="assets/images/Rectangle 9 (1).png" alt="item.name">
+                  <div class="item-details">
+                    <p class="nama-item m-0">Kopi Sanger</p>
+                    <p class="harga-item fw-bold m-0">10,000</p>
+                  </div>
+                  <button type="button"
+                    class="btn btn-outline-secondary btn-sm d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-minus fa-lg"></i>
+                  </button>
+                  <span x-text="item.quantity">1</span>
+                  <button type="button"
+                    class="btn btn-outline-secondary btn-sm d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-plus fa-lg"></i>
+                  </button>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cart-item d-flex justify-content-between align-items-center">
+                  <img src="assets/images/Rectangle 9 (1).png" alt="item.name">
+                  <div class="item-details">
+                    <p class="nama-item m-0">Kopi Sanger</p>
+                    <p class="harga-item fw-bold m-0">10,000</p>
+                  </div>
+                  <button type="button"
+                    class="btn btn-outline-secondary btn-sm text-center d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-minus fa-lg"></i>
+                  </button>
+                  <span x-text="item.quantity">1</span>
+                  <button type="button"
+                    class="btn btn-outline-secondary btn-sm text-center d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Total and Process Button -->
+              <div class="jumlah-harga d-flex justify-content-around align-items-center my-3">
+                <p class="fw-reguler">Total</p>
+                <p class="fw-bold">40,000</p>
+              </div>
+              <button class="btn btn-primary" type="button">Proses</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- End Cart -->
+
+      <!-- <div class="offcanvas offcanvas-end show  keranjang-pesanan active" tabindex="1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel" data-bs-scroll="true" data-bs-backdrop="false">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasRightLabel">Pesanan</h5>
         </div>
-        <div class="offcanvas-body ">
+        <div class="offcanvas-body "> -->
 
-          <!-- Isi Keranjang -->
-          <div class="wrap-cart">
+      <!-- Isi Keranjang -->
+      <!-- <div class="wrap-cart">
             <div class="shopping-cart ">
 
               <template x-for="(item, index) in $store.cart.items" x-keys="index">
@@ -353,20 +557,20 @@
             <div class="d-grid col-10 mx-auto">
               <button class="btn btn-primary  " type="button">Proses</button>
             </div>
-          </div>
+          </div> -->
 
-          <!-- Isi Keranjang -->
-        </div>
+      <!-- Isi Keranjang -->
+      <!-- </div> -->
 
 
-        <!-- Keranjang Belanja -->
-      </div>
+      <!-- Keranjang Belanja -->
+      <!-- </div> -->
 
     </div>
   </div>
 
 
- 
+
   <script src="assets/icons/fontawesome-free-6.5.1-web/js/all.js"></script>
   <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
   <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>

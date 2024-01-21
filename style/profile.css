@@ -1,0 +1,23 @@
+
+.img-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.card .card-body input{
+   
+    border-color: #774620 !important; 
+    
+}
+.card .card-body input:focus{
+    outline: none; 
+    border-color: #774620 !important; 
+    box-shadow: 0 0 0 0.2rem #774620; 
+}

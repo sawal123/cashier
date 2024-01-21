@@ -57,11 +57,15 @@ h3 {
 
 @media(max-width: 1300px) {
   .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan {
-    min-height: 280px !important;
-    min-width: 260px !important;
+    min-height: 180px !important;
+    min-width: 180px !important;
     padding: auto;
   }
 }
+
+
+
+
 
 @media(max-width: 993px) {
   .wrapper-menu-makanan .kartu-grafik-makanan .grafik-makanan {

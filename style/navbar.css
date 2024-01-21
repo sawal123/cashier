@@ -9,10 +9,11 @@
   border: 1px solid #000;
   background-color: white;
   text-align: center;
-  right: 30px !important;
+  right: 23px !important;
   top: 20px !important;
 
 }
+
 
 @media (max-width: 1200px) {
   .nav {
@@ -25,22 +26,145 @@
     border: 1px solid #000;
     background-color: white;
     text-align: center;
-    right: 30px !important;
+    right: 30x !important;
     top: 30px !important;
   }
 
 }
 
-
+.dropdown-nav{
+  left: 15px; 
+  margin-top: -1px !important;
+}
 .profile-image {
   width: 66px;
   height: 66px;
   border-radius: 100%;
   border: 3px solid #DBDBDB;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  left: 15px; 
+  margin-top: -2px !important;
 }
+
+
 
 .nav a {
   text-decoration: none;
   color: #000;
+  
+}
+
+
+.nav-dashboard{
+  position: fixed !important;
+  z-index: 999;
+  width: 63%;
+  margin: 0 auto !important;
+  height: 83px;
+  border-radius: 41px;
+  border: 1px solid #000;
+  background-color: white;
+  text-align: center;
+  right: 260px !important;
+  top: 20px !important;
+
+}
+
+@media (max-width: 2150px) {
+  .nav-dashboard {
+    position: fixed !important;
+    z-index: 999;
+    width: 60%;
+    margin: 0 auto !important;
+    height: 83px;
+    border-radius: 41px;
+    border: 1px solid #000;
+    background-color: white;
+    text-align: center;
+    right: 470px !important;
+    top: 30px !important;
+  }
+
+}
+
+@media (max-width: 1850px) {
+  .nav-dashboard {
+    position: fixed !important;
+    z-index: 999;
+    width: 60%;
+    margin: 0 auto !important;
+    height: 83px;
+    border-radius: 41px;
+    border: 1px solid #000;
+    background-color: white;
+    text-align: center;
+    right: 350px !important;
+    top: 30px !important;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .nav-dashboard {
+    position: fixed !important;
+    z-index: 999;
+    width: 60%;
+    margin: 0 auto !important;
+    height: 83px;
+    border-radius: 41px;
+    border: 1px solid #000;
+    background-color: white;
+    text-align: center;
+    right: 280px !important;
+    top: 30px !important;
+  }
+
+}
+
+@media (max-width: 1140px) {
+  .nav-dashboard {
+    position: fixed !important;
+    z-index: 999;
+    width: 54%;
+    margin: 0 auto !important;
+    height: 83px;
+    border-radius: 41px;
+    border: 1px solid #000;
+    background-color: white;
+    text-align: center;
+    right: 245px !important;
+    top: 30px !important;
+  }
+
+}
+@media (max-width: 988px) {
+  .nav-dashboard {
+    position: fixed !important;
+    z-index: 999;
+    width: 65%;
+    margin: 0 auto !important;
+    height: 83px;
+    border-radius: 41px;
+    border: 1px solid #000;
+    background-color: white;
+    text-align: center;
+    right: 60px !important;
+    top: 30px !important;
+  }
+
+}
+
+
+
+
+.dropdown-nav{
+  left: 15px; 
+  margin-top: -1px !important;
+}
+
+
+.nav-dashboard a {
+  text-decoration: none;
+  color: #000;
+  
 }

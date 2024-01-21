@@ -154,6 +154,39 @@ height: 34px;
 
 }
 
+@media (max-width: 1200px) {
+  .wrap-bar {
+width: 220px !important;    
+}
+}
+
 .modal {
   z-index: 99999 !important;
+}
+
+
+
+.Data_Tables .table-responsive {
+  display: block;
+  
+}
+
+.Data_Tables .table-responsive .dataTables_length{
+  padding-top: 20px !important;
+}
+
+.Data_Tables .table-responsive .dataTables_filter{
+  margin-top: -30px !important;
+}
+
+@media (max-width: 769px) {
+
+  .Data_Tables .table-responsive .dataTables_length{
+   margin-top: -20px !important;
+   
+  }
+
+  .Data_Tables .table-responsive .dataTables_filter{
+    margin-top: 20px !important;
+  }
 }

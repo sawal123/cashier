@@ -1,54 +1,42 @@
 /* ------------------------------------------------------ */
+.barsamping-kanan {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow:auto;
+    right: 0;
+    height: 100%;
+    background: white;
+    box-shadow: -14px -2px 50px -27px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: -14px -2px 50px -27px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: -14px -2px 50px -27px rgba(0, 0, 0, 0.75);
+    padding-right: 2rem !important;
+    margin-left: -20px !important;
+  }
+
+.col-barsamping-kanan{
+    padding: 0 !important;
+    
+}
+
+  @media (max-width: 1200px) {
+    .col-barsamping-kanan {
+width: 220px !important;    
+  }
+  }
+  
+  @media (max-width: 1200px) {
+    .barsamping-kanan {
+width: 220px !important;    
+  }
+  }
+
 
 
 .keranjang-pesanan {
-    right: -100rem !important;
-    width: 280px !important;
-    background: #fff;
-    padding: 0 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    /* z-index: 9999; */
-    display: none;
-    transition: all 0.5s linear;
-    /* opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    overflow: hidden;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch; */
-
+    margin: auto !important;
 }
 
-@media(max-width:1300px) {
-    #offcanvasRight {
-        display: none !important;
-    }
-}
-
-.keranjang-pesanan.active {
-    right: -1rem !important;
-    padding-right: 1.6rem !important;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 14px -2px 25px 5px rgba(0, 0, 0, 0.75);
-
-
-}
-
-.keranjang-pesanan .offcanvas-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly !important;
-    text-align: center;
-
-}
-
-.keranjang-pesanan .shopping-cart {
-    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-    margin-top: -50px !important;
-    margin-bottom: -140px !important;
-}
 
 .keranjang-pesanan .shopping-cart .cart-item {
     margin: 2px 0;
@@ -57,7 +45,7 @@
     gap: 0.5rem;
     color: #000;
     padding-bottom: 5px;
-
+   margin-bottom: 5px !important;
 }
 
 .keranjang-pesanan .shopping-cart img {
@@ -84,26 +72,30 @@
 }
 
 .keranjang-pesanan .shopping-cart .btn{
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    /* padding-left: 8.7px !important; */
-    
+   
+    width: 209px;
+    height: 49px;
+    border-radius: 7px;
+background: #728EF2;
 }
-.keranjang-pesanan .shopping-cart .btn-kurang {
+.keranjang-pesanan .shopping-cart .btn:hover{
+   
+background: var(--blue);
+}
+.keranjang-pesanan .shopping-cart .btn-sm {
     width: 22.905px;
-    height: 22.905px;
+height: 22.905px;
     color: #000;
     background-color: var(--grey);
 }
 
-.keranjang-pesanan .shopping-cart .btn-kurang:hover {
+.keranjang-pesanan .shopping-cart .btn-sm:hover {
     background-color: var(--danger);
     color: white;
 }
 
-.keranjang-pesanan .shopping-cart .btn-tambah {
-    width: 22.905px;
+/* .keranjang-pesanan .shopping-cart .btn-tambah {
+    width: 10px !important;
     height: 22.905px;
     color: #000;
     background-color: var(--grey);
@@ -112,14 +104,9 @@
 .keranjang-pesanan .shopping-cart .btn-tambah:hover {
     background-color: var(--blue);
     color: white;
-}
+} */
 
-.keranjang-pesanan .offcanvas-body .jumlah-harga {
-    color: #333;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 150px !important;
-    padding-bottom: 20px !important;
-}
+
+
+/* Cart MD */
+

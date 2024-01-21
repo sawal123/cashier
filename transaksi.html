@@ -84,41 +84,38 @@
       </div>
 
       <!-- Main Content -->
-      <div class="col col-lg-10 m-auto ">
+      <div class="col col-lg-10  m-auto ">
         <!-- sidebar offcanvas mobile-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
           <div class="container-fluid">
             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
                 class="navbar-toggler-icon"></span></button>
-
-            <div class="dropdown dropdown-nav">
-              <a class="btn btn-link bg-tertiary py-0 my-0 lh-1 pe-0 navbar-brand" id="dropdownMenuLink" href="#" role="button"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Hy. Sawal <img src="assets/images/profile.jpg" alt="" class="profile-image">
-              </a>
-
-              <div class="dropdown-menu shadow border mt-3" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
-                <div class="card border-0 pt-2">
-                  <ul class="p-0 list-unstyled">
-                    <li>
-                      <a class="nav-link ms-3 mb-2" href="profile.html">
-                        <i class="fa-solid fa-user ms-1"></i>
-                        <span class="px-2">Profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a type="button" class="nav-link ms-3" href="">
-                        <i class="fa-solid fa-right-to-bracket ms-1"></i>
-                        <span class="px-2">Logout</span>
-                      </a>
-                    </li>
-                  </ul>
+                <div class="dropdown dropdown-nav">
+                  <a class="btn btn-link bg-tertiary py-0 my-0 lh-1 pe-0 navbar-brand" id="dropdownMenuLink" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hy. Sawal <img src="assets/images/profile.jpg" alt="" class="profile-image">
+                  </a>
+    
+                  <div class="dropdown-menu shadow border mt-3" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                    <div class="card border-0 pt-2">
+                      <ul class="p-0 list-unstyled">
+                        <li>
+                          <a class="nav-link ms-3 mb-2" href="profile.html">
+                            <i class="fa-solid fa-user ms-1"></i>
+                            <span class="px-2">Profile</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a type="button" class="nav-link ms-3" href="">
+                            <i class="fa-solid fa-right-to-bracket ms-1"></i>
+                            <span class="px-2">Logout</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-
             <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
               aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header ">
@@ -181,7 +178,6 @@
                 <!-- akhir isi offcanvas -->
               </div>
             </div>
-          </div>
         </nav>
         <!-- End Offcanvas mobile -->
 
@@ -222,224 +218,63 @@
               </div>
             </div>
 
-
           </div>
         </nav>
         <!-- Other content within the wrapper -->
 
-        <!-- Card body -->
-        <section class="grafik pt-5">
-          <div class="container text-center">
-            <div class="row kartu-grafik">
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <a href="dashboard.html" style="text-decoration: none;">
-                  <div class="card rounded-4 pt-5 " style="min-height: 212px; ">
-                    <img src="assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
+        <!-- Start Transaksi -->
+        <section class="Data_Tables" style="padding-top: 150px;">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
                     <div class="card-body">
-                      <h3 class="card-text">Buat Pesanan</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4 pt-5" style="min-height: 212px;">
-                  <img src="assets/images/mdi_food.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text">Buat Pesanan</h3>
-                    <p class="card-text">30 Pesanan</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4 pt-5 pt-4" style="min-height: 212px;">
-                  <img src="assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text">Buat Pesanan</h3>
-                    <p class="card-text">RP. 20.000</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 col-6 mb-4">
-                <div class="card rounded-4 pt-5 pt-4" style="min-height: 212px;">
-                  <img src="assets/images/Group.svg" class="card-icon w-25 m-auto" alt="..." />
-                  <div class="card-body">
-                    <h3 class="card-text">Buat Pesanan</h3>
-                    <p class="card-text">Rp. 20.000</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- data tables -->
-        <section class=" container Data_Tables">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title mb-3">Tabel Pesanan</h2>
-                  <div class="table-responsive d-grid align-items-center">
-                    <table class="table table-bordered table-striped text-center " id="myTable">
-                      <thead>
-                        <tr>
-                          <th>No</th>
-                          <th>No Meja</th>
-                          <th>Menu</th>
-                          <th>Qty</th>
-                          <th>Jumlah</th>
-                          <th>Status</th>
-                          <th>Aksi</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>25</td>
-                          <td>3</td>
-                          <td>8</td>
-                          <td>RP.50.000</td>
-                          <td><span type="button" class="btn btn-primary">Sudah Bayar</span></td>
-                          <td>
-                            <button type="button" class="btn small-btn-primary">
-                              <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
-                            </button>
-                            <a href="" type="button" class="btn small-btn-danger">
-                              <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
-                            </a>
-                            <a href="" type="button" class="btn small-btn-primary" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>20</td>
-                          <td>5</td>
-                          <td>6</td>
-                          <td>RP.45.000</td>
-                          <td><span type="button" class="btn btn-danger">Belum Bayar</span></td>
-                          <td>
-                            <button type="button" class="btn small-btn-primary">
-                              <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
-                            </button>
-                            <a href="" type="button" class="btn small-btn-danger">
-                              <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
-                            </a>
-                            <a href="" type="button" class="btn small-btn-primary" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>20</td>
-                          <td>5</td>
-                          <td>6</td>
-                          <td>RP.45.000</td>
-                          <td><button type="button" class="btn btn-danger">Belum Bayar</button></td>
-                          <td>
-                            <span type="button" class="btn small-btn-primary">
-                              <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
-                            </span>
-                            <a href="" type="button" class="btn small-btn-danger">
-                              <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
-                            </a>
-                            <a href="" type="button" class="btn small-btn-primary" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Modals -->
-        <section>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered  ">
-                    <div class="modal-content z-3 position-absolute ">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Pesanan</h1>
-                      </div>
-                      <div class="modal-body">
-                        <div class="table-responsive">
-                          <table class="table  table-borderless">
-                            <thead>
-                              <tr>
-                                <th>Menu</th>
-                                <th>Qty</th>
-                                <th>Harga</th>
-                                <th>Total</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th>Kopi Sanger</th>
-                                <th>20.000</th>
-                                <th>20.000</th>
-                                <th>20.000</th>
-                              </tr>
-                              <tr>
-                                <th>Kopi Sanger</th>
-                                <th>20.000</th>
-                                <th>20.000</th>
-                                <th>20.000</th>
-                              </tr>
-                              <tr>
-                                <th>Kopi Sanger</th>
-                                <th>20.000</th>
-                                <th>20.000</th>
-                                <th>20.000</th>
-                              </tr>
-                            </tbody>
-                          </table>
-
-                          <div class="container-fluid">
-                            <div class="row mb-4">
-                              <div class="col-sm-6">
-                                <span>Status</span>
-                              </div>
-                              <div class="col-sm-6">
-                                <div class="d-flex justify-content-sm-end justify-content-md-end">
-                                  <select class="form-select" aria-label="Default select example"
-                                    style="width: 199px; min-height: 37px;">
-                                    <option selected>Belum Bayar</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- Akhir isi modal -->
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Update</button>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      <h2 class="card-title mb-3">Transaksi</h2>
+                      <div class="table-responsive">
+                        <table class="table table-bordered table-striped  " id="myTable" style="padding: 20px;">
+                          <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>No Meja</th>
+                              <th>Menu</th>
+                              <th>Qty</th>
+                              <th>Jumlah</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>25</td>
+                              <td>3</td>
+                              <td>8</td>
+                              <td>RP.50.000</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>20</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>RP.45.000</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>20</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>RP.45.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+      
+        <!-- End Transaksi -->
+       
 
         <!-- akhir Main Content -->
       </div>

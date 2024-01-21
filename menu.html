@@ -93,8 +93,31 @@
             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
                 class="navbar-toggler-icon"></span></button>
-            <a class="navbar-brand" href="#">Hy, Sawal <img src="assets/images/profile.jpg" alt=""
-                class="profile-image"></a>
+                <div class="dropdown dropdown-nav">
+                  <a class="btn btn-link bg-tertiary py-0 my-0 lh-1 pe-0 navbar-brand" id="dropdownMenuLink" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hy. Sawal <img src="assets/images/profile.jpg" alt="" class="profile-image">
+                  </a>
+    
+                  <div class="dropdown-menu shadow border mt-3" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                    <div class="card border-0 pt-2">
+                      <ul class="p-0 list-unstyled">
+                        <li>
+                          <a class="nav-link ms-3 mb-2" href="profile.html">
+                            <i class="fa-solid fa-user ms-1"></i>
+                            <span class="px-2">Profile</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a type="button" class="nav-link ms-3" href="">
+                            <i class="fa-solid fa-right-to-bracket ms-1"></i>
+                            <span class="px-2">Logout</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
             <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
               aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header ">
@@ -166,10 +189,38 @@
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
               <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
             </ol>
-            <span>
-              Hy. Sawal
-              <img src="assets/images/profile.jpg" alt="" class="profile-image">
-            </span>
+
+          
+            <div class="dropdown dropdown-nav">
+              <a class="btn btn-link bg-tertiary py-0 my-0 lh-1 pe-0 navbar-brand" id="dropdownMenuLink" href="#" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hy. Sawal <img src="assets/images/profile.jpg" alt="" class="profile-image">
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-end py-0 my-3 dropdown-profile shadow border"
+                aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                <div class="card position-relative border-0 " style="width: 200px !important;">
+                  <div class="card-body p-0">
+                    <div class="" style="height: 5rem !important;">
+                      <ul class="mb-5 pb-1 p-0 list-unstyled text-start">
+                        <li>
+                          <a class="nav-link " href="profile.html"> <i class="fa-solid fa-user ms-1"></i>
+                            <span class=" px-2">Profile</span></a>
+                        </li>
+                        <li>
+                          <a type="button" class="nav-link" href=""> <i class="fa-solid fa-right-to-bracket ms-1
+                              "></i>
+                            <span class=" px-2">Logout</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            
+            
           </div>
         </nav>
         <!-- Other content within the wrapper -->

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kedai Kopi</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/grafikcard.css">
+    <link rel="stylesheet" href="style/tables.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/profile.css">
+    <link href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Data Tables -->
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <!-- DataTables Buttons CSS -->
+    <link rel="stylesheet" href="node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css">
+
+<body>
+    <!-- Jangan pakek container fluid -->
+    <div class="">
+        <div class="row m-0 flex-nowrap">
+            <!-- sidebar -->
+            <div class="col-auto d-none d-md-block col-md-3 col-xl-2 wrap-bar">
+                <div class="d-flex flex-column align-items-center align-items-md-start px-3 pt-2 barsamping">
+                    <!-- Start-List -->
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto px-3 pt-30 logo">
+                        <img class="fs-5 d-none d-md-inline" src="assets/images/OBJECTS (1).svg" alt="" />
+                    </a>
+                    <div class=" w-75 mt-4">
+                        <a href="dashboard.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+                            <i class="fa-solid fa-house ms-1"></i>
+                            <span class="fs-5 d-none d-md-inline">Dashboard</span>
+                        </a>
+                        <a href="transaksi.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list">
+                            <i class="fa-solid fa-money-bill  ms-1"></i>
+                            <span class="fs-5 d-none d-md-inline">Transaksi</span>
+                        </a>
+                        <a href="menu.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+                            <i class="fa-solid fa-burger  ms-1"></i>
+                            <span class="fs-5 d-none d-md-inline">Menu</span>
+                        </a>
+                        <a href="setting.html" class="d-flex align-items-center py-4 my-1 mb-md-0 me-md-auto list ">
+                            <i class="fa-solid fa-gear  ms-1"></i>
+                            <span class="fs-5 d-none d-md-inline">Setting</span>
+                        </a>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <button class="accordion-button collapsed py-4 my-1 mb-md-0 me-md-auto list" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <i class="fa-solid fa-star ms-1"></i>
+                                <span class="fs-5 d-none d-md-inline">Assets</span>
+                            </button>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse text-center bg-white mx-3 "
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <ul class="list-unstyled ">
+                                    <li><a href="assets/assets-index/button.html"
+                                            class="py-2 text-decoration-none text-dark">Button</a>
+                                    </li>
+                                    <li><a href="assets/assets-index/card.html"
+                                            class="py-2 text-decoration-none text-dark">Card</a>
+                                    </li>
+                                    <li><a href="assets/assets-index/input.html"
+                                            class="py-2 text-decoration-none text-dark">Input</a>
+                                    </li>
+                                    <li><a href="assets/assets-index/dropdown.html"
+                                            class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                                    <li><a href="assets/assets-index/slick.html"
+                                            class="py-2 text-decoration-none text-dark">Slick
+                                            Js</a></li>
+                                    <li><a href="assets/assets-index/sweetAlert.html"
+                                            class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                                    <li><a href="assets/assets-index/dataTable.html"
+                                            class="py-2 text-decoration-none text-dark">dataTable</a></li>
+                                    <li><a href="assets/assets-index/chartJs.html"
+                                            class="py-2 text-decoration-none text-dark">chartJs</a>
+                                    </li>
+                                    <li><a href="assets/assets-index/iconFontAwsme.html"
+                                            class="py-2 text-decoration-none text-dark">Icon</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End List -->
+                    </div>
+                </div>
+                <!-- End Sidebar -->
+            </div>
+
+            <!-- Main Content -->
+            <div class="col col-lg-10  m-auto ">
+                <!-- sidebar offcanvas mobile-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-block d-md-none shadow-sm">
+                    <div class="container-fluid">
+                        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <a class="navbar-brand" href="#">Hy, Sawal <img src="assets/images/profile.jpg" alt=""
+                                class="profile-image"></a>
+                        <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <div class="offcanvas-header ">
+                                <h1 class="offcanvas-title" id="offcanvasScrollingLabel"><a href="index.html"><img
+                                            src="assets/images/OBJECTS (1).svg" alt="" srcset=""
+                                            style="width: 100px;"></a></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body px-3">
+                                <!-- isi offcanvas -->
+                                <a href="dashboard.html"
+                                    class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-house ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Dashboard</span>
+                                </a>
+                                <a href="transaksi.html"
+                                    class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-money-bill ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Transaksi</span>
+                                </a>
+                                <a href="menu.html" class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-burger ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Menu</span>
+                                </a>
+                                <a href="setting.html"
+                                    class="d-flex align-items-center py-2 my-1 mb-md-0 me-md-auto list">
+                                    <i class="fa-solid fa-gear ms-1"></i>
+                                    <span class=" px-2 d-sm-inline">Setting</span>
+                                </a>
+
+                                <div class="accordion accordion-flush " id="accordionFlushExample">
+                                    <button class="accordion-button collapsed py-2 my-1 mb-md-0 me-md-auto list"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <i class="fa-solid fa-star ms-1"></i>
+                                        <span class=" px-2 d-sm-inline">Assets</span>
+                                    </button>
+                                    <div id="flush-collapseOne"
+                                        class="accordion-collapse collapse text-center bg-white mx-3"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <ul class="list-unstyled ">
+                                            <li><a href="assets/assets-index/button.html"
+                                                    class="py-2 text-decoration-none text-dark">Button</a>
+                                            </li>
+                                            <li><a href="assets/assets-index/card.html"
+                                                    class="py-2 text-decoration-none text-dark">Card</a>
+                                            </li>
+                                            <li><a href="assets/assets-index/input.html"
+                                                    class="py-2 text-decoration-none text-dark">Input</a>
+                                            </li>
+                                            <li><a href="assets/assets-index/dropdown.html"
+                                                    class="py-2 text-decoration-none text-dark">Dropdown</a></li>
+                                            <li><a href="assets/assets-index/slick.html"
+                                                    class="py-2 text-decoration-none text-dark">Slick
+                                                    Js</a></li>
+                                            <li><a href="assets/assets-index/sweetAlert.html"
+                                                    class="py-2 text-decoration-none text-dark">SweetAlert</a></li>
+                                            <li><a href="assets/assets-index/dataTable.html"
+                                                    class="py-2 text-decoration-none text-dark">DataTable</a></li>
+                                            <li><a href="assets/assets-index/chartJs.html"
+                                                    class="py-2 text-decoration-none text-dark">ChartJs</a>
+                                            </li>
+                                            <li><a href="assets/assets-index/iconFontAwsme.html"
+                                                    class="py-2 text-decoration-none text-dark">Icon</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- akhir isi offcanvas -->
+                            </div>
+                        </div>
+                </nav>
+                <!-- End Offcanvas mobile -->
+
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg d-none d-md-block px-2 nav ">
+                    <div class="container-fluid">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
+                        </ol>
+
+                        <div class="dropdown dropdown-nav">
+                            <a class="btn btn-link bg-tertiary py-0 my-0 lh-1 pe-0" id="dropdownMenuLink" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hy. Sawal <img src="assets/images/profile.jpg" alt="" class="profile-image">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-end py-0 my-3 dropdown-profile shadow border"
+                                aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                                <div class="card position-relative border-0 " style="width: 200px !important;">
+                                    <div class="card-body p-0">
+                                        <div class="" style="height: 5rem !important;">
+                                            <ul class="mb-5 pb-1 p-0 list-unstyled text-start">
+                                                <li>
+                                                    <a class="nav-link " href="profile.html"> <i
+                                                            class="fa-solid fa-user ms-1"></i>
+                                                        <span class=" px-2">Profile</span></a>
+                                                </li>
+                                                <li>
+                                                    <a type="button" class="nav-link" href=""> <i class="fa-solid fa-right-to-bracket ms-1
+                              "></i>
+                                                        <span class=" px-2">Logout</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </nav>
+                <!-- Other content within the wrapper -->
+
+                <!-- Start Profile -->
+
+                <section class="pt-5 mb-5">
+                    <div class="container pt-5 mt-5 ">
+                        <div class="row ">
+                            <div class="col-sm-8 offset-sm-2">
+                                <div class="card shadow-lg rounded-4">
+                                    <div class="card-body text-center">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle rounded-circle border-0"
+                                                        type="button" id="profileDropdown" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <div class="img-container">
+                                                            <img src="assets/images/profile.jpg" id="profileImage"
+                                                                alt="Admin" class="rounded-circle p-1 shadow-sm"
+                                                                style="background-color: #774620;">
+                                                        </div>
+                                                    </button>
+
+                                                    <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                                                        <li><label for="uploadImage" class="dropdown-item">Upload
+                                                                Photo</label></li>
+                                                        <li><label for="defaultImage" class="dropdown-item">Default
+                                                                Photo</label></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Hidden file input for uploading image -->
+                                                <input type="file" id="uploadImage" class="d-none " accept="image/*">
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex align-items-center text-start pt-5">
+                                            <div class="col-lg-2 col-md-4 col-sm-2 mt-1">
+                                                <h6>Email</h6>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-sm-10">
+                                                <input class="form-control rounded-5" type="email" name="" placeholder="Email"
+                                                    required="" />
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex align-items-center text-start pt-5">
+                                            <div class="col-lg-2 col-md-4 col-sm-2 mt-1">
+                                                <h6>Password</h6>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-sm-10">
+                                                <input class="form-control rounded-5" type="password" name=""  placeholder="Password"
+                                                    required="" />
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex align-items-center text-start pt-5">
+                                            <div class="col-lg-2 col-md-4 col-sm-2 mt-1">
+                                                <h6>Nama</h6>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-sm-10">
+                                                <input class="form-control rounded-5" type="text" name=""  placeholder="Username"
+                                                    required="" />
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex align-items-center text-start pt-5">
+                                            <div class="col-lg-2 col-md-4 col-sm-2 mt-1">
+                                                <h6>No Telp</h6>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-sm-10">
+                                                <input class="form-control rounded-5" type="text"   name="numericInput"
+                                                    placeholder="No Telp" required="" />
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex align-items-center text-start pt-5">
+                                            <div class="col-lg-2 col-md-4 col-sm-2 mt-1">
+                                                <h6>Alamat</h6>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-sm-10">
+                                                <input class="form-control rounded-5" type="text" name=""  placeholder="Alamat"
+                                                    required="" />
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex align-items-center text-start pt-5">
+                                            <div class="col-sm-2">
+                                                <button type="button" class="btn btn-primary">Simpan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Profile -->
+
+
+                <!-- akhir Main Content -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/icons/fontawesome-free-6.5.1-web/js/all.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <!-- DataTables JS -->
+    <script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="node_modules/datatables.net-bs5/js/dataTables.bootstrap5.js"></script>
+
+    <!-- DataTables Buttons JS -->
+    <script src="node_modules/Buttons-2.4.2/js/dataTables.buttons.js"></script>
+    <script src="node_modules/Buttons-2.4.2/js/buttons.bootstrap5.min.js"></script>
+    <script src="node_modules/Buttons-2.4.2/js/buttons.html5.js"></script>
+    <script src="node_modules/Buttons-2.4.2/js/buttons.print.js"></script>
+    <!-- DataTables pdf JS -->
+    <script src="node_modules/pdfmake/build/pdfmake.min.js"></script>
+    <script src="node_modules/pdfmake/build/vfs_fonts.js"></script>
+    <script src="node_modules/Buttons-2.4.2/js/buttons.print.js"></script>
+
+    <script src="node_modules/apps/datatables.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var uploadImageInput = document.getElementById("uploadImage");
+            var profileImageElement = document.getElementById("profileImage");
+        
+            // Handle file upload when the "Upload Photo" option is selected
+            document.getElementById("uploadImage").addEventListener("change", function() {
+                var file = uploadImageInput.files[0];
+        
+                if (file) {
+                    var reader = new FileReader();
+        
+                    reader.onload = function(e) {
+                        profileImageElement.src = e.target.result;
+                    };
+        
+                    reader.readAsDataURL(file);
+                }
+            });
+        
+            // Handle default image when the "Default Photo" option is selected
+            document.getElementById("defaultImage").addEventListener("click", function() {
+                profileImageElement.src = "assets/images/profile.jpg"; // Sesuaikan path sesuai dengan struktur proyek Anda
+            });
+        });
+        </script>
+
+</body>
+
+</html>
